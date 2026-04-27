@@ -1,0 +1,9 @@
+# Allow all search engines to crawl the entire site.
+User-agent: *
+Allow: /
+
+# Don't index the side-by-side style preview page (it's a dev tool, not content).
+Disallow: /comparison-tres-porquets.html
+
+# Sitemap location.
+Sitemap: https://alc1218.github.io/interactive_tales/sitemap.xml

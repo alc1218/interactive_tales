@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/tres-porquets/cover-storybook.svg</image:loc>
+      <image:title>Els tres porquets</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/caputxeta-vermella/cover-storybook.svg</image:loc>
+      <image:title>La Caputxeta Vermella</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/gegant-del-pi/cover-storybook.svg</image:loc>
+      <image:title>El Gegant del Pi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/rateta/cover-storybook.svg</image:loc>
+      <image:title>La Rateta que escombrava l'escaleta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/patufet/cover-storybook.svg</image:loc>
+      <image:title>En Patufet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/ventafocs/cover-storybook.svg</image:loc>
+      <image:title>La Ventafocs</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/llebre-i-tortuga/cover-storybook.svg</image:loc>
+      <image:title>La llebre i la tortuga</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/aneguet-lleig/cover-storybook.svg</image:loc>
+      <image:title>L'aneguet lleig</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/reader.html?tale=tres-porquets</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/tres-porquets/cover-storybook.svg</image:loc>
+      <image:title>Els tres porquets</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/reader.html?tale=caputxeta-vermella</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/caputxeta-vermella/cover-storybook.svg</image:loc>
+      <image:title>La Caputxeta Vermella</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/reader.html?tale=gegant-del-pi</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/gegant-del-pi/cover-storybook.svg</image:loc>
+      <image:title>El Gegant del Pi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/reader.html?tale=rateta</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/rateta/cover-storybook.svg</image:loc>
+      <image:title>La Rateta que escombrava l'escaleta</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/reader.html?tale=patufet</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/patufet/cover-storybook.svg</image:loc>
+      <image:title>En Patufet</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/reader.html?tale=ventafocs</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/ventafocs/cover-storybook.svg</image:loc>
+      <image:title>La Ventafocs</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/reader.html?tale=llebre-i-tortuga</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/llebre-i-tortuga/cover-storybook.svg</image:loc>
+      <image:title>La llebre i la tortuga</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://alc1218.github.io/interactive_tales/reader.html?tale=aneguet-lleig</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://alc1218.github.io/interactive_tales/contes/aneguet-lleig/cover-storybook.svg</image:loc>
+      <image:title>L'aneguet lleig</image:title>
+    </image:image>
+  </url>
+
+</urlset>
