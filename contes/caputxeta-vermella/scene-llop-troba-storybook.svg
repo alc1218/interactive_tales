@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyCV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8aa8c4"/>
+      <stop offset="1" stop-color="#e0c890"/>
+    </linearGradient>
+    <linearGradient id="grassCV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6ba85e"/>
+      <stop offset="1" stop-color="#234a28"/>
+    </linearGradient>
+    <linearGradient id="redCloakC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <radialGradient id="wolfBody" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#9aa0ad"/>
+      <stop offset="1" stop-color="#454a55"/>
+    </radialGradient>
+    <radialGradient id="wolfHead" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#a8aebc"/>
+      <stop offset="1" stop-color="#3d424d"/>
+    </radialGradient>
+    <radialGradient id="skinCV3" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <linearGradient id="trunkCV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d4f2a"/>
+      <stop offset="1" stop-color="#4a2d18"/>
+    </linearGradient>
+    <filter id="softShadowCV3" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyCV3)"/>
+
+  <!-- distant moody mountains -->
+  <path d="M-20 360 L100 280 L240 340 L360 270 L500 330 L620 280 L620 400 L-20 400 Z" fill="#5e7898" opacity=".55"/>
+  <path d="M-20 390 L150 340 L300 380 L450 335 L620 375 L620 410 L-20 410 Z" fill="#4a5e7c" opacity=".5"/>
+
+  <!-- darker forest backdrop -->
+  <g opacity=".7">
+    <ellipse cx="60" cy="300" rx="50" ry="100" fill="#2c5a32"/>
+    <ellipse cx="540" cy="290" rx="55" ry="110" fill="#2c5a32"/>
+    <ellipse cx="140" cy="320" rx="40" ry="80" fill="#3a7140"/>
+    <ellipse cx="450" cy="310" rx="45" ry="90" fill="#3a7140"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="560" rx="600" ry="200" fill="url(#grassCV3)"/>
+
+  <!-- tree between -->
+  <g filter="url(#softShadowCV3)">
+    <rect x="290" y="280" width="20" height="180" fill="url(#trunkCV3)"/>
+    <ellipse cx="300" cy="270" rx="55" ry="70" fill="#3a7140"/>
+    <ellipse cx="280" cy="240" rx="30" ry="30" fill="#4c8c52"/>
+  </g>
+
+  <!-- Red on left -->
+  <g filter="url(#softShadowCV3)" transform="translate(150,360)">
+    <ellipse cx="0" cy="155" rx="38" ry="7" fill="#0006"/>
+    <path d="M-42 150 L-46 35 q0 -10 5 -15 L42 20 q5 5 5 15 L42 150 z" fill="url(#redCloakC)"/>
+    <path d="M-22 150 L-22 55 q0 -10 22 -10 q22 0 22 10 L22 150 z" fill="#f0e2d0"/>
+    <circle cx="0" cy="-5" r="30" fill="url(#skinCV3)"/>
+    <path d="M-32 -5 q-5 -50 32 -55 q37 5 32 55 q-2 -25 -32 -25 q-30 0 -32 25 z" fill="url(#redCloakC)"/>
+    <path d="M-20 -10 q5 -10 20 -10 q15 0 20 10 q-5 -3 -20 -3 q-15 0 -20 3 z" fill="#c08040"/>
+    <!-- worried eyes (slightly bigger) -->
+    <circle cx="-9" cy="-3" r="3.5" fill="#fff"/><circle cx="-9" cy="-3" r="2" fill="#2b2140"/>
+    <circle cx="9" cy="-3" r="3.5" fill="#fff"/><circle cx="9" cy="-3" r="2" fill="#2b2140"/>
+    <circle cx="-8" cy="-4" r=".8" fill="#fff"/>
+    <!-- small "o" mouth -->
+    <ellipse cx="0" cy="10" rx="2.5" ry="3.5" fill="#7a2a3e"/>
+    <circle cx="-16" cy="5" r="5" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="16" cy="5" r="5" fill="#ff9bb5" opacity=".55"/>
+  </g>
+
+  <!-- Wolf on right (big sly) -->
+  <g filter="url(#softShadowCV3)" transform="translate(440,330)">
+    <ellipse cx="0" cy="190" rx="55" ry="10" fill="#0006"/>
+    <!-- back legs -->
+    <ellipse cx="-30" cy="170" rx="14" ry="20" fill="url(#wolfBody)"/>
+    <ellipse cx="30" cy="170" rx="14" ry="20" fill="url(#wolfBody)"/>
+    <!-- body -->
+    <ellipse cx="0" cy="120" rx="65" ry="55" fill="url(#wolfBody)"/>
+    <!-- tail -->
+    <path d="M55 100 q40 -20 55 10 q-25 -5 -45 15" fill="url(#wolfBody)"/>
+    <!-- head -->
+    <ellipse cx="0" cy="40" rx="50" ry="48" fill="url(#wolfHead)"/>
+    <!-- ears pointed -->
+    <path d="M-40 5 L-50 -35 L-22 -10 z" fill="#454a55"/>
+    <path d="M40 5 L50 -35 L22 -10 z" fill="#454a55"/>
+    <path d="M-40 5 L-44 -22 L-28 -8 z" fill="#7a2a3e" opacity=".6"/>
+    <path d="M40 5 L44 -22 L28 -8 z" fill="#7a2a3e" opacity=".6"/>
+    <!-- snout -->
+    <ellipse cx="0" cy="55" rx="22" ry="18" fill="#a8aebc"/>
+    <ellipse cx="0" cy="42" rx="6" ry="4.5" fill="#1a1a22"/>
+    <!-- sly slanted eyes -->
+    <path d="M-22 30 q8 -5 18 -1" stroke="#1a1a22" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M22 30 q-8 -5 -18 -1" stroke="#1a1a22" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-15" cy="32" rx="4" ry="3" fill="#ffd86b"/>
+    <circle cx="-15" cy="32" r="1.6" fill="#1a1a22"/>
+    <ellipse cx="15" cy="32" rx="4" ry="3" fill="#ffd86b"/>
+    <circle cx="15" cy="32" r="1.6" fill="#1a1a22"/>
+    <!-- big grin showing teeth -->
+    <path d="M-22 60 q22 18 44 0" stroke="#1a1a22" stroke-width="2.5" fill="#3a1018"/>
+    <polygon points="-15,60 -12,72 -9,60" fill="#fff"/>
+    <polygon points="-5,62 -2,75 1,62" fill="#fff"/>
+    <polygon points="5,62 8,75 11,62" fill="#fff"/>
+    <polygon points="14,60 17,70 19,60" fill="#fff"/>
+    <!-- tongue -->
+    <ellipse cx="0" cy="73" rx="6" ry="3" fill="#e85a78"/>
+  </g>
+
+  <!-- foreground grass tufts -->
+  <g fill="#1a4225" opacity=".7">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+  <g>
+    <g transform="translate(220,560)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(380,565)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+  </g>
+</svg>

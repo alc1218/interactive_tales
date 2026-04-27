@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <filter id="paperWF" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 .85  0 0 0 0 .80  0 0 0 0 .65  0 0 0 .12 0"/>
+    </filter>
+    <filter id="bleedWF" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="softBleedWF" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="#f4eedf"/>
+  <rect width="600" height="600" filter="url(#paperWF)" opacity=".5"/>
+
+  <ellipse cx="300" cy="80" rx="500" ry="250" fill="#cfe5f0" opacity=".6" filter="url(#bleedWF)"/>
+  <ellipse cx="200" cy="140" rx="300" ry="120" fill="#a8cbe0" opacity=".4" filter="url(#bleedWF)"/>
+  <circle cx="490" cy="110" r="80" fill="#ffd86b" opacity=".22" filter="url(#softBleedWF)"/>
+  <circle cx="490" cy="110" r="35" fill="#ffd86b" opacity=".55" filter="url(#bleedWF)"/>
+  <circle cx="490" cy="110" r="25" fill="#fff5b3" opacity=".75"/>
+
+  <ellipse cx="300" cy="540" rx="500" ry="200" fill="#a4c878" opacity=".55" filter="url(#bleedWF)"/>
+  <ellipse cx="300" cy="560" rx="500" ry="120" fill="#79a05d" opacity=".4" filter="url(#bleedWF)"/>
+
+  <path d="M-20 380 Q150 320 320 360 Q480 320 620 380 L620 420 L-20 420 Z"
+        fill="#a8b8d0" opacity=".55" filter="url(#bleedWF)"/>
+
+  <!-- pine trees as soft triangular blobs -->
+  <g opacity=".75" filter="url(#bleedWF)">
+    <polygon points="66,200 35,300 95,300" fill="#3c6f44"/>
+    <polygon points="66,235 30,320 100,320" fill="#558d5c"/>
+    <polygon points="66,275 28,345 102,345" fill="#74a47a"/>
+    <rect x="60" y="335" width="12" height="35" fill="#5d3a20"/>
+
+    <polygon points="531,225 500,320 562,320" fill="#3c6f44"/>
+    <polygon points="531,260 495,340 567,340" fill="#558d5c"/>
+    <polygon points="531,295 493,355 569,355" fill="#74a47a"/>
+    <rect x="525" y="345" width="12" height="35" fill="#5d3a20"/>
+  </g>
+
+  <!-- log house: roof wash -->
+  <polygon points="170,290 430,290 300,160" fill="#7a4a23" opacity=".7" filter="url(#bleedWF)"/>
+  <polygon points="170,290 430,290 300,160" fill="#a36c39" opacity=".5"/>
+  <g stroke="#3d2410" stroke-width="2" opacity=".55" fill="none" filter="url(#bleedWF)">
+    <line x1="220" y1="285" x2="295" y2="195"/>
+    <line x1="300" y1="285" x2="305" y2="245"/>
+    <line x1="380" y1="285" x2="305" y2="195"/>
+  </g>
+
+  <!-- walls -->
+  <rect x="190" y="290" width="220" height="190" fill="#cf945a" opacity=".7" filter="url(#bleedWF)"/>
+  <rect x="190" y="290" width="220" height="190" fill="#cf945a" opacity=".4"/>
+  <!-- log strokes -->
+  <g stroke="#5d3a1c" stroke-width="2.5" opacity=".55" filter="url(#bleedWF)">
+    <line x1="195" y1="320" x2="405" y2="320"/>
+    <line x1="195" y1="355" x2="405" y2="355"/>
+    <line x1="195" y1="390" x2="405" y2="390"/>
+    <line x1="195" y1="425" x2="405" y2="425"/>
+    <line x1="195" y1="460" x2="405" y2="460"/>
+  </g>
+  <!-- log ends as round dabs -->
+  <g opacity=".75">
+    <circle cx="190" cy="305" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="190" cy="338" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="190" cy="372" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="190" cy="407" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="190" cy="442" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="410" cy="305" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="410" cy="338" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="410" cy="372" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="410" cy="407" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+    <circle cx="410" cy="442" r="9" fill="#a06f3a" filter="url(#bleedWF)"/>
+  </g>
+
+  <!-- door -->
+  <path d="M270 480 L270 380 q0 -25 30 -25 q30 0 30 25 L330 480 z" fill="#3d2410" opacity=".75" filter="url(#bleedWF)"/>
+  <path d="M275 475 L275 382 q0 -20 25 -20 q25 0 25 20 L325 475 z" fill="#5d3a1c" opacity=".55"/>
+  <circle cx="318" cy="425" r="3" fill="#ffd86b"/>
+
+  <!-- windows -->
+  <rect x="215" y="320" width="40" height="40" rx="4" fill="#cfeaff" opacity=".7" filter="url(#bleedWF)"/>
+  <rect x="215" y="320" width="40" height="40" rx="4" fill="none" stroke="#3d2410" stroke-width="2.5" opacity=".7"/>
+  <line x1="215" y1="340" x2="255" y2="340" stroke="#3d2410" stroke-width="2" opacity=".5"/>
+  <line x1="235" y1="320" x2="235" y2="360" stroke="#3d2410" stroke-width="2" opacity=".5"/>
+  <rect x="345" y="320" width="40" height="40" rx="4" fill="#cfeaff" opacity=".7" filter="url(#bleedWF)"/>
+  <rect x="345" y="320" width="40" height="40" rx="4" fill="none" stroke="#3d2410" stroke-width="2.5" opacity=".7"/>
+  <line x1="345" y1="340" x2="385" y2="340" stroke="#3d2410" stroke-width="2" opacity=".5"/>
+  <line x1="365" y1="320" x2="365" y2="360" stroke="#3d2410" stroke-width="2" opacity=".5"/>
+
+  <!-- chimney with smoke wisps -->
+  <rect x="350" y="180" width="22" height="60" fill="#7a4a23" opacity=".7" filter="url(#bleedWF)"/>
+  <g opacity=".5" filter="url(#bleedWF)">
+    <ellipse cx="361" cy="170" rx="6" ry="3" fill="#cfd6df"/>
+    <ellipse cx="368" cy="158" rx="9" ry="5" fill="#d6dde5"/>
+    <ellipse cx="358" cy="142" rx="11" ry="6" fill="#dee5ec"/>
+  </g>
+
+  <!-- splatters -->
+  <g opacity=".5">
+    <circle cx="180" cy="510" r="3" fill="#5d3a1c"/>
+    <circle cx="450" cy="525" r="3" fill="#5d3a1c"/>
+    <circle cx="100" cy="545" r="3" fill="#5683b8"/>
+    <circle cx="520" cy="540" r="3" fill="#e87a98"/>
+  </g>
+
+  <rect width="600" height="600" filter="url(#paperWF)" opacity=".25"/>
+</svg>

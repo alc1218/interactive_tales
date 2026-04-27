@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#eaf7ff"/>
+  <ellipse cx="150" cy="265" rx="260" ry="45" fill="#8cd2a0"/>
+  <!-- ox -->
+  <g transform="translate(50,110)">
+    <ellipse cx="90" cy="100" rx="90" ry="50" fill="#c8a074"/>
+    <circle cx="170" cy="80" r="40" fill="#d6b086"/>
+    <polygon points="140,55 145,35 155,55" fill="#f4e7cf"/>
+    <polygon points="180,55 185,35 195,55" fill="#f4e7cf"/>
+    <circle cx="160" cy="78" r="3" fill="#2b2140"/><circle cx="180" cy="78" r="3" fill="#2b2140"/>
+    <ellipse cx="195" cy="95" rx="10" ry="7" fill="#8a5a2a"/>
+    <circle cx="193" cy="93" r="1.5" fill="#2b2140"/>
+    <rect x="20" y="145" width="15" height="30" fill="#8a5a2a"/>
+    <rect x="55" y="145" width="15" height="30" fill="#8a5a2a"/>
+    <rect x="115" y="145" width="15" height="30" fill="#8a5a2a"/>
+    <rect x="150" y="145" width="15" height="30" fill="#8a5a2a"/>
+  </g>
+  <!-- grass tuft at mouth with Patufet -->
+  <g transform="translate(240,195)">
+    <g fill="#4aa568"><polygon points="5,10 8,0 11,10"/><polygon points="13,10 17,-5 20,10"/></g>
+    <g transform="translate(9,-4)">
+      <rect x="0" y="8" width="8" height="10" fill="#d93048"/>
+      <circle cx="4" cy="5" r="4" fill="#ffd9c0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyLT2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8cc4e8"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <radialGradient id="sunLT2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff8d0"/>
+      <stop offset=".5" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassLT2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <linearGradient id="pathLT2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6a370"/>
+      <stop offset="1" stop-color="#a16f3f"/>
+    </linearGradient>
+    <radialGradient id="hareBodyLT2" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#e8d8c0"/>
+      <stop offset="1" stop-color="#a98760"/>
+    </radialGradient>
+    <radialGradient id="tortShellLT2" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#9ec46a"/>
+      <stop offset="1" stop-color="#4d6b1a"/>
+    </radialGradient>
+    <radialGradient id="cloudLT2" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <filter id="softShadowLT2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyLT2)"/>
+
+  <circle cx="120" cy="120" r="140" fill="url(#sunLT2)" opacity=".7"/>
+  <circle cx="120" cy="120" r="36" fill="#fff5b3"/>
+  <circle cx="120" cy="120" r="28" fill="#ffd86b"/>
+
+  <!-- mountains -->
+  <path d="M-20 360 L100 290 L200 340 L320 280 L450 330 L620 290 L620 400 L-20 400 Z" fill="#7392b8" opacity=".5"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowLT2)">
+    <ellipse cx="380" cy="90" rx="55" ry="20" fill="url(#cloudLT2)"/>
+    <ellipse cx="420" cy="85" rx="35" ry="14" fill="url(#cloudLT2)"/>
+    <ellipse cx="500" cy="140" rx="40" ry="15" fill="url(#cloudLT2)"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="600" ry="200" fill="url(#grassLT2)"/>
+
+  <!-- dirt/sandy path -->
+  <path d="M-20 460 Q300 420 620 470 L620 510 Q300 470 -20 500 Z" fill="url(#pathLT2)" opacity=".95"/>
+  <g stroke="#a16f3f" stroke-width="1.5" fill="none" opacity=".4">
+    <path d="M30 480 q40 -5 80 0"/>
+    <path d="M450 478 q40 -5 80 -2"/>
+  </g>
+
+  <!-- Tortoise far behind -->
+  <g filter="url(#softShadowLT2)" transform="translate(80,440) scale(0.55)">
+    <ellipse cx="0" cy="55" rx="55" ry="8" fill="#0006"/>
+    <ellipse cx="0" cy="20" rx="50" ry="30" fill="url(#tortShellLT2)"/>
+    <path d="M-30 20 q15 -8 30 0 q15 -8 30 0" stroke="#3d6b22" stroke-width="2" fill="none" opacity=".6"/>
+    <ellipse cx="-35" cy="40" rx="10" ry="6" fill="#7d9a45"/>
+    <ellipse cx="35" cy="40" rx="10" ry="6" fill="#7d9a45"/>
+    <ellipse cx="-50" cy="20" rx="14" ry="11" fill="#7d9a45"/>
+    <circle cx="-55" cy="17" r="2.5" fill="#fff"/>
+    <circle cx="-55" cy="17" r="1.4" fill="#2b2140"/>
+  </g>
+
+  <!-- motion lines behind hare -->
+  <g stroke="#fff" stroke-width="3" opacity=".7" stroke-linecap="round">
+    <line x1="280" y1="370" x2="340" y2="370"/>
+    <line x1="260" y1="390" x2="330" y2="390"/>
+    <line x1="270" y1="410" x2="335" y2="410"/>
+  </g>
+  <g stroke="#a16f3f" stroke-width="2" opacity=".6" stroke-linecap="round">
+    <line x1="260" y1="430" x2="320" y2="430"/>
+  </g>
+
+  <!-- Hare sprinting -->
+  <g filter="url(#softShadowLT2)" transform="translate(440,360)">
+    <ellipse cx="0" cy="100" rx="50" ry="7" fill="#0006"/>
+    <!-- body stretched -->
+    <ellipse cx="0" cy="65" rx="50" ry="32" fill="url(#hareBodyLT2)"/>
+    <!-- back legs extended -->
+    <ellipse cx="-40" cy="80" rx="18" ry="8" fill="#a98760" transform="rotate(-15 -40 80)"/>
+    <ellipse cx="35" cy="90" rx="14" ry="7" fill="#a98760"/>
+    <!-- head forward -->
+    <circle cx="35" cy="40" r="24" fill="url(#hareBodyLT2)"/>
+    <!-- ears swept back -->
+    <path d="M30 20 q-20 -25 -10 -32 q15 0 18 28 z" fill="url(#hareBodyLT2)"/>
+    <path d="M28 22 q-15 -22 -6 -26 q10 2 12 22 z" fill="#ffd0d8"/>
+    <!-- eye -->
+    <circle cx="42" cy="40" r="3.5" fill="#fff"/>
+    <circle cx="43" cy="40" r="2" fill="#2b2140"/>
+    <circle cx="44" cy="39" r=".8" fill="#fff"/>
+    <!-- nose -->
+    <ellipse cx="55" cy="46" rx="3" ry="2" fill="#e87a98"/>
+    <path d="M48 50 q5 3 8 -1" stroke="#7a2a3e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- tail -->
+    <circle cx="-50" cy="55" r="9" fill="#fff"/>
+  </g>
+
+  <!-- flowers -->
+  <g>
+    <g transform="translate(60,540)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(540,540)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(200,560)"><circle r="4" fill="#cfe2ff"/><circle r="1.6" fill="#5683b8"/></g>
+  </g>
+
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

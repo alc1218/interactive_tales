@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#9ed3f0"/>
+  <circle cx="510" cy="100" r="240" fill="#fff5b3"/>
+  <g fill="#ffe17a" opacity=".7">
+    <polygon points="510,100 480,-20 540,-20"/>
+    <polygon points="510,100 380,40 410,-10"/>
+    <polygon points="510,100 640,40 610,-10"/>
+  </g>
+
+  <!-- hills -->
+  <path d="M0 380 Q200 280 380 350 T 600 320 V 600 H 0 Z" fill="#3c8a8d"/>
+  <path d="M0 410 Q150 340 320 400 T 600 380 V 600 H 0 Z" fill="#2a6b6e"/>
+  <path d="M0 460 Q200 410 380 460 T 600 440 V 600 H 0 Z" fill="#1f4f52"/>
+  <path d="M0 510 Q300 480 600 510 V 600 H 0 Z" fill="#173b3e"/>
+
+  <!-- pine trees flat -->
+  <g>
+    <polygon points="68,200 30,310 106,310" fill="#558d5c"/>
+    <polygon points="68,250 28,350 108,350" fill="#3c6f44"/>
+    <rect x="62" y="335" width="12" height="30" fill="#5d3a20"/>
+    <polygon points="532,225 494,330 570,330" fill="#558d5c"/>
+    <polygon points="532,275 492,375 572,375" fill="#3c6f44"/>
+    <rect x="526" y="360" width="12" height="30" fill="#5d3a20"/>
+  </g>
+
+  <!-- log house -->
+  <g opacity=".25">
+    <polygon points="170,290 430,290 430,475 360,540 200,540" fill="#173b3e" transform="translate(45,15) skewX(-12)"/>
+  </g>
+  <polygon points="170,290 430,290 300,160" fill="#7a4a23"/>
+  <polygon points="170,290 300,290 300,160" fill="#3d2410"/>
+  <rect x="190" y="290" width="220" height="190" fill="#cf945a"/>
+  <rect x="190" y="290" width="110" height="190" fill="#7a4a23" opacity=".5"/>
+  <!-- horizontal logs -->
+  <g stroke="#3d2410" stroke-width="3" opacity=".7">
+    <line x1="190" y1="320" x2="410" y2="320"/>
+    <line x1="190" y1="355" x2="410" y2="355"/>
+    <line x1="190" y1="390" x2="410" y2="390"/>
+    <line x1="190" y1="425" x2="410" y2="425"/>
+    <line x1="190" y1="460" x2="410" y2="460"/>
+  </g>
+  <!-- log ends -->
+  <g fill="#a06f3a" stroke="#3d2410" stroke-width="2.5">
+    <circle cx="190" cy="305" r="10"/><circle cx="190" cy="338" r="10"/>
+    <circle cx="190" cy="372" r="10"/><circle cx="190" cy="407" r="10"/><circle cx="190" cy="442" r="10"/>
+    <circle cx="410" cy="305" r="10"/><circle cx="410" cy="338" r="10"/>
+    <circle cx="410" cy="372" r="10"/><circle cx="410" cy="407" r="10"/><circle cx="410" cy="442" r="10"/>
+  </g>
+  <g fill="#3d2410">
+    <circle cx="190" cy="305" r="3"/><circle cx="190" cy="338" r="3"/>
+    <circle cx="190" cy="372" r="3"/><circle cx="190" cy="407" r="3"/><circle cx="190" cy="442" r="3"/>
+    <circle cx="410" cy="305" r="3"/><circle cx="410" cy="338" r="3"/>
+    <circle cx="410" cy="372" r="3"/><circle cx="410" cy="407" r="3"/><circle cx="410" cy="442" r="3"/>
+  </g>
+  <!-- door -->
+  <path d="M270 480 L270 380 q0 -25 30 -25 q30 0 30 25 L330 480 z" fill="#3d2410"/>
+  <path d="M270 480 L270 380 q0 -25 30 -25 L300 480 z" fill="#1d1408" opacity=".4"/>
+  <circle cx="318" cy="425" r="3.5" fill="#ffd86b"/>
+  <!-- windows -->
+  <rect x="215" y="320" width="40" height="40" fill="#cfeaff"/>
+  <rect x="215" y="320" width="40" height="40" fill="none" stroke="#3d2410" stroke-width="3"/>
+  <rect x="215" y="320" width="20" height="40" fill="#a8cbe0"/>
+  <rect x="345" y="320" width="40" height="40" fill="#cfeaff"/>
+  <rect x="345" y="320" width="40" height="40" fill="none" stroke="#3d2410" stroke-width="3"/>
+  <rect x="345" y="320" width="20" height="40" fill="#a8cbe0"/>
+
+  <!-- chimney + smoke -->
+  <rect x="350" y="180" width="22" height="60" fill="#3d2410"/>
+  <g fill="#fff" opacity=".75">
+    <rect x="354" y="155" width="14" height="14" rx="7"/>
+    <rect x="350" y="135" width="22" height="18" rx="9"/>
+    <rect x="346" y="115" width="30" height="22" rx="11"/>
+  </g>
+
+  <!-- log pile -->
+  <g transform="translate(440,440)">
+    <rect x="0" y="0" width="60" height="14" rx="3" fill="#7a4a23"/>
+    <circle cx="0" cy="7" r="9" fill="#a06f3a" stroke="#3d2410" stroke-width="2"/>
+    <circle cx="60" cy="7" r="9" fill="#a06f3a" stroke="#3d2410" stroke-width="2"/>
+    <rect x="6" y="-15" width="50" height="14" rx="3" fill="#7a4a23"/>
+    <circle cx="6" cy="-8" r="9" fill="#a06f3a" stroke="#3d2410" stroke-width="2"/>
+    <circle cx="56" cy="-8" r="9" fill="#a06f3a" stroke="#3d2410" stroke-width="2"/>
+  </g>
+
+  <!-- piglet -->
+  <g transform="translate(170,440)">
+    <ellipse cx="0" cy="20" rx="22" ry="20" fill="#ffadc1"/>
+    <circle cx="0" cy="-5" r="18" fill="#ffbfd0"/>
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#ff5d80"/>
+    <circle cx="-2" cy="0" r="1.2" fill="#5a1d2e"/>
+    <circle cx="2" cy="0" r="1.2" fill="#5a1d2e"/>
+    <circle cx="-6" cy="-8" r="1.5" fill="#1f1334"/>
+    <circle cx="6" cy="-8" r="1.5" fill="#1f1334"/>
+  </g>
+
+  <g fill="#fff" opacity=".85">
+    <rect x="80" y="100" width="120" height="22" rx="11"/>
+  </g>
+</svg>

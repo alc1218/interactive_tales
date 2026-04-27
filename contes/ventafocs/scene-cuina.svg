@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#f3e5d0"/>
+  <rect x="0" y="230" width="300" height="70" fill="#8a5a2a"/>
+  <!-- fireplace -->
+  <rect x="20" y="100" width="90" height="130" fill="#6b4423"/>
+  <rect x="32" y="140" width="66" height="80" fill="#2b2140"/>
+  <g fill="#ff7a59"><path d="M50 210 Q56 180 62 210"/><path d="M65 215 Q72 175 79 215"/><path d="M80 210 Q86 185 92 210"/></g>
+  <!-- Cinderella sweeping -->
+  <g transform="translate(140,130)">
+    <path d="M0 70 Q30 100 60 70 L55 120 L5 120 Z" fill="#9c8b7a"/>
+    <circle cx="30" cy="50" r="20" fill="#ffd9c0"/>
+    <path d="M10 40 Q30 15 50 40 L50 55 Q30 62 10 55 Z" fill="#ffd86b"/>
+    <circle cx="24" cy="50" r="1.5" fill="#2b2140"/><circle cx="36" cy="50" r="1.5" fill="#2b2140"/>
+    <path d="M24 60 Q30 64 36 60" stroke="#2b2140" stroke-width="1" fill="none"/>
+  </g>
+  <!-- broom -->
+  <g transform="translate(205,170)">
+    <rect x="0" y="0" width="5" height="60" fill="#8a5a2a"/>
+    <polygon points="-6,60 11,60 14,80 -9,80" fill="#f2c14e"/>
+  </g>
+</svg>

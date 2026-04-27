@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#3d4870"/>
+  <!-- moon big -->
+  <circle cx="500" cy="120" r="220" fill="#fff5d8" opacity=".15"/>
+  <circle cx="500" cy="120" r="60" fill="#fff5d8"/>
+  <circle cx="540" cy="100" r="20" fill="#3d4870"/>
+
+  <!-- jagged dark hills -->
+  <path d="M0 380 L120 320 L260 360 L380 305 L500 350 L620 320 V 600 H 0 Z" fill="#1d2236"/>
+  <path d="M0 410 L150 355 L300 395 L460 350 L620 390 V 600 H 0 Z" fill="#0e1322"/>
+  <path d="M0 510 Q300 480 600 510 V 600 H 0 Z" fill="#080a14"/>
+
+  <!-- bare trees flat -->
+  <g stroke="#0e1322" stroke-width="4" fill="none">
+    <path d="M70 380 Q72 320 65 270 Q60 240 70 220"/>
+    <path d="M70 320 Q60 305 50 305"/>
+    <path d="M70 280 Q85 270 95 265"/>
+    <path d="M70 250 Q60 240 55 230"/>
+  </g>
+
+  <!-- straw house in distance -->
+  <g transform="translate(380,330)" opacity=".95">
+    <polygon points="-30,40 70,40 20,-15" fill="#a86f17"/>
+    <rect x="-22" y="40" width="84" height="60" fill="#cf9929"/>
+    <rect x="10" y="68" width="14" height="32" fill="#7d4f12"/>
+    <!-- straw flying off -->
+    <g stroke="#fbd96a" stroke-width="3" stroke-linecap="round">
+      <line x1="60" y1="-10" x2="100" y2="-25"/>
+      <line x1="50" y1="-5" x2="85" y2="-15"/>
+      <line x1="40" y1="-20" x2="65" y2="-35"/>
+    </g>
+  </g>
+
+  <!-- WOLF — bold flat shapes -->
+  <g>
+    <ellipse cx="180" cy="500" rx="135" ry="22" fill="#080a14" opacity=".55"/>
+    <!-- body -->
+    <ellipse cx="180" cy="430" rx="120" ry="70" fill="#5a576c"/>
+    <ellipse cx="120" cy="430" rx="120" ry="70" fill="#3a3850" opacity=".6"/>
+    <!-- legs -->
+    <ellipse cx="120" cy="490" rx="22" ry="25" fill="#3a3850"/>
+    <ellipse cx="240" cy="495" rx="22" ry="22" fill="#3a3850"/>
+    <rect x="100" y="450" width="20" height="60" rx="9" fill="#3a3850"/>
+    <rect x="195" y="455" width="20" height="55" rx="9" fill="#3a3850"/>
+
+    <!-- tail -->
+    <path d="M280 410 q60 -10 60 -50 q-15 0 -25 18 q-10 -10 -22 -8 q-12 -2 -18 8" fill="#3a3850"/>
+    <path d="M280 410 q60 -10 60 -50 q-15 0 -25 18" fill="#5a576c" opacity=".7"/>
+
+    <!-- head -->
+    <g transform="translate(280,330)">
+      <path d="M0 50 q10 -55 70 -55 q60 5 70 30 q15 25 -5 50 q-5 25 -45 25 q-50 0 -70 -15 q-25 -10 -20 -35 z" fill="#85819a"/>
+      <path d="M0 50 q10 -55 70 -55 q60 5 70 30 L70 50 z" fill="#5a576c" opacity=".55"/>
+      <!-- ears -->
+      <path d="M20 -5 q-10 -35 12 -40 q14 -2 18 30 z" fill="#85819a"/>
+      <path d="M30 -10 q-3 -22 8 -25 q9 -1 12 18 z" fill="#3a3850" opacity=".7"/>
+      <path d="M105 -5 q15 -38 -10 -42 q-15 -2 -19 32 z" fill="#85819a"/>
+      <path d="M97 -10 q9 -25 -3 -28 q-10 -1 -12 20 z" fill="#3a3850" opacity=".7"/>
+      <!-- eyes -->
+      <circle cx="42" cy="20" r="6" fill="#fff5b3"/>
+      <circle cx="42" cy="22" r="3.5" fill="#1d1825"/>
+      <circle cx="82" cy="20" r="6" fill="#fff5b3"/>
+      <circle cx="82" cy="22" r="3.5" fill="#1d1825"/>
+      <!-- eyebrows angry -->
+      <path d="M30 12 q10 -3 18 0" stroke="#1d1825" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M70 12 q10 -3 18 0" stroke="#1d1825" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <!-- snout -->
+      <path d="M50 45 q15 -8 30 0 q20 5 35 22 q-5 30 -55 30 q-30 -2 -40 -22 q-2 -22 30 -30 z" fill="#85819a"/>
+      <path d="M50 45 q15 -8 30 0 q20 5 35 22 L75 75 z" fill="#3a3850" opacity=".4"/>
+      <!-- nose -->
+      <ellipse cx="118" cy="55" rx="14" ry="9" fill="#1d1825"/>
+      <!-- mouth blowing -->
+      <ellipse cx="125" cy="78" rx="10" ry="14" fill="#1d1825"/>
+      <!-- teeth -->
+      <polygon points="118,75 122,82 116,82" fill="#fff"/>
+      <polygon points="132,75 130,82 134,82" fill="#fff"/>
+    </g>
+  </g>
+
+  <!-- wind blast as flat layered ovals -->
+  <g>
+    <ellipse cx="500" cy="410" rx="100" ry="14" fill="#cfd6df" opacity=".85"/>
+    <ellipse cx="510" cy="385" rx="80" ry="10" fill="#cfd6df" opacity=".7"/>
+    <ellipse cx="510" cy="438" rx="90" ry="12" fill="#cfd6df" opacity=".75"/>
+  </g>
+  <g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".75">
+    <path d="M450 360 Q480 358 510 360"/>
+    <path d="M460 470 Q490 468 520 470"/>
+    <path d="M555 405 q10 -5 18 0"/>
+    <path d="M555 395 q10 -5 18 0"/>
+    <path d="M555 415 q10 -5 18 0"/>
+  </g>
+</svg>

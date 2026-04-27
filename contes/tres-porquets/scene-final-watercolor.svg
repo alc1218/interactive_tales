@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <filter id="paperWFi" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" seed="13"/>
+      <feColorMatrix values="0 0 0 0 .85  0 0 0 0 .80  0 0 0 0 .65  0 0 0 .12 0"/>
+    </filter>
+    <filter id="bleedWFi" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="softBleedWFi" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="#fbf3df"/>
+  <rect width="600" height="600" filter="url(#paperWFi)" opacity=".5"/>
+
+  <!-- warm sunrise sky -->
+  <ellipse cx="300" cy="80" rx="500" ry="250" fill="#ffd5b8" opacity=".55" filter="url(#bleedWFi)"/>
+  <ellipse cx="200" cy="160" rx="300" ry="120" fill="#ffe4b8" opacity=".4" filter="url(#bleedWFi)"/>
+  <ellipse cx="450" cy="110" rx="200" ry="60" fill="#ffd86b" opacity=".35" filter="url(#bleedWFi)"/>
+
+  <circle cx="490" cy="120" r="80" fill="#ffd86b" opacity=".25" filter="url(#softBleedWFi)"/>
+  <circle cx="490" cy="120" r="40" fill="#ffd86b" opacity=".55" filter="url(#bleedWFi)"/>
+  <circle cx="490" cy="120" r="30" fill="#fff5b3" opacity=".75"/>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="500" ry="200" fill="#a4c878" opacity=".55" filter="url(#bleedWFi)"/>
+  <ellipse cx="300" cy="560" rx="500" ry="120" fill="#79a05d" opacity=".4" filter="url(#bleedWFi)"/>
+
+  <!-- distant hills -->
+  <path d="M-20 380 Q150 320 320 360 Q480 320 620 380 L620 420 L-20 420 Z"
+        fill="#a8b8d0" opacity=".55" filter="url(#bleedWFi)"/>
+
+  <!-- trees -->
+  <g opacity=".75">
+    <ellipse cx="72" cy="305" rx="42" ry="50" fill="#5e8a4a" filter="url(#bleedWFi)"/>
+    <ellipse cx="58" cy="293" rx="22" ry="22" fill="#7ba65a" filter="url(#bleedWFi)"/>
+    <rect x="65" y="320" width="14" height="55" fill="#7d4f12" opacity=".6"/>
+    <ellipse cx="532" cy="315" rx="40" ry="46" fill="#5e8a4a" filter="url(#bleedWFi)"/>
+    <ellipse cx="548" cy="302" rx="22" ry="22" fill="#7ba65a" filter="url(#bleedWFi)"/>
+    <rect x="525" y="330" width="14" height="55" fill="#7d4f12" opacity=".6"/>
+  </g>
+
+  <!-- brick house: roof -->
+  <polygon points="130,290 470,290 300,140" fill="#a4341a" opacity=".7" filter="url(#bleedWFi)"/>
+  <polygon points="130,290 470,290 300,140" fill="#c14d2e" opacity=".4"/>
+
+  <!-- walls wash -->
+  <rect x="160" y="290" width="280" height="200" fill="#e57858" opacity=".7" filter="url(#bleedWFi)"/>
+  <rect x="160" y="290" width="280" height="200" fill="#c8543a" opacity=".4"/>
+  <g stroke="#651b08" stroke-width="1.5" opacity=".5" filter="url(#bleedWFi)">
+    <line x1="160" y1="312" x2="440" y2="312"/>
+    <line x1="160" y1="334" x2="440" y2="334"/>
+    <line x1="160" y1="378" x2="440" y2="378"/>
+    <line x1="160" y1="422" x2="440" y2="422"/>
+    <line x1="160" y1="466" x2="440" y2="466"/>
+  </g>
+
+  <!-- door -->
+  <path d="M260 490 L260 390 q0 -28 40 -28 q40 0 40 28 L340 490 z" fill="#3d2410" opacity=".75" filter="url(#bleedWFi)"/>
+  <circle cx="328" cy="438" r="3" fill="#ffd86b"/>
+
+  <!-- 3 windows with pigs -->
+  <g>
+    <rect x="180" y="320" width="55" height="55" fill="#a8d5f0" opacity=".7" filter="url(#bleedWFi)"/>
+    <rect x="180" y="320" width="55" height="55" fill="none" stroke="#651b08" stroke-width="2.5" opacity=".7"/>
+    <line x1="180" y1="347" x2="235" y2="347" stroke="#651b08" stroke-width="2" opacity=".5"/>
+    <line x1="207" y1="320" x2="207" y2="375" stroke="#651b08" stroke-width="2" opacity=".5"/>
+    <g transform="translate(207,360)">
+      <circle cx="0" cy="0" r="20" fill="#ffbfd0" opacity=".75" filter="url(#bleedWFi)"/>
+      <ellipse cx="0" cy="6" rx="8" ry="5" fill="#ff97b3" opacity=".7"/>
+      <circle cx="-2.5" cy="6" r="1.4" fill="#7a2a3e"/>
+      <circle cx="2.5" cy="6" r="1.4" fill="#7a2a3e"/>
+      <circle cx="-7" cy="-3" r="1.5" fill="#2b2140"/>
+      <circle cx="7" cy="-3" r="1.5" fill="#2b2140"/>
+      <path d="M-6 13 q6 5 12 0" stroke="#7a2a3e" stroke-width="1.6" fill="none"/>
+    </g>
+
+    <rect x="365" y="320" width="55" height="55" fill="#a8d5f0" opacity=".7" filter="url(#bleedWFi)"/>
+    <rect x="365" y="320" width="55" height="55" fill="none" stroke="#651b08" stroke-width="2.5" opacity=".7"/>
+    <line x1="365" y1="347" x2="420" y2="347" stroke="#651b08" stroke-width="2" opacity=".5"/>
+    <line x1="392" y1="320" x2="392" y2="375" stroke="#651b08" stroke-width="2" opacity=".5"/>
+    <g transform="translate(392,360)">
+      <circle cx="0" cy="0" r="20" fill="#ffbfd0" opacity=".75" filter="url(#bleedWFi)"/>
+      <ellipse cx="0" cy="6" rx="8" ry="5" fill="#ff97b3" opacity=".7"/>
+      <circle cx="-2.5" cy="6" r="1.4" fill="#7a2a3e"/>
+      <circle cx="2.5" cy="6" r="1.4" fill="#7a2a3e"/>
+      <circle cx="-7" cy="-3" r="1.5" fill="#2b2140"/>
+      <circle cx="7" cy="-3" r="1.5" fill="#2b2140"/>
+      <path d="M-6 13 q6 5 12 0" stroke="#7a2a3e" stroke-width="1.6" fill="none"/>
+    </g>
+
+    <!-- top window -->
+    <rect x="270" y="220" width="60" height="55" fill="#a8d5f0" opacity=".7" filter="url(#bleedWFi)"/>
+    <rect x="270" y="220" width="60" height="55" fill="none" stroke="#651b08" stroke-width="2.5" opacity=".7"/>
+    <line x1="270" y1="248" x2="330" y2="248" stroke="#651b08" stroke-width="2" opacity=".5"/>
+    <line x1="300" y1="220" x2="300" y2="275" stroke="#651b08" stroke-width="2" opacity=".5"/>
+    <g transform="translate(300,260)">
+      <circle cx="0" cy="0" r="20" fill="#ffbfd0" opacity=".75" filter="url(#bleedWFi)"/>
+      <ellipse cx="0" cy="6" rx="8" ry="5" fill="#ff97b3" opacity=".7"/>
+      <circle cx="-2.5" cy="6" r="1.4" fill="#7a2a3e"/>
+      <circle cx="2.5" cy="6" r="1.4" fill="#7a2a3e"/>
+      <circle cx="-7" cy="-3" r="1.5" fill="#2b2140"/>
+      <circle cx="7" cy="-3" r="1.5" fill="#2b2140"/>
+      <path d="M-6 13 q6 5 12 0" stroke="#7a2a3e" stroke-width="1.6" fill="none"/>
+    </g>
+  </g>
+
+  <!-- chimney with smoke -->
+  <rect x="380" y="170" width="22" height="55" fill="#a4341a" opacity=".75" filter="url(#bleedWFi)"/>
+  <g opacity=".55" filter="url(#bleedWFi)">
+    <ellipse cx="391" cy="158" rx="6" ry="3" fill="#cfd6df"/>
+    <ellipse cx="398" cy="146" rx="9" ry="5" fill="#d6dde5"/>
+    <ellipse cx="388" cy="132" rx="11" ry="6" fill="#dee5ec"/>
+    <ellipse cx="402" cy="115" rx="13" ry="6" fill="#e8eef3"/>
+  </g>
+
+  <!-- confetti -->
+  <g opacity=".75">
+    <circle cx="80" cy="200" r="4" fill="#ff5a7e"/>
+    <circle cx="170" cy="120" r="4" fill="#5683b8"/>
+    <circle cx="220" cy="170" r="4" fill="#ffae3b"/>
+    <circle cx="380" cy="100" r="4" fill="#ff5a7e"/>
+    <circle cx="450" cy="150" r="4" fill="#52c280"/>
+    <circle cx="510" cy="220" r="4" fill="#ffae3b"/>
+    <circle cx="60" cy="320" r="3" fill="#ffd86b"/>
+    <circle cx="540" cy="290" r="3" fill="#ff5a7e"/>
+  </g>
+
+  <!-- splatters -->
+  <g opacity=".5">
+    <circle cx="100" cy="540" r="3" fill="#52c280"/>
+    <circle cx="500" cy="555" r="3" fill="#ff5a7e"/>
+  </g>
+
+  <rect width="600" height="600" filter="url(#paperWFi)" opacity=".25"/>
+</svg>

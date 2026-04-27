@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe0ff"/><stop offset="1" stop-color="#e9f7d3"/></linearGradient></defs>
+  <rect width="300" height="400" fill="url(#sky)"/>
+  <ellipse cx="150" cy="360" rx="260" ry="40" fill="#8cd2a0"/>
+  <!-- tortoise -->
+  <g transform="translate(40,260)">
+    <ellipse cx="65" cy="50" rx="65" ry="35" fill="#4aa568"/>
+    <ellipse cx="65" cy="45" rx="55" ry="26" fill="#3f8b54"/>
+    <g fill="#2f7a44"><circle cx="40" cy="40" r="6"/><circle cx="65" cy="35" r="6"/><circle cx="90" cy="40" r="6"/><circle cx="50" cy="55" r="5"/><circle cx="80" cy="55" r="5"/></g>
+    <circle cx="130" cy="55" r="15" fill="#7ecb8e"/>
+    <circle cx="135" cy="50" r="1.8" fill="#2b2140"/>
+    <path d="M130 62 Q135 66 140 62" stroke="#2b2140" stroke-width="1" fill="none"/>
+    <rect x="15" y="75" width="12" height="10" fill="#7ecb8e"/>
+    <rect x="45" y="75" width="12" height="10" fill="#7ecb8e"/>
+    <rect x="75" y="75" width="12" height="10" fill="#7ecb8e"/>
+    <rect x="105" y="75" width="12" height="10" fill="#7ecb8e"/>
+  </g>
+  <!-- hare -->
+  <g transform="translate(170,170)">
+    <ellipse cx="55" cy="75" rx="45" ry="30" fill="#c9a26b"/>
+    <circle cx="90" cy="55" r="22" fill="#d8b480"/>
+    <polygon points="80,40 83,10 90,42" fill="#d8b480"/>
+    <polygon points="100,40 103,10 110,42" fill="#d8b480"/>
+    <polygon points="83,35 87,18 90,38" fill="#ffb3d2"/>
+    <polygon points="103,35 105,18 108,38" fill="#ffb3d2"/>
+    <circle cx="85" cy="55" r="2" fill="#2b2140"/><circle cx="98" cy="55" r="2" fill="#2b2140"/>
+    <ellipse cx="107" cy="65" rx="6" ry="4" fill="#ff8fb0"/>
+    <ellipse cx="10" cy="65" rx="12" ry="8" fill="#fff"/>
+  </g>
+  <text x="150" y="50" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="24" font-weight="800" fill="#2b2140">La llebre</text>
+  <text x="150" y="80" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="24" font-weight="800" fill="#3f8b54">i la tortuga</text>
+</svg>

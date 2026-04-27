@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyLT3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8cc4e8"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <radialGradient id="sunLT3" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff8d0"/>
+      <stop offset=".5" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassLT3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <linearGradient id="trunkLT3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d4f2a"/>
+      <stop offset="1" stop-color="#4a2d18"/>
+    </linearGradient>
+    <radialGradient id="folLT3" cx=".5" cy=".5" r=".6">
+      <stop offset="0" stop-color="#6cb060"/>
+      <stop offset="1" stop-color="#2c6a3a"/>
+    </radialGradient>
+    <radialGradient id="hareBodyLT3" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#e8d8c0"/>
+      <stop offset="1" stop-color="#a98760"/>
+    </radialGradient>
+    <radialGradient id="tortShellLT3" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#9ec46a"/>
+      <stop offset="1" stop-color="#4d6b1a"/>
+    </radialGradient>
+    <filter id="softShadowLT3" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyLT3)"/>
+  <circle cx="500" cy="120" r="130" fill="url(#sunLT3)" opacity=".7"/>
+  <circle cx="500" cy="120" r="32" fill="#fff5b3"/>
+  <circle cx="500" cy="120" r="24" fill="#ffd86b"/>
+
+  <!-- distant hills -->
+  <path d="M-20 380 L130 320 L240 360 L340 305 L450 350 L620 330 L620 420 L-20 420 Z" fill="#7392b8" opacity=".4"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowLT3)">
+    <ellipse cx="120" cy="100" rx="50" ry="18" fill="#fff"/>
+    <ellipse cx="160" cy="95" rx="35" ry="14" fill="#fff"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="600" ry="200" fill="url(#grassLT3)"/>
+
+  <!-- background tortoise plodding past -->
+  <g filter="url(#softShadowLT3)" transform="translate(420,400) scale(0.6)">
+    <ellipse cx="0" cy="55" rx="55" ry="8" fill="#0006"/>
+    <ellipse cx="0" cy="20" rx="50" ry="30" fill="url(#tortShellLT3)"/>
+    <path d="M-30 20 q15 -8 30 0 q15 -8 30 0" stroke="#3d6b22" stroke-width="2" fill="none" opacity=".6"/>
+    <ellipse cx="-35" cy="40" rx="10" ry="6" fill="#7d9a45"/>
+    <ellipse cx="35" cy="40" rx="10" ry="6" fill="#7d9a45"/>
+    <ellipse cx="50" cy="20" rx="14" ry="11" fill="#7d9a45"/>
+    <circle cx="55" cy="17" r="2.5" fill="#fff"/>
+    <circle cx="55" cy="17" r="1.4" fill="#2b2140"/>
+    <path d="M52 24 q4 3 7 0" stroke="#5d4a1f" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- big leafy tree -->
+  <g filter="url(#softShadowLT3)">
+    <rect x="160" y="320" width="36" height="180" fill="url(#trunkLT3)"/>
+    <ellipse cx="178" cy="280" rx="120" ry="100" fill="url(#folLT3)"/>
+    <ellipse cx="120" cy="240" rx="50" ry="40" fill="#6cb060"/>
+    <ellipse cx="240" cy="245" rx="55" ry="42" fill="#7ec56e"/>
+  </g>
+
+  <!-- Sleeping hare under tree -->
+  <g filter="url(#softShadowLT3)" transform="translate(180,460)">
+    <ellipse cx="0" cy="20" rx="60" ry="8" fill="#0006"/>
+    <!-- lying body -->
+    <ellipse cx="0" cy="0" rx="55" ry="22" fill="url(#hareBodyLT3)"/>
+    <!-- head curled -->
+    <circle cx="-45" cy="-10" r="22" fill="url(#hareBodyLT3)"/>
+    <!-- floppy ears lying down -->
+    <path d="M-55 -15 q-30 5 -35 -10 q5 -8 30 -10 z" fill="url(#hareBodyLT3)"/>
+    <path d="M-55 -10 q-22 5 -28 -5 q4 -5 22 -8 z" fill="#ffd0d8"/>
+    <!-- closed eye (curve) -->
+    <path d="M-52 -12 q5 4 10 0" stroke="#2b2140" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- nose -->
+    <ellipse cx="-65" cy="-5" rx="3" ry="2" fill="#e87a98"/>
+    <!-- mouth -->
+    <path d="M-65 0 q3 3 6 0" stroke="#7a2a3e" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <!-- belly highlight -->
+    <ellipse cx="0" cy="5" rx="40" ry="14" fill="#fff" opacity=".25"/>
+    <!-- tail -->
+    <circle cx="50" cy="0" r="9" fill="#fff"/>
+  </g>
+
+  <!-- Zzz floating -->
+  <g font-family="Georgia" font-style="italic" fill="#3a4f7a" opacity=".85">
+    <text x="250" y="350" font-size="36">Z</text>
+    <text x="280" y="320" font-size="28">z</text>
+    <text x="305" y="295" font-size="20">z</text>
+  </g>
+
+  <!-- flowers -->
+  <g>
+    <g transform="translate(80,520)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(540,520)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(360,545)"><circle r="4" fill="#cfe2ff"/><circle r="1.6" fill="#5683b8"/></g>
+  </g>
+
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyR1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8eb"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <linearGradient id="grassR1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <linearGradient id="stairR1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cbb89a"/>
+      <stop offset="1" stop-color="#6e604a"/>
+    </linearGradient>
+    <radialGradient id="mouseBodyR1" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#f8e8d0"/>
+      <stop offset="1" stop-color="#c9a878"/>
+    </radialGradient>
+    <radialGradient id="mouseHeadR1" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fbf2dc"/>
+      <stop offset="1" stop-color="#d8b888"/>
+    </radialGradient>
+    <radialGradient id="cloudR1" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <radialGradient id="dustR1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadowR1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyR1)"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowR1)">
+    <ellipse cx="120" cy="100" rx="50" ry="18" fill="url(#cloudR1)"/>
+    <ellipse cx="480" cy="120" rx="48" ry="16" fill="url(#cloudR1)"/>
+  </g>
+
+  <!-- distant trees -->
+  <g opacity=".6">
+    <ellipse cx="60" cy="350" rx="40" ry="50" fill="#3a7140"/>
+    <ellipse cx="540" cy="340" rx="45" ry="55" fill="#4c8c52"/>
+  </g>
+
+  <!-- ground -->
+  <ellipse cx="300" cy="540" rx="600" ry="200" fill="url(#grassR1)"/>
+
+  <!-- stone staircase -->
+  <g filter="url(#softShadowR1)">
+    <rect x="200" y="460" width="280" height="30" fill="url(#stairR1)"/>
+    <rect x="220" y="430" width="260" height="30" fill="url(#stairR1)"/>
+    <rect x="240" y="400" width="240" height="30" fill="url(#stairR1)"/>
+    <rect x="260" y="370" width="220" height="30" fill="url(#stairR1)"/>
+    <!-- stone texture lines -->
+    <g stroke="#5d4a2e" stroke-width="1" opacity=".4">
+      <line x1="240" y1="475" x2="280" y2="475"/>
+      <line x1="320" y1="475" x2="360" y2="475"/>
+      <line x1="400" y1="475" x2="440" y2="475"/>
+      <line x1="260" y1="445" x2="300" y2="445"/>
+      <line x1="340" y1="445" x2="380" y2="445"/>
+      <line x1="280" y1="415" x2="320" y2="415"/>
+      <line x1="360" y1="415" x2="400" y2="415"/>
+    </g>
+  </g>
+
+  <!-- dust puffs -->
+  <g>
+    <circle cx="180" cy="455" r="20" fill="url(#dustR1)"/>
+    <circle cx="160" cy="475" r="14" fill="url(#dustR1)"/>
+    <circle cx="200" cy="440" r="12" fill="url(#dustR1)"/>
+  </g>
+
+  <!-- Mouse holding broom -->
+  <g filter="url(#softShadowR1)" transform="translate(310,360)">
+    <ellipse cx="0" cy="100" rx="40" ry="6" fill="#0006"/>
+    <!-- body -->
+    <ellipse cx="0" cy="55" rx="38" ry="42" fill="url(#mouseBodyR1)"/>
+    <!-- belly -->
+    <ellipse cx="0" cy="65" rx="22" ry="28" fill="#fff5e0" opacity=".7"/>
+    <!-- legs -->
+    <ellipse cx="-12" cy="95" rx="9" ry="6" fill="#c9a878"/>
+    <ellipse cx="14" cy="95" rx="9" ry="6" fill="#c9a878"/>
+    <!-- head -->
+    <circle cx="0" cy="15" r="26" fill="url(#mouseHeadR1)"/>
+    <!-- ears with pink inner -->
+    <circle cx="-18" cy="-8" r="12" fill="url(#mouseHeadR1)"/>
+    <circle cx="-18" cy="-8" r="7" fill="#ffb8c8"/>
+    <circle cx="18" cy="-8" r="12" fill="url(#mouseHeadR1)"/>
+    <circle cx="18" cy="-8" r="7" fill="#ffb8c8"/>
+    <!-- eyes -->
+    <circle cx="-7" cy="13" r="3.5" fill="#fff"/>
+    <circle cx="-7" cy="13" r="2" fill="#2b2140"/>
+    <circle cx="-6" cy="12" r=".8" fill="#fff"/>
+    <circle cx="9" cy="13" r="3.5" fill="#fff"/>
+    <circle cx="9" cy="13" r="2" fill="#2b2140"/>
+    <circle cx="10" cy="12" r=".8" fill="#fff"/>
+    <!-- nose -->
+    <ellipse cx="1" cy="22" rx="3" ry="2.4" fill="#e87a98"/>
+    <!-- mouth -->
+    <path d="M-4 28 q5 4 10 0" stroke="#7a2a3e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- whiskers -->
+    <line x1="-30" y1="22" x2="-12" y2="22" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="-30" y1="26" x2="-12" y2="24" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="12" y1="22" x2="30" y2="22" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="12" y1="24" x2="30" y2="26" stroke="#7a5a3a" stroke-width="1"/>
+    <!-- cheeks -->
+    <circle cx="-18" cy="22" r="4" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="20" cy="22" r="4" fill="#ff9bb5" opacity=".55"/>
+    <!-- tail -->
+    <path d="M35 80 q40 -5 50 30" stroke="#c9a878" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- arms holding broom -->
+    <path d="M-30 50 q-20 -5 -25 -25" stroke="url(#mouseBodyR1)" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M30 50 q15 5 22 18" stroke="url(#mouseBodyR1)" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- broom handle -->
+    <line x1="-50" y1="20" x2="-90" y2="120" stroke="#7d4f12" stroke-width="5" stroke-linecap="round"/>
+    <!-- broom bristles -->
+    <g transform="translate(-90,120)">
+      <path d="M-5 0 L-22 30 L20 30 L8 0 z" fill="#c89060"/>
+      <line x1="-15" y1="5" x2="-20" y2="28" stroke="#7a4d22" stroke-width="1"/>
+      <line x1="-8" y1="5" x2="-10" y2="28" stroke="#7a4d22" stroke-width="1"/>
+      <line x1="0" y1="5" x2="0" y2="28" stroke="#7a4d22" stroke-width="1"/>
+      <line x1="6" y1="5" x2="10" y2="28" stroke="#7a4d22" stroke-width="1"/>
+    </g>
+  </g>
+
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

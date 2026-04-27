@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fff2e8"/>
+  <ellipse cx="150" cy="265" rx="250" ry="45" fill="#8cd2a0"/>
+  <g transform="translate(160,30)">
+    <polygon points="0,60 25,15 50,60" fill="#2f7a44"/>
+    <polygon points="-10,120 25,50 60,120" fill="#3a8f53"/>
+    <polygon points="-20,180 25,100 70,180" fill="#4aa568"/>
+    <rect x="18" y="180" width="14" height="40" fill="#5a3320"/>
+  </g>
+  <!-- boy -->
+  <g transform="translate(40,150)">
+    <rect x="10" y="45" width="35" height="60" fill="#ffb703" rx="4"/>
+    <circle cx="27" cy="30" r="18" fill="#ffd9c0"/>
+    <path d="M12 20 Q27 5 42 20 L42 34 Q27 38 12 34 Z" fill="#2b2140"/>
+    <circle cx="22" cy="30" r="1.5" fill="#2b2140"/><circle cx="32" cy="30" r="1.5" fill="#2b2140"/>
+    <path d="M22 38 Q27 42 32 38" stroke="#2b2140" stroke-width="1" fill="none"/>
+    <rect x="12" y="105" width="12" height="25" fill="#3455a3"/>
+    <rect x="31" y="105" width="12" height="25" fill="#3455a3"/>
+  </g>
+  <!-- girl -->
+  <g transform="translate(110,150)">
+    <path d="M5 45 L45 45 L50 110 L0 110 Z" fill="#d93048"/>
+    <circle cx="25" cy="30" r="18" fill="#ffd9c0"/>
+    <path d="M8 18 Q25 3 42 18 L44 40 Q25 45 6 40 Z" fill="#ffb703"/>
+    <circle cx="20" cy="30" r="1.5" fill="#2b2140"/><circle cx="30" cy="30" r="1.5" fill="#2b2140"/>
+    <path d="M20 38 Q25 42 30 38" stroke="#2b2140" stroke-width="1" fill="none"/>
+    <rect x="10" y="110" width="12" height="22" fill="#ffd9c0"/>
+    <rect x="28" y="110" width="12" height="22" fill="#ffd9c0"/>
+  </g>
+</svg>

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="wallV1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d4a0"/>
+      <stop offset="1" stop-color="#c08860"/>
+    </linearGradient>
+    <linearGradient id="floorV1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a4754a"/>
+      <stop offset="1" stop-color="#5d3a1a"/>
+    </linearGradient>
+    <linearGradient id="stoneV1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8a098"/>
+      <stop offset="1" stop-color="#5a5248"/>
+    </linearGradient>
+    <radialGradient id="flameV1" cx=".5" cy=".7" r=".6">
+      <stop offset="0" stop-color="#fff5b3"/>
+      <stop offset=".5" stop-color="#ffae3b"/>
+      <stop offset="1" stop-color="#ef4153"/>
+    </radialGradient>
+    <radialGradient id="warmGlowV1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffae3b" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dressV1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a9a9a"/>
+      <stop offset="1" stop-color="#5a5a5a"/>
+    </linearGradient>
+    <radialGradient id="skinV1" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <filter id="softShadowV1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#wallV1)"/>
+  <rect y="450" width="600" height="150" fill="url(#floorV1)"/>
+  <g stroke="#3a2308" stroke-width="1" opacity=".4">
+    <line x1="0" y1="490" x2="600" y2="490"/>
+    <line x1="0" y1="540" x2="600" y2="540"/>
+  </g>
+
+  <!-- Stone fireplace on left -->
+  <g filter="url(#softShadowV1)">
+    <!-- chimney/mantel -->
+    <rect x="40" y="100" width="220" height="350" fill="url(#stoneV1)"/>
+    <rect x="20" y="100" width="260" height="30" fill="#7a7268"/>
+    <!-- inner hearth -->
+    <rect x="80" y="220" width="140" height="180" fill="#1a0a08"/>
+    <ellipse cx="150" cy="220" rx="70" ry="20" fill="#1a0a08"/>
+    <!-- glow -->
+    <ellipse cx="150" cy="370" rx="120" ry="80" fill="url(#warmGlowV1)"/>
+    <!-- logs -->
+    <ellipse cx="135" cy="385" rx="35" ry="6" fill="#5d3a1a"/>
+    <ellipse cx="160" cy="378" rx="32" ry="5" fill="#7a4d22"/>
+    <!-- flames -->
+    <path d="M110 380 q-5 -25 5 -35 q3 12 12 0 q5 15 -2 25 q-2 -8 -8 0 q-2 5 -7 10 z" fill="url(#flameV1)"/>
+    <path d="M150 385 q-8 -45 5 -65 q5 20 15 0 q8 25 -3 40 q-3 -10 -10 0 q-3 12 -7 25 z" fill="url(#flameV1)"/>
+    <path d="M190 380 q-5 -28 8 -38 q3 12 12 0 q4 15 -3 25 q-2 -8 -8 0 q-2 5 -9 13 z" fill="url(#flameV1)"/>
+    <!-- stone seam lines -->
+    <g stroke="#5a5248" stroke-width="1" opacity=".5">
+      <line x1="40" y1="180" x2="280" y2="180"/>
+      <line x1="40" y1="280" x2="80" y2="280"/>
+      <line x1="220" y1="280" x2="280" y2="280"/>
+      <line x1="40" y1="370" x2="80" y2="370"/>
+      <line x1="220" y1="370" x2="280" y2="370"/>
+    </g>
+  </g>
+
+  <!-- Cinderella sweeping -->
+  <g filter="url(#softShadowV1)" transform="translate(400,310)">
+    <ellipse cx="0" cy="180" rx="55" ry="9" fill="#0006"/>
+    <!-- gray work dress -->
+    <path d="M-50 175 L-38 30 q0 -10 38 -10 q38 0 38 10 L50 175 z" fill="url(#dressV1)"/>
+    <!-- apron -->
+    <path d="M-22 175 L-20 50 q5 -5 20 -5 q15 0 20 5 L22 175 z" fill="#e8d4b8" opacity=".7"/>
+    <!-- patches -->
+    <rect x="-32" y="120" width="14" height="14" fill="#7a7a7a" opacity=".7"/>
+    <!-- arms -->
+    <path d="M-32 30 q-25 -5 -28 22" stroke="url(#skinV1)" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <path d="M32 30 q20 0 28 18" stroke="url(#skinV1)" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="0" cy="-10" r="30" fill="url(#skinV1)"/>
+    <!-- blonde hair tied -->
+    <path d="M-30 -22 q5 -28 30 -28 q25 0 30 28 q-3 -8 -10 -10 q-15 0 -25 5 q-15 -2 -25 5 z" fill="#e8c068"/>
+    <path d="M-25 -5 q-15 5 -10 25 q5 -5 12 -10 z" fill="#e8c068"/>
+    <!-- eyes -->
+    <circle cx="-9" cy="-8" r="3" fill="#fff"/>
+    <circle cx="-9" cy="-8" r="1.7" fill="#2b6abd"/>
+    <circle cx="9" cy="-8" r="3" fill="#fff"/>
+    <circle cx="9" cy="-8" r="1.7" fill="#2b6abd"/>
+    <circle cx="-8" cy="-9" r=".7" fill="#fff"/>
+    <path d="M-5 4 q5 4 10 0" stroke="#7a2a3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="-16" cy="0" r="4.5" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="16" cy="0" r="4.5" fill="#ff9bb5" opacity=".55"/>
+
+    <!-- broom -->
+    <line x1="55" y1="50" x2="120" y2="170" stroke="#7d4f12" stroke-width="5" stroke-linecap="round"/>
+    <g transform="translate(120,170)">
+      <path d="M-8 0 L-22 30 L20 30 L8 0 z" fill="#c89060"/>
+      <line x1="-15" y1="5" x2="-20" y2="28" stroke="#7a4d22" stroke-width="1"/>
+      <line x1="-5" y1="5" x2="-7" y2="28" stroke="#7a4d22" stroke-width="1"/>
+      <line x1="5" y1="5" x2="8" y2="28" stroke="#7a4d22" stroke-width="1"/>
+      <line x1="13" y1="5" x2="17" y2="28" stroke="#7a4d22" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- ash particles near hearth -->
+  <g fill="#7a6a5a" opacity=".5">
+    <circle cx="270" cy="450" r="2"/>
+    <circle cx="290" cy="470" r="1.5"/>
+    <circle cx="310" cy="455" r="2"/>
+    <circle cx="330" cy="475" r="1.5"/>
+  </g>
+</svg>

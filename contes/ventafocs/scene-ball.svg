@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fde5f1"/>
+  <rect x="0" y="230" width="300" height="70" fill="#c080e5"/>
+  <!-- chandelier -->
+  <g transform="translate(130,10)">
+    <rect x="18" y="0" width="4" height="20" fill="#8a5a2a"/>
+    <ellipse cx="20" cy="30" rx="30" ry="12" fill="#ffd86b"/>
+    <g fill="#fff8d6"><circle cx="5" cy="32" r="3"/><circle cx="20" cy="34" r="3"/><circle cx="35" cy="32" r="3"/></g>
+  </g>
+  <!-- Cinderella -->
+  <g transform="translate(75,100)">
+    <path d="M0 100 Q40 140 80 100 L75 180 L5 180 Z" fill="#a5cfff"/>
+    <rect x="30" y="60" width="25" height="45" fill="#cfe6ff"/>
+    <circle cx="42" cy="45" r="20" fill="#ffd9c0"/>
+    <path d="M22 35 Q42 10 62 35 L62 52 Q42 58 22 52 Z" fill="#ffd86b"/>
+    <circle cx="37" cy="45" r="1.5" fill="#2b2140"/><circle cx="47" cy="45" r="1.5" fill="#2b2140"/>
+    <path d="M37 55 Q42 58 47 55" stroke="#d93048" stroke-width="1" fill="none"/>
+  </g>
+  <!-- Prince -->
+  <g transform="translate(165,100)">
+    <rect x="15" y="60" width="40" height="100" fill="#2b2140"/>
+    <rect x="15" y="60" width="40" height="25" fill="#d93048"/>
+    <circle cx="35" cy="40" r="20" fill="#ffd9c0"/>
+    <path d="M18 30 Q35 8 52 30 L52 45 Q35 52 18 45 Z" fill="#2b2140"/>
+    <circle cx="29" cy="42" r="1.5" fill="#2b2140"/><circle cx="41" cy="42" r="1.5" fill="#2b2140"/>
+    <path d="M29 52 Q35 55 41 52" stroke="#2b2140" stroke-width="1" fill="none"/>
+  </g>
+  <!-- notes -->
+  <g fill="#ff5a7e"><text x="20" y="80" font-size="18">♪</text><text x="250" y="90" font-size="18">♫</text></g>
+</svg>

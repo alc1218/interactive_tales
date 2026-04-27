@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="skyCV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8eb"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <linearGradient id="grassCV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fc070"/>
+      <stop offset="1" stop-color="#2c6a3a"/>
+    </linearGradient>
+    <radialGradient id="sunCV" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff8d0"/>
+      <stop offset=".5" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="redCloakCV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <linearGradient id="trunkCV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d4f2a"/>
+      <stop offset="1" stop-color="#4a2d18"/>
+    </linearGradient>
+    <radialGradient id="folCV" cx=".5" cy=".5" r=".6">
+      <stop offset="0" stop-color="#6cb060"/>
+      <stop offset="1" stop-color="#2c6a3a"/>
+    </radialGradient>
+    <linearGradient id="pathCV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6a370"/>
+      <stop offset="1" stop-color="#a16f3f"/>
+    </linearGradient>
+    <radialGradient id="skinCV" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <linearGradient id="ribbonCV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <filter id="softShadowCV" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#skyCV)"/>
+
+  <!-- frame -->
+  <rect x="20" y="20" width="560" height="760" rx="22" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/>
+  <rect x="32" y="32" width="536" height="736" rx="16" fill="none" stroke="#7a3a10" stroke-width="3" opacity=".55"/>
+
+  <!-- sun glow -->
+  <circle cx="300" cy="220" r="170" fill="url(#sunCV)" opacity=".7"/>
+  <circle cx="300" cy="220" r="32" fill="#fff5b3"/>
+
+  <!-- distant trees -->
+  <g opacity=".55">
+    <ellipse cx="80" cy="430" rx="40" ry="80" fill="#3a7140"/>
+    <ellipse cx="520" cy="420" rx="45" ry="90" fill="#3a7140"/>
+    <ellipse cx="160" cy="440" rx="35" ry="70" fill="#4c8c52"/>
+    <ellipse cx="450" cy="435" rx="40" ry="80" fill="#4c8c52"/>
+  </g>
+
+  <!-- wolf eyes peeking -->
+  <g opacity=".85">
+    <circle cx="100" cy="430" r="3.5" fill="#fff8a0"/>
+    <circle cx="115" cy="432" r="3.5" fill="#fff8a0"/>
+    <circle cx="100" cy="430" r="1.5" fill="#1a1a1a"/>
+    <circle cx="115" cy="432" r="1.5" fill="#1a1a1a"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="720" rx="600" ry="200" fill="url(#grassCV)"/>
+
+  <!-- winding path -->
+  <path d="M280 800 Q320 660 240 580 Q190 510 320 440 Q420 410 320 340" stroke="url(#pathCV)" stroke-width="58" fill="none" stroke-linecap="round" opacity=".85"/>
+
+  <!-- trees foreground -->
+  <g filter="url(#softShadowCV)">
+    <rect x="50" y="500" width="22" height="130" fill="url(#trunkCV)"/>
+    <ellipse cx="61" cy="470" rx="60" ry="80" fill="url(#folCV)"/>
+    <ellipse cx="40" cy="440" rx="30" ry="30" fill="#6cb060"/>
+
+    <rect x="510" y="490" width="24" height="140" fill="url(#trunkCV)"/>
+    <ellipse cx="522" cy="460" rx="65" ry="85" fill="url(#folCV)"/>
+    <ellipse cx="550" cy="430" rx="32" ry="32" fill="#6cb060"/>
+  </g>
+
+  <!-- Red walking on path -->
+  <g filter="url(#softShadowCV)" transform="translate(290,500)">
+    <ellipse cx="0" cy="155" rx="38" ry="6" fill="#0006"/>
+    <path d="M-44 150 L-50 30 q0 -10 5 -15 L44 15 q5 5 5 15 L44 150 z" fill="url(#redCloakCV)"/>
+    <path d="M-24 150 L-24 50 q0 -10 24 -10 q24 0 24 10 L24 150 z" fill="#f0e2d0"/>
+    <circle cx="0" cy="-12" r="30" fill="url(#skinCV)"/>
+    <path d="M-32 -12 q-5 -48 32 -52 q37 4 32 52 q-2 -22 -32 -22 q-30 0 -32 22 z" fill="url(#redCloakCV)"/>
+    <path d="M-18 -16 q5 -8 18 -8 q13 0 18 8 q-5 -2 -18 -2 q-13 0 -18 2 z" fill="#c08040"/>
+    <circle cx="-9" cy="-9" r="3.2" fill="#fff"/><circle cx="-9" cy="-9" r="1.9" fill="#2b2140"/>
+    <circle cx="9" cy="-9" r="3.2" fill="#fff"/><circle cx="9" cy="-9" r="1.9" fill="#2b2140"/>
+    <circle cx="-8" cy="-10" r=".7" fill="#fff"/>
+    <path d="M-5 4 q5 4 10 0" stroke="#7a2a3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="-16" cy="0" r="4.5" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="16" cy="0" r="4.5" fill="#ff9bb5" opacity=".55"/>
+    <!-- basket -->
+    <path d="M30 60 q15 5 25 25" stroke="url(#skinCV)" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <g transform="translate(60,90)">
+      <path d="M-20 0 q0 -5 20 -5 q20 0 20 5 L17 28 q-5 5 -17 5 q-12 0 -17 -5 z" fill="#a06414"/>
+      <path d="M-18 -3 q18 -22 36 0" stroke="#7d4f12" stroke-width="3" fill="none"/>
+      <ellipse cx="-5" cy="-5" rx="8" ry="5" fill="#d8a060"/>
+      <circle cx="10" cy="-2" r="5" fill="#e84d3d"/>
+    </g>
+  </g>
+
+  <!-- title ribbon at top -->
+  <g filter="url(#softShadowCV)">
+    <rect x="40" y="80" width="520" height="85" rx="14" fill="url(#ribbonCV)" opacity=".95"/>
+  </g>
+  <text x="300" y="135" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="40" font-weight="800" fill="#fff" stroke="#5c0a18" stroke-width="6" stroke-linejoin="round" paint-order="stroke fill">La Caputxeta Vermella</text>
+</svg>

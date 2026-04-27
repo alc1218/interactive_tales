@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#d4efff"/>
+  <ellipse cx="150" cy="265" rx="260" ry="45" fill="#8cd2a0"/>
+  <!-- hare -->
+  <g transform="translate(30,140)">
+    <ellipse cx="45" cy="75" rx="40" ry="25" fill="#c9a26b"/>
+    <circle cx="75" cy="55" r="20" fill="#d8b480"/>
+    <polygon points="70,40 72,15 78,42" fill="#d8b480"/>
+    <polygon points="85,40 88,15 92,42" fill="#d8b480"/>
+    <polygon points="72,35 75,20 78,38" fill="#ffb3d2"/>
+    <polygon points="85,35 87,22 90,38" fill="#ffb3d2"/>
+    <circle cx="70" cy="55" r="1.8" fill="#2b2140"/><circle cx="82" cy="55" r="1.8" fill="#2b2140"/>
+  </g>
+  <!-- tortoise -->
+  <g transform="translate(160,170)">
+    <ellipse cx="55" cy="50" rx="55" ry="28" fill="#4aa568"/>
+    <ellipse cx="55" cy="48" rx="45" ry="20" fill="#3f8b54"/>
+    <g fill="#2f7a44"><circle cx="35" cy="42" r="5"/><circle cx="55" cy="38" r="5"/><circle cx="75" cy="42" r="5"/></g>
+    <circle cx="110" cy="52" r="12" fill="#7ecb8e"/>
+    <circle cx="114" cy="48" r="1.5" fill="#2b2140"/>
+  </g>
+  <text x="150" y="40" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="18" font-weight="800" fill="#2b2140">A veure qui guanya!</text>
+</svg>

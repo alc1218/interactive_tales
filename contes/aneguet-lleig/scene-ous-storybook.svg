@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyA1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8eb"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <radialGradient id="sunA1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff8d0"/>
+      <stop offset=".5" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassA1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="duckA1" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fff5b3"/>
+      <stop offset="1" stop-color="#d8a040"/>
+    </radialGradient>
+    <radialGradient id="nestA1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#a06a3a"/>
+      <stop offset="1" stop-color="#5d3a1a"/>
+    </radialGradient>
+    <radialGradient id="grayEggA1" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#c8c8d0"/>
+      <stop offset="1" stop-color="#7a7a88"/>
+    </radialGradient>
+    <radialGradient id="cloudA1" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <filter id="softShadowA1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyA1)"/>
+  <circle cx="100" cy="120" r="120" fill="url(#sunA1)" opacity=".7"/>
+  <circle cx="100" cy="120" r="30" fill="#fff5b3"/>
+
+  <g filter="url(#softShadowA1)">
+    <ellipse cx="380" cy="100" rx="50" ry="18" fill="url(#cloudA1)"/>
+    <ellipse cx="430" cy="95" rx="35" ry="14" fill="url(#cloudA1)"/>
+  </g>
+
+  <g opacity=".55">
+    <ellipse cx="60" cy="370" rx="40" ry="40" fill="#3a7140"/>
+    <ellipse cx="540" cy="365" rx="45" ry="45" fill="#4c8c52"/>
+  </g>
+
+  <ellipse cx="300" cy="540" rx="600" ry="220" fill="url(#grassA1)"/>
+
+  <!-- Nest -->
+  <g filter="url(#softShadowA1)" transform="translate(300,420)">
+    <ellipse cx="0" cy="60" rx="160" ry="20" fill="#0006"/>
+    <!-- nest base -->
+    <ellipse cx="0" cy="40" rx="150" ry="50" fill="url(#nestA1)"/>
+    <!-- twigs criss-cross -->
+    <g stroke="#7a4d22" stroke-width="3" fill="none" stroke-linecap="round">
+      <line x1="-130" y1="30" x2="-90" y2="50"/>
+      <line x1="-100" y1="20" x2="-60" y2="55"/>
+      <line x1="-70" y1="25" x2="-30" y2="58"/>
+      <line x1="-40" y1="20" x2="0" y2="60"/>
+      <line x1="-10" y1="25" x2="30" y2="58"/>
+      <line x1="20" y1="20" x2="60" y2="55"/>
+      <line x1="50" y1="25" x2="90" y2="58"/>
+      <line x1="80" y1="20" x2="120" y2="50"/>
+    </g>
+    <!-- inner darker depression -->
+    <ellipse cx="0" cy="32" rx="130" ry="32" fill="#3a2a18" opacity=".5"/>
+    <!-- 4 small white eggs + 1 large gray -->
+    <ellipse cx="-80" cy="20" rx="18" ry="22" fill="#fff5e8"/>
+    <path d="M-90 12 q5 -5 12 -2" stroke="#fff" stroke-width="2" fill="none" opacity=".7"/>
+    <ellipse cx="-40" cy="15" rx="18" ry="22" fill="#fff5e8"/>
+    <path d="M-50 7 q5 -5 12 -2" stroke="#fff" stroke-width="2" fill="none" opacity=".7"/>
+    <ellipse cx="40" cy="15" rx="18" ry="22" fill="#fff5e8"/>
+    <path d="M30 7 q5 -5 12 -2" stroke="#fff" stroke-width="2" fill="none" opacity=".7"/>
+    <ellipse cx="80" cy="20" rx="18" ry="22" fill="#fff5e8"/>
+    <path d="M70 12 q5 -5 12 -2" stroke="#fff" stroke-width="2" fill="none" opacity=".7"/>
+    <!-- big gray egg in middle, slightly behind/forward -->
+    <ellipse cx="0" cy="10" rx="24" ry="30" fill="url(#grayEggA1)"/>
+    <path d="M-12 -2 q6 -7 16 -3" stroke="#fff" stroke-width="2" fill="none" opacity=".5"/>
+    <!-- speckles -->
+    <circle cx="-5" cy="0" r="1.5" fill="#5a5a68" opacity=".5"/>
+    <circle cx="6" cy="15" r="1.5" fill="#5a5a68" opacity=".5"/>
+  </g>
+
+  <!-- Mother duck on side of nest -->
+  <g filter="url(#softShadowA1)" transform="translate(420,330)">
+    <!-- body -->
+    <ellipse cx="0" cy="50" rx="55" ry="40" fill="url(#duckA1)"/>
+    <!-- wing -->
+    <ellipse cx="-10" cy="45" rx="28" ry="22" fill="#d8a040"/>
+    <path d="M-30 50 q15 5 30 0" stroke="#a07020" stroke-width="1.5" fill="none"/>
+    <!-- head -->
+    <circle cx="35" cy="10" r="26" fill="url(#duckA1)"/>
+    <!-- beak -->
+    <path d="M55 8 L75 5 L75 18 L55 18 z" fill="#ff9b3b"/>
+    <line x1="55" y1="13" x2="75" y2="13" stroke="#a07020" stroke-width="1"/>
+    <!-- eye -->
+    <circle cx="40" cy="5" r="3" fill="#fff"/>
+    <circle cx="40" cy="5" r="1.7" fill="#2b2140"/>
+    <circle cx="41" cy="4" r=".7" fill="#fff"/>
+    <!-- cheek -->
+    <circle cx="32" cy="14" r="3.5" fill="#ff9bb5" opacity=".5"/>
+    <!-- tail -->
+    <path d="M-50 30 q-15 0 -20 -10" stroke="#d8a040" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- feet hidden behind nest -->
+  </g>
+
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+  <g>
+    <g transform="translate(80,540)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(560,560)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+  </g>
+</svg>

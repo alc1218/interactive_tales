@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fff8e8"/>
+  <rect x="0" y="240" width="300" height="60" fill="#d6b27a"/>
+  <!-- Prince kneeling -->
+  <g transform="translate(40,130)">
+    <rect x="15" y="60" width="40" height="80" fill="#2b2140"/>
+    <rect x="15" y="60" width="40" height="25" fill="#d93048"/>
+    <circle cx="35" cy="40" r="20" fill="#ffd9c0"/>
+    <path d="M18 30 Q35 8 52 30 L52 45 Q35 52 18 45 Z" fill="#2b2140"/>
+    <circle cx="29" cy="42" r="1.5" fill="#2b2140"/><circle cx="41" cy="42" r="1.5" fill="#2b2140"/>
+    <!-- slipper in hand -->
+    <ellipse cx="75" cy="120" rx="18" ry="6" fill="#cfe6ff" stroke="#6a9bff" stroke-width="1.5"/>
+  </g>
+  <!-- Cinderella foot -->
+  <g transform="translate(180,140)">
+    <path d="M0 100 Q50 140 100 100 L95 115 L5 115 Z" fill="#a5cfff"/>
+    <rect x="30" y="50" width="40" height="60" fill="#cfe6ff" rx="6"/>
+    <circle cx="50" cy="35" r="22" fill="#ffd9c0"/>
+    <path d="M28 23 Q50 0 72 23 L72 40 Q50 46 28 40 Z" fill="#ffd86b"/>
+    <circle cx="42" cy="35" r="1.5" fill="#2b2140"/><circle cx="58" cy="35" r="1.5" fill="#2b2140"/>
+    <path d="M42 44 Q50 48 58 44" stroke="#d93048" stroke-width="1" fill="none"/>
+    <!-- slipper -->
+    <ellipse cx="50" cy="118" rx="16" ry="5" fill="#cfe6ff" stroke="#6a9bff" stroke-width="1.2"/>
+  </g>
+</svg>

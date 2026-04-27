@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <filter id="paperWL" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" seed="11"/>
+      <feColorMatrix values="0 0 0 0 .85  0 0 0 0 .80  0 0 0 0 .65  0 0 0 .12 0"/>
+    </filter>
+    <filter id="bleedWL" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="softBleedWL" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- dusk paper -->
+  <rect width="600" height="600" fill="#e6dccb"/>
+  <rect width="600" height="600" filter="url(#paperWL)" opacity=".5"/>
+
+  <!-- dusk sky -->
+  <ellipse cx="300" cy="60" rx="500" ry="220" fill="#637094" opacity=".6" filter="url(#bleedWL)"/>
+  <ellipse cx="450" cy="160" rx="280" ry="100" fill="#d6a07a" opacity=".4" filter="url(#bleedWL)"/>
+  <ellipse cx="120" cy="180" rx="280" ry="100" fill="#7c87a8" opacity=".4" filter="url(#bleedWL)"/>
+
+  <!-- moon -->
+  <circle cx="495" cy="120" r="60" fill="#fff5d8" opacity=".4" filter="url(#softBleedWL)"/>
+  <circle cx="495" cy="120" r="40" fill="#fff5d8" opacity=".75" filter="url(#bleedWL)"/>
+  <circle cx="495" cy="120" r="32" fill="#fffde2"/>
+
+  <!-- dark hills -->
+  <path d="M-20 380 Q150 320 320 360 Q480 320 620 380 L620 420 L-20 420 Z"
+        fill="#3a4660" opacity=".75" filter="url(#bleedWL)"/>
+
+  <!-- ground wash -->
+  <ellipse cx="300" cy="540" rx="500" ry="200" fill="#3a5a45" opacity=".55" filter="url(#bleedWL)"/>
+  <ellipse cx="300" cy="560" rx="500" ry="120" fill="#2c4d2f" opacity=".5" filter="url(#bleedWL)"/>
+
+  <!-- bare trees as scratchy strokes -->
+  <g stroke="#1d1825" stroke-width="3" fill="none" opacity=".7" filter="url(#bleedWL)">
+    <path d="M70 380 Q72 320 65 270 Q60 240 70 220"/>
+    <path d="M70 320 Q60 305 50 305"/>
+    <path d="M70 280 Q85 270 95 265"/>
+    <path d="M70 250 Q60 240 55 230"/>
+
+    <path d="M530 380 Q528 320 535 270 Q540 240 530 220"/>
+    <path d="M530 320 Q545 305 555 305"/>
+    <path d="M530 280 Q515 270 505 265"/>
+    <path d="M530 250 Q540 240 545 230"/>
+  </g>
+
+  <!-- distant straw house -->
+  <g transform="translate(380,330)" opacity=".85">
+    <polygon points="-30,40 70,40 20,-15" fill="#a86f17" opacity=".7" filter="url(#bleedWL)"/>
+    <rect x="-22" y="40" width="84" height="60" fill="#cf9929" opacity=".7" filter="url(#bleedWL)"/>
+    <rect x="10" y="68" width="14" height="32" fill="#7d4f12" opacity=".75"/>
+  </g>
+
+  <!-- WOLF — soft watercolor blobs -->
+  <g>
+    <ellipse cx="180" cy="490" rx="125" ry="22" fill="#0006" opacity=".25" filter="url(#bleedWL)"/>
+    <ellipse cx="180" cy="430" rx="120" ry="70" fill="#5a576c" opacity=".7" filter="url(#bleedWL)"/>
+    <ellipse cx="180" cy="430" rx="120" ry="70" fill="#7a7689" opacity=".4"/>
+    <!-- legs -->
+    <ellipse cx="120" cy="490" rx="22" ry="25" fill="#5a576c" opacity=".7" filter="url(#bleedWL)"/>
+    <ellipse cx="240" cy="495" rx="22" ry="22" fill="#5a576c" opacity=".7" filter="url(#bleedWL)"/>
+    <rect x="100" y="450" width="20" height="60" rx="9" fill="#5a576c" opacity=".7" filter="url(#bleedWL)"/>
+    <rect x="195" y="455" width="20" height="55" rx="9" fill="#5a576c" opacity=".7" filter="url(#bleedWL)"/>
+
+    <!-- tail -->
+    <path d="M280 410 q60 -10 60 -50 q-15 0 -25 18 q-10 -10 -22 -8 q-12 -2 -18 8" fill="#5a576c" opacity=".7" filter="url(#bleedWL)"/>
+
+    <!-- head -->
+    <g transform="translate(280,330)">
+      <path d="M0 50 q10 -55 70 -55 q60 5 70 30 q15 25 -5 50 q-5 25 -45 25 q-50 0 -70 -15 q-25 -10 -20 -35 z"
+            fill="#85819a" opacity=".7" filter="url(#bleedWL)"/>
+      <path d="M0 50 q10 -55 70 -55 q60 5 70 30 q15 25 -5 50 q-5 25 -45 25 q-50 0 -70 -15 q-25 -10 -20 -35 z"
+            fill="#a8a4b8" opacity=".4"/>
+      <!-- ears -->
+      <path d="M20 -5 q-10 -35 12 -40 q14 -2 18 30 z" fill="#85819a" opacity=".75" filter="url(#bleedWL)"/>
+      <path d="M105 -5 q15 -38 -10 -42 q-15 -2 -19 32 z" fill="#85819a" opacity=".75" filter="url(#bleedWL)"/>
+      <!-- snout -->
+      <path d="M50 45 q15 -8 30 0 q20 5 35 22 q-5 30 -55 30 q-30 -2 -40 -22 q-2 -22 30 -30 z"
+            fill="#85819a" opacity=".7" filter="url(#bleedWL)"/>
+      <ellipse cx="118" cy="55" rx="14" ry="9" fill="#1d1825" opacity=".75" filter="url(#bleedWL)"/>
+      <!-- eyes -->
+      <ellipse cx="40" cy="20" rx="7" ry="4" fill="#fff8d8" opacity=".85"/>
+      <circle cx="42" cy="22" r="3" fill="#1d1825"/>
+      <ellipse cx="80" cy="20" rx="7" ry="4" fill="#fff8d8" opacity=".85"/>
+      <circle cx="82" cy="22" r="3" fill="#1d1825"/>
+      <!-- mouth blowing -->
+      <ellipse cx="125" cy="78" rx="10" ry="14" fill="#1d1825" opacity=".75" filter="url(#bleedWL)"/>
+    </g>
+  </g>
+
+  <!-- wind blast — flowing watercolor washes -->
+  <g opacity=".7">
+    <ellipse cx="500" cy="410" rx="100" ry="14" fill="#cfd6df" opacity=".7" filter="url(#bleedWL)"/>
+    <ellipse cx="510" cy="385" rx="80" ry="10" fill="#dde2e8" opacity=".6" filter="url(#bleedWL)"/>
+    <ellipse cx="510" cy="438" rx="90" ry="12" fill="#dde2e8" opacity=".6" filter="url(#bleedWL)"/>
+  </g>
+  <g stroke="#fff" stroke-width="2.5" fill="none" opacity=".55" stroke-linecap="round" filter="url(#bleedWL)">
+    <path d="M450 360 Q480 358 510 360"/>
+    <path d="M460 470 Q490 468 520 470"/>
+  </g>
+
+  <!-- splatters -->
+  <g opacity=".5">
+    <circle cx="100" cy="540" r="3" fill="#3a3850"/>
+    <circle cx="540" cy="555" r="3" fill="#3a3850"/>
+    <circle cx="60" cy="500" r="3" fill="#3a3850"/>
+    <circle cx="555" cy="495" r="3" fill="#3a3850"/>
+  </g>
+
+  <rect width="600" height="600" filter="url(#paperWL)" opacity=".25"/>
+</svg>

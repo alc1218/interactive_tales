@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fff8d6"/>
+  <rect x="0" y="240" width="300" height="60" fill="#c9a26b"/>
+  <!-- mouse -->
+  <g transform="translate(40,140)">
+    <ellipse cx="40" cy="70" rx="35" ry="28" fill="#d8c4a4"/>
+    <circle cx="70" cy="50" r="22" fill="#e8d4b4"/>
+    <circle cx="64" cy="34" r="9" fill="#d8c4a4"/><circle cx="78" cy="34" r="9" fill="#d8c4a4"/>
+    <circle cx="74" cy="52" r="1.5" fill="#2b2140"/>
+    <ellipse cx="83" cy="58" rx="4" ry="2.5" fill="#ff8fb0"/>
+    <path d="M50 14 L70 24 L60 3 Z" fill="#d93048"/>
+    <path d="M90 14 L70 24 L80 3 Z" fill="#d93048"/>
+    <circle cx="70" cy="20" r="4" fill="#d93048"/>
+  </g>
+  <!-- cat -->
+  <g transform="translate(150,120)">
+    <ellipse cx="60" cy="85" rx="55" ry="35" fill="#8a8a8a"/>
+    <circle cx="40" cy="55" r="30" fill="#a0a0a0"/>
+    <polygon points="22,35 28,15 40,40" fill="#a0a0a0"/>
+    <polygon points="58,35 50,15 60,40" fill="#a0a0a0"/>
+    <polygon points="26,30 31,20 38,35" fill="#ffb3d2"/>
+    <polygon points="55,30 50,20 56,35" fill="#ffb3d2"/>
+    <circle cx="32" cy="55" r="2.5" fill="#3f8b54"/>
+    <circle cx="48" cy="55" r="2.5" fill="#3f8b54"/>
+    <polygon points="37,65 43,65 40,70" fill="#ff8fb0"/>
+    <path d="M35 72 Q40 75 45 72" stroke="#2b2140" stroke-width="1" fill="none"/>
+    <line x1="22" y1="63" x2="12" y2="60" stroke="#2b2140" stroke-width="1"/>
+    <line x1="22" y1="67" x2="10" y2="67" stroke="#2b2140" stroke-width="1"/>
+    <line x1="58" y1="63" x2="68" y2="60" stroke="#2b2140" stroke-width="1"/>
+    <line x1="58" y1="67" x2="70" y2="67" stroke="#2b2140" stroke-width="1"/>
+  </g>
+  <text x="220" y="55" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="16" font-weight="700" fill="#2b2140">Miau, miau!</text>
+</svg>

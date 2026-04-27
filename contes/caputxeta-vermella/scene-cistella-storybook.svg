@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyCV1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ed3f0"/>
+      <stop offset="1" stop-color="#ffe4b8"/>
+    </linearGradient>
+    <linearGradient id="grassCV1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a4dd8c"/>
+      <stop offset="1" stop-color="#3d7c45"/>
+    </linearGradient>
+    <radialGradient id="sunCV1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="redCloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <linearGradient id="apronGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="1" stop-color="#e6d8b8"/>
+    </linearGradient>
+    <linearGradient id="cottageWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5d8a8"/>
+      <stop offset="1" stop-color="#c89762"/>
+    </linearGradient>
+    <linearGradient id="cottageRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a45a3c"/>
+      <stop offset="1" stop-color="#6b3a26"/>
+    </linearGradient>
+    <radialGradient id="skinTone" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <radialGradient id="cloudCV1" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <filter id="softShadowCV1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyCV1)"/>
+
+  <!-- sun -->
+  <circle cx="100" cy="120" r="150" fill="url(#sunCV1)" opacity=".75"/>
+  <circle cx="100" cy="120" r="38" fill="#fff5b3"/>
+  <circle cx="100" cy="120" r="28" fill="#ffd86b"/>
+
+  <!-- distant mountains -->
+  <path d="M-20 360 L120 290 L240 340 L360 280 L480 330 L620 290 L620 400 L-20 400 Z" fill="#7392b8" opacity=".5"/>
+  <path d="M-20 390 L150 340 L300 380 L450 335 L620 375 L620 410 L-20 410 Z" fill="#5c7aa1" opacity=".4"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowCV1)">
+    <ellipse cx="380" cy="90" rx="55" ry="20" fill="url(#cloudCV1)"/>
+    <ellipse cx="420" cy="85" rx="38" ry="16" fill="url(#cloudCV1)"/>
+    <ellipse cx="500" cy="160" rx="42" ry="16" fill="url(#cloudCV1)"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="500" ry="180" fill="url(#grassCV1)"/>
+
+  <!-- cottage backdrop -->
+  <g filter="url(#softShadowCV1)">
+    <polygon points="380,330 580,330 480,210" fill="url(#cottageRoof)"/>
+    <rect x="380" y="330" width="200" height="140" fill="url(#cottageWall)"/>
+    <rect x="455" y="380" width="50" height="90" fill="#7d4f12"/>
+    <rect x="400" y="350" width="35" height="35" rx="4" fill="#cfeaff" stroke="#7d4f12" stroke-width="3"/>
+    <rect x="525" y="350" width="35" height="35" rx="4" fill="#cfeaff" stroke="#7d4f12" stroke-width="3"/>
+    <line x1="400" y1="367" x2="435" y2="367" stroke="#7d4f12" stroke-width="2"/>
+    <line x1="417" y1="350" x2="417" y2="385" stroke="#7d4f12" stroke-width="2"/>
+    <line x1="525" y1="367" x2="560" y2="367" stroke="#7d4f12" stroke-width="2"/>
+    <line x1="542" y1="350" x2="542" y2="385" stroke="#7d4f12" stroke-width="2"/>
+    <rect x="450" y="220" width="20" height="40" fill="#7d4f12"/>
+    <ellipse cx="460" cy="220" rx="6" ry="8" fill="#a8a8a8" opacity=".6"/>
+  </g>
+
+  <!-- mom (left) -->
+  <g filter="url(#softShadowCV1)" transform="translate(140,290)">
+    <!-- body/dress -->
+    <path d="M-50 200 L-50 80 q0 -30 50 -30 q50 0 50 30 L50 200 z" fill="#7a96c4"/>
+    <!-- apron -->
+    <path d="M-30 200 L-30 90 q0 -20 30 -20 q30 0 30 20 L30 200 z" fill="url(#apronGrad)"/>
+    <!-- head -->
+    <circle cx="0" cy="20" r="35" fill="url(#skinTone)"/>
+    <!-- hair bun -->
+    <path d="M-30 5 q0 -30 30 -30 q30 0 30 30 q-2 -10 -30 -10 q-28 0 -30 10 z" fill="#7a4a2a"/>
+    <circle cx="0" cy="-22" r="14" fill="#7a4a2a"/>
+    <!-- eyes -->
+    <circle cx="-10" cy="22" r="3" fill="#fff"/><circle cx="-10" cy="22" r="1.8" fill="#2b2140"/>
+    <circle cx="10" cy="22" r="3" fill="#fff"/><circle cx="10" cy="22" r="1.8" fill="#2b2140"/>
+    <!-- smile -->
+    <path d="M-7 35 q7 5 14 0" stroke="#7a2a3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- cheeks -->
+    <circle cx="-18" cy="30" r="5" fill="#ff9bb5" opacity=".5"/>
+    <circle cx="18" cy="30" r="5" fill="#ff9bb5" opacity=".5"/>
+    <!-- arm holding basket -->
+    <path d="M30 90 q40 10 60 40" stroke="url(#skinTone)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- basket between them -->
+  <g filter="url(#softShadowCV1)" transform="translate(280,400)">
+    <path d="M-40 0 q0 -10 40 -10 q40 0 40 10 L35 50 q-5 8 -35 8 q-30 0 -35 -8 z" fill="#a06414"/>
+    <g stroke="#5d3a20" stroke-width="1.4" opacity=".7">
+      <line x1="-35" y1="5" x2="-30" y2="55"/>
+      <line x1="-20" y1="5" x2="-17" y2="55"/>
+      <line x1="0" y1="5" x2="0" y2="55"/>
+      <line x1="20" y1="5" x2="17" y2="55"/>
+      <line x1="35" y1="5" x2="30" y2="55"/>
+      <path d="M-40 15 q40 6 80 0"/>
+      <path d="M-38 30 q38 6 76 0"/>
+    </g>
+    <!-- handle -->
+    <path d="M-38 -5 q38 -45 76 0" stroke="#7d4f12" stroke-width="5" fill="none"/>
+    <!-- bread -->
+    <ellipse cx="-15" cy="-8" rx="18" ry="10" fill="#d8a060"/>
+    <line x1="-25" y1="-12" x2="-5" y2="-8" stroke="#a8702c" stroke-width="1.2"/>
+    <!-- apple -->
+    <circle cx="20" cy="-5" r="10" fill="#e84d3d"/>
+    <path d="M20 -15 q3 -5 6 -3" stroke="#3d5a20" stroke-width="1.5" fill="none"/>
+    <!-- grapes -->
+    <g fill="#7a4ac8">
+      <circle cx="0" cy="-5" r="3"/>
+      <circle cx="5" cy="-3" r="3"/>
+      <circle cx="-5" cy="-3" r="3"/>
+      <circle cx="2" cy="-9" r="3"/>
+    </g>
+  </g>
+
+  <!-- Red (right) -->
+  <g filter="url(#softShadowCV1)" transform="translate(400,310)">
+    <!-- cloak body -->
+    <path d="M-40 200 L-45 70 q0 -10 5 -15 L40 55 q5 5 5 15 L40 200 z" fill="url(#redCloak)"/>
+    <!-- dress -->
+    <path d="M-25 200 L-25 90 q0 -10 25 -10 q25 0 25 10 L25 200 z" fill="#f0e2d0"/>
+    <!-- head -->
+    <circle cx="0" cy="30" r="30" fill="url(#skinTone)"/>
+    <!-- hood -->
+    <path d="M-32 30 q-5 -50 32 -55 q37 5 32 55 q-2 -25 -32 -25 q-30 0 -32 25 z" fill="url(#redCloak)"/>
+    <!-- hair peek -->
+    <path d="M-20 25 q5 -10 20 -10 q15 0 20 10 q-5 -3 -20 -3 q-15 0 -20 3 z" fill="#c08040"/>
+    <!-- eyes -->
+    <circle cx="-8" cy="32" r="3" fill="#fff"/><circle cx="-8" cy="32" r="1.8" fill="#2b2140"/>
+    <circle cx="8" cy="32" r="3" fill="#fff"/><circle cx="8" cy="32" r="1.8" fill="#2b2140"/>
+    <circle cx="-7" cy="31" r=".7" fill="#fff"/>
+    <circle cx="9" cy="31" r=".7" fill="#fff"/>
+    <!-- smile -->
+    <path d="M-6 44 q6 4 12 0" stroke="#7a2a3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- cheeks -->
+    <circle cx="-15" cy="40" r="5" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="15" cy="40" r="5" fill="#ff9bb5" opacity=".55"/>
+    <!-- arm reaching -->
+    <path d="M-30 95 q-30 8 -45 30" stroke="url(#skinTone)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- foreground tufts -->
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 575 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 575 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+  <g>
+    <g transform="translate(220,540)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(500,545)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(60,560)"><circle r="4" fill="#cfe2ff"/><circle r="1.6" fill="#5683b8"/></g>
+  </g>
+</svg>

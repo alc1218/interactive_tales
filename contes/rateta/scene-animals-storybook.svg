@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyR4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8eb"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <linearGradient id="grassR4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="dogR4" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#c89060"/>
+      <stop offset="1" stop-color="#7a4d22"/>
+    </radialGradient>
+    <radialGradient id="pigR4" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffd2dc"/>
+      <stop offset=".7" stop-color="#ffadc1"/>
+      <stop offset="1" stop-color="#e87a98"/>
+    </radialGradient>
+    <radialGradient id="roosterR4" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fff5b3"/>
+      <stop offset="1" stop-color="#d8a040"/>
+    </radialGradient>
+    <radialGradient id="cloudR4" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <filter id="softShadowR4" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyR4)"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowR4)">
+    <ellipse cx="120" cy="80" rx="45" ry="16" fill="url(#cloudR4)"/>
+    <ellipse cx="480" cy="100" rx="50" ry="18" fill="url(#cloudR4)"/>
+  </g>
+
+  <!-- distant trees -->
+  <g opacity=".6">
+    <ellipse cx="50" cy="350" rx="45" ry="60" fill="#3a7140"/>
+    <ellipse cx="550" cy="345" rx="50" ry="65" fill="#3a7140"/>
+  </g>
+
+  <!-- garden -->
+  <ellipse cx="300" cy="540" rx="600" ry="220" fill="url(#grassR4)"/>
+
+  <!-- flower bushes -->
+  <g filter="url(#softShadowR4)">
+    <ellipse cx="40" cy="430" rx="40" ry="30" fill="#6cb060"/>
+    <circle cx="25" cy="420" r="6" fill="#ffd0e0"/>
+    <circle cx="55" cy="425" r="6" fill="#fff7c2"/>
+    <ellipse cx="560" cy="430" rx="40" ry="30" fill="#6cb060"/>
+    <circle cx="545" cy="420" r="6" fill="#cfe2ff"/>
+    <circle cx="575" cy="425" r="6" fill="#ffd0e0"/>
+  </g>
+
+  <!-- DOG (left) -->
+  <g filter="url(#softShadowR4)" transform="translate(120,420)">
+    <ellipse cx="0" cy="80" rx="40" ry="6" fill="#0006"/>
+    <ellipse cx="0" cy="40" rx="38" ry="36" fill="url(#dogR4)"/>
+    <ellipse cx="-12" cy="75" rx="9" ry="6" fill="#7a4d22"/>
+    <ellipse cx="14" cy="75" rx="9" ry="6" fill="#7a4d22"/>
+    <circle cx="0" cy="0" r="26" fill="url(#dogR4)"/>
+    <!-- droopy ears -->
+    <ellipse cx="-22" cy="-2" rx="10" ry="18" fill="#5d3a1a"/>
+    <ellipse cx="22" cy="-2" rx="10" ry="18" fill="#5d3a1a"/>
+    <!-- snout -->
+    <ellipse cx="0" cy="8" rx="14" ry="10" fill="#e8c89a"/>
+    <ellipse cx="0" cy="3" rx="3" ry="2.4" fill="#2a1a08"/>
+    <!-- eyes -->
+    <circle cx="-8" cy="-5" r="3" fill="#fff"/>
+    <circle cx="-8" cy="-5" r="1.7" fill="#2b2140"/>
+    <circle cx="8" cy="-5" r="3" fill="#fff"/>
+    <circle cx="8" cy="-5" r="1.7" fill="#2b2140"/>
+    <path d="M-4 12 q4 4 8 0" stroke="#5d2a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="-15" cy="5" r="3.5" fill="#ff9bb5" opacity=".5"/>
+    <circle cx="15" cy="5" r="3.5" fill="#ff9bb5" opacity=".5"/>
+    <!-- tail -->
+    <path d="M35 30 q15 -10 25 -20" stroke="#7a4d22" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- speech bubble -->
+  <g filter="url(#softShadowR4)">
+    <ellipse cx="120" cy="290" rx="60" ry="28" fill="#fff"/>
+    <path d="M105 312 L100 335 L130 318 z" fill="#fff"/>
+    <text x="120" y="297" text-anchor="middle" font-family="Georgia" font-size="18" fill="#5d3a1a" font-weight="bold">Bup</text>
+    <text x="120" y="312" text-anchor="middle" font-family="Georgia" font-size="14" fill="#5d3a1a">bup!</text>
+  </g>
+
+  <!-- PIG (middle) -->
+  <g filter="url(#softShadowR4)" transform="translate(300,420)">
+    <ellipse cx="0" cy="80" rx="42" ry="6" fill="#0006"/>
+    <ellipse cx="0" cy="40" rx="40" ry="36" fill="url(#pigR4)"/>
+    <ellipse cx="-12" cy="75" rx="9" ry="6" fill="#e89aa8"/>
+    <ellipse cx="14" cy="75" rx="9" ry="6" fill="#e89aa8"/>
+    <circle cx="0" cy="0" r="28" fill="url(#pigR4)"/>
+    <path d="M-22 -18 q-4 -12 4 -16 q11 -2 13 14 z" fill="#e89aa8"/>
+    <path d="M22 -18 q4 -12 -4 -16 q-11 -2 -13 14 z" fill="#e89aa8"/>
+    <ellipse cx="0" cy="10" rx="13" ry="9" fill="#ff97b3"/>
+    <ellipse cx="-4" cy="10" rx="2" ry="2.6" fill="#7a2a3e"/>
+    <ellipse cx="4" cy="10" rx="2" ry="2.6" fill="#7a2a3e"/>
+    <circle cx="-8" cy="-5" r="3" fill="#fff"/>
+    <circle cx="-8" cy="-5" r="1.7" fill="#2b2140"/>
+    <circle cx="8" cy="-5" r="3" fill="#fff"/>
+    <circle cx="8" cy="-5" r="1.7" fill="#2b2140"/>
+    <path d="M-6 22 q6 5 12 0" stroke="#7a2a3e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <circle cx="-18" cy="10" r="4" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="18" cy="10" r="4" fill="#ff9bb5" opacity=".55"/>
+    <!-- curly tail -->
+    <path d="M40 35 q12 -8 5 -18 q-10 4 -2 12" stroke="#e89aa8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#softShadowR4)">
+    <ellipse cx="300" cy="290" rx="50" ry="26" fill="#fff"/>
+    <path d="M285 313 L280 333 L310 320 z" fill="#fff"/>
+    <text x="300" y="297" text-anchor="middle" font-family="Georgia" font-size="20" fill="#a3192a" font-weight="bold">Oink!</text>
+  </g>
+
+  <!-- ROOSTER (right) -->
+  <g filter="url(#softShadowR4)" transform="translate(480,420)">
+    <ellipse cx="0" cy="80" rx="38" ry="6" fill="#0006"/>
+    <ellipse cx="0" cy="40" rx="34" ry="38" fill="url(#roosterR4)"/>
+    <!-- legs -->
+    <line x1="-8" y1="75" x2="-10" y2="92" stroke="#d8a040" stroke-width="3"/>
+    <line x1="8" y1="75" x2="10" y2="92" stroke="#d8a040" stroke-width="3"/>
+    <path d="M-14 92 l-4 -2 l4 4 l-4 -2 z" fill="#d8a040"/>
+    <path d="M14 92 l4 -2 l-4 4 l4 -2 z" fill="#d8a040"/>
+    <!-- head -->
+    <circle cx="0" cy="0" r="22" fill="url(#roosterR4)"/>
+    <!-- comb (red) -->
+    <path d="M-12 -18 q5 -10 8 -2 q5 -10 8 -2 q5 -10 8 -2 q-3 6 -12 8 q-9 -2 -12 -2 z" fill="#ef4153"/>
+    <!-- beak -->
+    <path d="M22 0 L36 -3 L22 5 z" fill="#ffae3b"/>
+    <!-- wattle -->
+    <path d="M14 8 q4 8 -2 12 q-6 -2 -4 -10" fill="#ef4153"/>
+    <!-- eye -->
+    <circle cx="6" cy="-5" r="3" fill="#fff"/>
+    <circle cx="6" cy="-5" r="1.7" fill="#2b2140"/>
+    <!-- tail feathers -->
+    <path d="M-30 30 q-25 -20 -10 -45 q15 5 18 25 z" fill="#5d3a1a"/>
+    <path d="M-32 25 q-20 -15 -5 -30 q10 5 12 22 z" fill="#a3192a"/>
+  </g>
+  <g filter="url(#softShadowR4)">
+    <ellipse cx="475" cy="290" rx="70" ry="28" fill="#fff"/>
+    <path d="M460 313 L455 333 L485 320 z" fill="#fff"/>
+    <text x="475" y="297" text-anchor="middle" font-family="Georgia" font-size="14" fill="#a3192a" font-weight="bold">Quiquiriquic!</text>
+  </g>
+
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

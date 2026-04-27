@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <pattern id="brickPatFlatFi" x="0" y="0" width="40" height="22" patternUnits="userSpaceOnUse">
+      <rect width="40" height="22" fill="#e57858"/>
+      <rect width="40" height="22" fill="none" stroke="#5a1d10" stroke-width="2"/>
+      <rect x="20" y="11" width="40" height="22" fill="none" stroke="#5a1d10" stroke-width="2"/>
+      <line x1="0" y1="11" x2="40" y2="11" stroke="#5a1d10" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="600" fill="#ffd5b8"/>
+  <circle cx="510" cy="100" r="240" fill="#ff8a5b"/>
+  <g fill="#ffe17a" opacity=".7">
+    <polygon points="510,100 480,-20 540,-20"/>
+    <polygon points="510,100 380,40 410,-10"/>
+    <polygon points="510,100 640,40 610,-10"/>
+  </g>
+
+  <path d="M0 380 Q200 280 380 350 T 600 320 V 600 H 0 Z" fill="#3c8a8d"/>
+  <path d="M0 410 Q150 340 320 400 T 600 380 V 600 H 0 Z" fill="#2a6b6e"/>
+  <path d="M0 460 Q200 410 380 460 T 600 440 V 600 H 0 Z" fill="#1f4f52"/>
+  <path d="M0 510 Q300 480 600 510 V 600 H 0 Z" fill="#173b3e"/>
+
+  <g>
+    <circle cx="55" cy="380" r="38" fill="#d6f0a8"/>
+    <rect x="51" y="380" width="8" height="22" fill="#5d3a20"/>
+    <circle cx="555" cy="385" r="35" fill="#d6f0a8"/>
+    <rect x="551" y="385" width="8" height="22" fill="#5d3a20"/>
+  </g>
+
+  <g opacity=".25">
+    <polygon points="130,290 470,290 470,490 350,540 175,540" fill="#173b3e" transform="translate(45,15) skewX(-12)"/>
+  </g>
+
+  <!-- big brick house -->
+  <polygon points="130,290 470,290 300,140" fill="#a4341a"/>
+  <polygon points="130,290 300,290 300,140" fill="#651b08" opacity=".5"/>
+  <g fill="#5a1d10">
+    <path d="M140 280 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0 q12 -16 24 0" opacity=".55"/>
+  </g>
+
+  <rect x="160" y="290" width="280" height="200" fill="url(#brickPatFlatFi)"/>
+  <rect x="160" y="290" width="280" height="200" fill="none" stroke="#3d0e02" stroke-width="3"/>
+
+  <!-- door -->
+  <path d="M260 490 L260 390 q0 -28 40 -28 q40 0 40 28 L340 490 z" fill="#3d2410"/>
+  <path d="M260 490 L260 390 q0 -28 40 -28 L300 490 z" fill="#1d1408" opacity=".4"/>
+  <circle cx="328" cy="438" r="3.5" fill="#ffd86b"/>
+
+  <!-- 3 windows with pigs -->
+  <g>
+    <rect x="180" y="320" width="55" height="55" fill="#a8d5f0"/>
+    <rect x="180" y="320" width="55" height="55" fill="none" stroke="#3d0e02" stroke-width="3"/>
+    <rect x="180" y="320" width="27" height="55" fill="#7eb5d3"/>
+    <g transform="translate(207,360)">
+      <circle cx="0" cy="0" r="22" fill="#ffbfd0"/>
+      <ellipse cx="-10" cy="6" rx="22" ry="22" fill="#ff8aa3" opacity=".4"/>
+      <ellipse cx="0" cy="6" rx="9" ry="6" fill="#ff5d80"/>
+      <circle cx="-2.5" cy="6" r="1.4" fill="#5a1d2e"/>
+      <circle cx="2.5" cy="6" r="1.4" fill="#5a1d2e"/>
+      <circle cx="-7" cy="-3" r="2" fill="#1f1334"/>
+      <circle cx="7" cy="-3" r="2" fill="#1f1334"/>
+      <path d="M-6 13 q6 5 12 0" stroke="#5a1d2e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M-15 -16 q-3 -10 4 -12 q8 -1 8 10 z" fill="#ff8aa3"/>
+      <path d="M15 -16 q3 -10 -4 -12 q-8 -1 -8 10 z" fill="#ff8aa3"/>
+    </g>
+
+    <rect x="365" y="320" width="55" height="55" fill="#a8d5f0"/>
+    <rect x="365" y="320" width="55" height="55" fill="none" stroke="#3d0e02" stroke-width="3"/>
+    <rect x="365" y="320" width="27" height="55" fill="#7eb5d3"/>
+    <g transform="translate(392,360)">
+      <circle cx="0" cy="0" r="22" fill="#ffbfd0"/>
+      <ellipse cx="-10" cy="6" rx="22" ry="22" fill="#ff8aa3" opacity=".4"/>
+      <ellipse cx="0" cy="6" rx="9" ry="6" fill="#ff5d80"/>
+      <circle cx="-2.5" cy="6" r="1.4" fill="#5a1d2e"/>
+      <circle cx="2.5" cy="6" r="1.4" fill="#5a1d2e"/>
+      <circle cx="-7" cy="-3" r="2" fill="#1f1334"/>
+      <circle cx="7" cy="-3" r="2" fill="#1f1334"/>
+      <path d="M-6 13 q6 5 12 0" stroke="#5a1d2e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M-15 -16 q-3 -10 4 -12 q8 -1 8 10 z" fill="#ff8aa3"/>
+      <path d="M15 -16 q3 -10 -4 -12 q-8 -1 -8 10 z" fill="#ff8aa3"/>
+    </g>
+
+    <rect x="270" y="220" width="60" height="55" fill="#a8d5f0"/>
+    <rect x="270" y="220" width="60" height="55" fill="none" stroke="#3d0e02" stroke-width="3"/>
+    <rect x="270" y="220" width="30" height="55" fill="#7eb5d3"/>
+    <g transform="translate(300,260)">
+      <circle cx="0" cy="0" r="22" fill="#ffbfd0"/>
+      <ellipse cx="-10" cy="6" rx="22" ry="22" fill="#ff8aa3" opacity=".4"/>
+      <ellipse cx="0" cy="6" rx="9" ry="6" fill="#ff5d80"/>
+      <circle cx="-2.5" cy="6" r="1.4" fill="#5a1d2e"/>
+      <circle cx="2.5" cy="6" r="1.4" fill="#5a1d2e"/>
+      <circle cx="-7" cy="-3" r="2" fill="#1f1334"/>
+      <circle cx="7" cy="-3" r="2" fill="#1f1334"/>
+      <path d="M-6 13 q6 5 12 0" stroke="#5a1d2e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M-15 -16 q-3 -10 4 -12 q8 -1 8 10 z" fill="#ff8aa3"/>
+      <path d="M15 -16 q3 -10 -4 -12 q-8 -1 -8 10 z" fill="#ff8aa3"/>
+    </g>
+  </g>
+
+  <!-- chimney + smoke -->
+  <rect x="380" y="170" width="22" height="55" fill="url(#brickPatFlatFi)" stroke="#3d0e02" stroke-width="2"/>
+  <g fill="#fff" opacity=".75">
+    <rect x="384" y="148" width="14" height="14" rx="7"/>
+    <rect x="380" y="128" width="22" height="18" rx="9"/>
+    <rect x="376" y="108" width="30" height="22" rx="11"/>
+  </g>
+
+  <!-- confetti rectangles -->
+  <g>
+    <rect x="100" y="180" width="8" height="18" rx="2" fill="#ff5a7e" transform="rotate(20 104 189)"/>
+    <rect x="170" y="120" width="8" height="18" rx="2" fill="#5683b8" transform="rotate(-15 174 129)"/>
+    <rect x="220" y="170" width="8" height="18" rx="2" fill="#ffae3b" transform="rotate(40 224 179)"/>
+    <rect x="380" y="100" width="8" height="18" rx="2" fill="#ff5a7e" transform="rotate(-25 384 109)"/>
+    <rect x="450" y="150" width="8" height="18" rx="2" fill="#52c280" transform="rotate(15 454 159)"/>
+    <rect x="510" y="220" width="8" height="18" rx="2" fill="#ffae3b" transform="rotate(-30 514 229)"/>
+    <circle cx="80" cy="240" r="5" fill="#ffd86b"/>
+    <circle cx="540" cy="280" r="5" fill="#ff5a7e"/>
+    <circle cx="60" cy="320" r="5" fill="#5683b8"/>
+  </g>
+
+  <!-- Banner -->
+  <g transform="translate(300,80)">
+    <rect x="-110" y="-25" width="220" height="50" rx="25" fill="#ff5a7e"/>
+    <text x="0" y="9" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="28" font-weight="800" fill="#fff">Segurs!</text>
+  </g>
+</svg>

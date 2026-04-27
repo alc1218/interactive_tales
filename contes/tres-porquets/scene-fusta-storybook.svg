@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ed3f0"/>
+      <stop offset="1" stop-color="#dceefb"/>
+    </linearGradient>
+    <linearGradient id="grassF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ed387"/>
+      <stop offset="1" stop-color="#3d7c45"/>
+    </linearGradient>
+    <linearGradient id="logRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a36c39"/>
+      <stop offset="1" stop-color="#5d3a1c"/>
+    </linearGradient>
+    <linearGradient id="logWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cf945a"/>
+      <stop offset="1" stop-color="#7a4a23"/>
+    </linearGradient>
+    <radialGradient id="logEnd" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#e8b779"/>
+      <stop offset="1" stop-color="#7a4a23"/>
+    </radialGradient>
+    <radialGradient id="sunF" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadowF" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyF)"/>
+
+  <!-- sun -->
+  <circle cx="490" cy="120" r="160" fill="url(#sunF)" opacity=".75"/>
+  <circle cx="490" cy="120" r="38" fill="#fff5b3"/>
+  <circle cx="490" cy="120" r="28" fill="#ffd86b"/>
+
+  <!-- distant hills -->
+  <path d="M-20 380 L120 320 L260 360 L380 305 L500 350 L620 320 L620 420 L-20 420 Z"
+        fill="#7392b8" opacity=".5"/>
+  <path d="M-20 405 L150 355 L300 395 L460 350 L620 390 L620 430 L-20 430 Z"
+        fill="#5c7aa1" opacity=".4"/>
+
+  <!-- clouds -->
+  <g opacity=".95">
+    <ellipse cx="100" cy="100" rx="50" ry="20" fill="#fff"/>
+    <ellipse cx="135" cy="97" rx="34" ry="15" fill="#fff"/>
+    <ellipse cx="72" cy="105" rx="28" ry="13" fill="#fff"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="380" width="600" height="220" fill="url(#grassF)"/>
+
+  <!-- pine trees -->
+  <g filter="url(#softShadowF)">
+    <rect x="60" y="335" width="12" height="35" fill="#5d3a20"/>
+    <polygon points="66,200 35,300 95,300" fill="#2f6336"/>
+    <polygon points="66,235 30,320 100,320" fill="#3d7e44"/>
+    <polygon points="66,275 28,345 102,345" fill="#4a9251"/>
+
+    <rect x="525" y="345" width="12" height="35" fill="#5d3a20"/>
+    <polygon points="531,225 500,320 562,320" fill="#2f6336"/>
+    <polygon points="531,260 495,340 567,340" fill="#3d7e44"/>
+    <polygon points="531,295 493,355 569,355" fill="#4a9251"/>
+  </g>
+
+  <!-- log house -->
+  <g filter="url(#softShadowF)">
+    <!-- roof -->
+    <polygon points="170,290 430,290 300,160" fill="url(#logRoof)"/>
+    <!-- roof shingles -->
+    <g stroke="#3d2410" stroke-width="2" opacity=".7" fill="none">
+      <line x1="180" y1="285" x2="290" y2="170"/>
+      <line x1="220" y1="285" x2="295" y2="195"/>
+      <line x1="260" y1="285" x2="300" y2="220"/>
+      <line x1="300" y1="285" x2="305" y2="245"/>
+      <line x1="340" y1="285" x2="310" y2="220"/>
+      <line x1="380" y1="285" x2="305" y2="195"/>
+      <line x1="420" y1="285" x2="310" y2="170"/>
+    </g>
+    <!-- horizontal log walls -->
+    <rect x="190" y="290" width="220" height="190" fill="url(#logWall)"/>
+    <g stroke="#5d3a1c" stroke-width="2.5" opacity=".85">
+      <line x1="190" y1="320" x2="410" y2="320"/>
+      <line x1="190" y1="355" x2="410" y2="355"/>
+      <line x1="190" y1="390" x2="410" y2="390"/>
+      <line x1="190" y1="425" x2="410" y2="425"/>
+      <line x1="190" y1="460" x2="410" y2="460"/>
+    </g>
+    <!-- log ends (left and right) -->
+    <g>
+      <circle cx="190" cy="305" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+      <circle cx="190" cy="338" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+      <circle cx="190" cy="372" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+      <circle cx="190" cy="407" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+      <circle cx="190" cy="442" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+
+      <circle cx="410" cy="305" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+      <circle cx="410" cy="338" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+      <circle cx="410" cy="372" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+      <circle cx="410" cy="407" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+      <circle cx="410" cy="442" r="9" fill="url(#logEnd)" stroke="#5d3a1c" stroke-width="2"/>
+    </g>
+
+    <!-- door -->
+    <path d="M270 480 L270 380 q0 -25 30 -25 q30 0 30 25 L330 480 z" fill="#3d2410"/>
+    <path d="M275 475 L275 382 q0 -20 25 -20 q25 0 25 20 L325 475 z" fill="#5d3a1c"/>
+    <g stroke="#3d2410" stroke-width="1" opacity=".7">
+      <line x1="280" y1="380" x2="320" y2="380"/>
+      <line x1="280" y1="410" x2="320" y2="410"/>
+      <line x1="280" y1="440" x2="320" y2="440"/>
+    </g>
+    <circle cx="318" cy="425" r="3" fill="#ffd86b"/>
+
+    <!-- windows -->
+    <rect x="215" y="320" width="40" height="40" rx="4" fill="#cfeaff" stroke="#3d2410" stroke-width="3"/>
+    <line x1="215" y1="340" x2="255" y2="340" stroke="#3d2410" stroke-width="2"/>
+    <line x1="235" y1="320" x2="235" y2="360" stroke="#3d2410" stroke-width="2"/>
+    <path d="M215 320 q40 -3 0 0" fill="none"/>
+
+    <rect x="345" y="320" width="40" height="40" rx="4" fill="#cfeaff" stroke="#3d2410" stroke-width="3"/>
+    <line x1="345" y1="340" x2="385" y2="340" stroke="#3d2410" stroke-width="2"/>
+    <line x1="365" y1="320" x2="365" y2="360" stroke="#3d2410" stroke-width="2"/>
+
+    <!-- chimney -->
+    <rect x="350" y="180" width="22" height="60" fill="#7a4a23"/>
+    <rect x="346" y="178" width="30" height="8" fill="#5d3a1c"/>
+    <g opacity=".7">
+      <ellipse cx="361" cy="170" rx="6" ry="3" fill="#cfd6df"/>
+      <ellipse cx="368" cy="158" rx="8" ry="4" fill="#d6dde5"/>
+      <ellipse cx="358" cy="145" rx="10" ry="5" fill="#dee5ec"/>
+    </g>
+  </g>
+
+  <!-- pile of logs by the house -->
+  <g transform="translate(440,440)">
+    <rect x="0" y="-2" width="60" height="14" rx="4" fill="#7a4a23"/>
+    <circle cx="0" cy="5" r="9" fill="url(#logEnd)" stroke="#3d2410" stroke-width="1.5"/>
+    <circle cx="60" cy="5" r="9" fill="url(#logEnd)" stroke="#3d2410" stroke-width="1.5"/>
+    <rect x="6" y="-15" width="50" height="14" rx="4" fill="#7a4a23"/>
+    <circle cx="6" cy="-8" r="9" fill="url(#logEnd)" stroke="#3d2410" stroke-width="1.5"/>
+    <circle cx="56" cy="-8" r="9" fill="url(#logEnd)" stroke="#3d2410" stroke-width="1.5"/>
+  </g>
+
+  <!-- piglet at door -->
+  <g transform="translate(170,400)">
+    <ellipse cx="0" cy="36" rx="10" ry="3" fill="#0006"/>
+    <ellipse cx="0" cy="20" rx="22" ry="20" fill="#ffadc1"/>
+    <circle cx="0" cy="-5" r="18" fill="#ffbfd0"/>
+    <path d="M-13 -18 q-3 -8 3 -10 q7 -1 8 8 z" fill="#e89aa8"/>
+    <path d="M13 -18 q3 -8 -3 -10 q-7 -1 -8 8 z" fill="#e89aa8"/>
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#ff97b3"/>
+    <circle cx="-2" cy="0" r="1.2" fill="#7a2a3e"/>
+    <circle cx="2" cy="0" r="1.2" fill="#7a2a3e"/>
+    <circle cx="-6" cy="-8" r="1.5" fill="#2b2140"/>
+    <circle cx="6" cy="-8" r="1.5" fill="#2b2140"/>
+    <path d="M-5 9 q5 4 10 0" stroke="#7a2a3e" stroke-width="1.4" fill="none"/>
+  </g>
+
+  <!-- foreground grass -->
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 575 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 575 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d4870"/>
+      <stop offset=".55" stop-color="#7c87a8"/>
+      <stop offset="1" stop-color="#d6a07a"/>
+    </linearGradient>
+    <linearGradient id="grassL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a8a55"/>
+      <stop offset="1" stop-color="#2c4d2f"/>
+    </linearGradient>
+    <radialGradient id="moonL" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".5" stop-color="#fff5b3" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#fff5b3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="wolfBody" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#a8a4b8"/>
+      <stop offset=".7" stop-color="#7a7689"/>
+      <stop offset="1" stop-color="#3a3850"/>
+    </radialGradient>
+    <radialGradient id="wolfHead" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#b8b3c7"/>
+      <stop offset=".75" stop-color="#85819a"/>
+      <stop offset="1" stop-color="#403d56"/>
+    </radialGradient>
+    <linearGradient id="windL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#dceefb" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#cfd6df" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#dceefb" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softShadowL" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyL)"/>
+
+  <!-- moon -->
+  <circle cx="495" cy="120" r="170" fill="url(#moonL)"/>
+  <circle cx="495" cy="120" r="50" fill="#fff5d8"/>
+  <g fill="#dde0c0" opacity=".55">
+    <circle cx="485" cy="115" r="6"/>
+    <circle cx="510" cy="130" r="4"/>
+    <circle cx="492" cy="135" r="3"/>
+  </g>
+
+  <!-- distant ridge -->
+  <path d="M-20 380 L120 320 L260 360 L380 305 L500 350 L620 320 L620 420 L-20 420 Z"
+        fill="#3a4660" opacity=".7"/>
+  <path d="M-20 405 L150 355 L300 395 L460 350 L620 390 L620 430 L-20 430 Z"
+        fill="#293247" opacity=".7"/>
+
+  <!-- bare twisted trees -->
+  <g stroke="#1d1825" stroke-width="3" fill="none" opacity=".85">
+    <path d="M70 380 Q72 320 65 270 Q60 240 70 220"/>
+    <path d="M70 320 Q60 305 50 305"/>
+    <path d="M70 280 Q85 270 95 265"/>
+    <path d="M70 250 Q60 240 55 230"/>
+
+    <path d="M530 380 Q528 320 535 270 Q540 240 530 220"/>
+    <path d="M530 320 Q545 305 555 305"/>
+    <path d="M530 280 Q515 270 505 265"/>
+    <path d="M530 250 Q540 240 545 230"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="380" width="600" height="220" fill="url(#grassL)"/>
+
+  <!-- straw house in distance (collapsed-ish) -->
+  <g transform="translate(380,330)" filter="url(#softShadowL)" opacity=".9">
+    <polygon points="-30,40 70,40 20,-15" fill="#a86f17"/>
+    <rect x="-22" y="40" width="84" height="60" fill="#cf9929"/>
+    <g stroke="#7d4f12" stroke-width="1.4" opacity=".7">
+      <line x1="-15" y1="55" x2="55" y2="55"/>
+      <line x1="-15" y1="68" x2="55" y2="68"/>
+      <line x1="-15" y1="80" x2="55" y2="80"/>
+    </g>
+    <rect x="10" y="68" width="14" height="32" fill="#7d4f12"/>
+    <!-- straw blowing in air -->
+    <g stroke="#fbd96a" stroke-width="2" opacity=".7">
+      <line x1="50" y1="-20" x2="80" y2="-30"/>
+      <line x1="60" y1="-10" x2="95" y2="-20"/>
+      <line x1="40" y1="-25" x2="65" y2="-40"/>
+    </g>
+  </g>
+
+  <!-- WOLF (big, snarling, blowing) -->
+  <g filter="url(#softShadowL)">
+    <!-- body -->
+    <ellipse cx="180" cy="430" rx="120" ry="70" fill="url(#wolfBody)"/>
+    <!-- back legs -->
+    <ellipse cx="120" cy="490" rx="22" ry="25" fill="#5a576c"/>
+    <ellipse cx="240" cy="495" rx="22" ry="22" fill="#5a576c"/>
+    <!-- front legs (planted, blowing posture) -->
+    <rect x="100" y="450" width="20" height="60" rx="9" fill="#5a576c"/>
+    <rect x="195" y="455" width="20" height="55" rx="9" fill="#5a576c"/>
+    <ellipse cx="110" cy="510" rx="14" ry="6" fill="#3a3850"/>
+    <ellipse cx="205" cy="510" rx="14" ry="6" fill="#3a3850"/>
+
+    <!-- tail -->
+    <path d="M280 410 q60 -10 60 -50 q-15 0 -25 18 q-10 -10 -22 -8 q-12 -2 -18 8" fill="#5a576c" stroke="#3a3850" stroke-width="1.5"/>
+
+    <!-- chest fluff -->
+    <path d="M150 460 q25 18 50 0" fill="#3a3850" opacity=".5"/>
+
+    <!-- head (big, raised, blowing) -->
+    <g transform="translate(280,330)">
+      <!-- head shape -->
+      <path d="M0 50 q10 -55 70 -55 q60 5 70 30 q15 25 -5 50 q-5 25 -45 25 q-50 0 -70 -15 q-25 -10 -20 -35 z" fill="url(#wolfHead)"/>
+      <!-- ears -->
+      <path d="M20 -5 q-10 -35 12 -40 q14 -2 18 30 z" fill="url(#wolfHead)"/>
+      <path d="M30 -10 q-3 -22 8 -25 q9 -1 12 18 z" fill="#3a3850" opacity=".7"/>
+      <path d="M105 -5 q15 -38 -10 -42 q-15 -2 -19 32 z" fill="url(#wolfHead)"/>
+      <path d="M97 -10 q9 -25 -3 -28 q-10 -1 -12 20 z" fill="#3a3850" opacity=".7"/>
+      <!-- eyes -->
+      <ellipse cx="40" cy="20" rx="9" ry="6" fill="#fff8d8"/>
+      <circle cx="42" cy="22" r="4" fill="#1d1825"/>
+      <circle cx="44" cy="20" r="1.2" fill="#fff"/>
+      <ellipse cx="80" cy="20" rx="9" ry="6" fill="#fff8d8"/>
+      <circle cx="82" cy="22" r="4" fill="#1d1825"/>
+      <circle cx="84" cy="20" r="1.2" fill="#fff"/>
+      <!-- eyebrows -->
+      <path d="M30 12 q10 -3 18 0" stroke="#1d1825" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M70 12 q10 -3 18 0" stroke="#1d1825" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- snout -->
+      <path d="M50 45 q15 -8 30 0 q20 5 35 22 q-5 30 -55 30 q-30 -2 -40 -22 q-2 -22 30 -30 z" fill="#85819a"/>
+      <!-- nose -->
+      <ellipse cx="118" cy="55" rx="14" ry="9" fill="#1d1825"/>
+      <ellipse cx="122" cy="51" rx="3" ry="2" fill="#fff" opacity=".4"/>
+      <!-- mouth blowing — pursed lips -->
+      <ellipse cx="125" cy="78" rx="10" ry="14" fill="#1d1825"/>
+      <ellipse cx="125" cy="78" rx="6" ry="9" fill="#5a1626"/>
+      <!-- teeth -->
+      <polygon points="118,75 122,82 116,82" fill="#fff"/>
+      <polygon points="132,75 130,82 134,82" fill="#fff"/>
+      <!-- cheek puff -->
+      <ellipse cx="80" cy="60" rx="20" ry="14" fill="#85819a" opacity=".7"/>
+    </g>
+  </g>
+
+  <!-- wind blast -->
+  <g opacity=".9">
+    <path d="M420 410 Q470 400 580 410 Q620 415 590 425 Q500 425 410 415 Z" fill="url(#windL)"/>
+    <path d="M420 380 Q470 372 560 380 Q610 385 580 395 Q500 395 410 385 Z" fill="url(#windL)" opacity=".7"/>
+    <path d="M420 440 Q470 432 560 440 Q610 445 580 455 Q500 455 410 445 Z" fill="url(#windL)" opacity=".75"/>
+  </g>
+  <!-- swirling wind detail -->
+  <g stroke="#fff" stroke-width="2" fill="none" opacity=".55" stroke-linecap="round">
+    <path d="M450 360 Q480 358 510 360"/>
+    <path d="M460 470 Q490 468 520 470"/>
+    <path d="M555 405 q10 -5 18 0"/>
+    <path d="M555 395 q10 -5 18 0"/>
+    <path d="M555 415 q10 -5 18 0"/>
+  </g>
+
+  <!-- ground tufts -->
+  <g fill="#2c4d2f" opacity=".7">
+    <path d="M0 575 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 575 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

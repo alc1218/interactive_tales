@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyP3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8cc4e8"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <radialGradient id="sunP3" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff8d0"/>
+      <stop offset=".5" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassP3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="oxBodyP3" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#a06f3a"/>
+      <stop offset="1" stop-color="#5d3a1a"/>
+    </radialGradient>
+    <radialGradient id="cabbageP3" cx=".5" cy=".5" r=".6">
+      <stop offset="0" stop-color="#bce286"/>
+      <stop offset="1" stop-color="#3d7a32"/>
+    </radialGradient>
+    <linearGradient id="capP3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <radialGradient id="skinP3" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <filter id="softShadowP3" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyP3)"/>
+  <circle cx="100" cy="120" r="120" fill="url(#sunP3)" opacity=".7"/>
+  <circle cx="100" cy="120" r="30" fill="#fff5b3"/>
+
+  <!-- distant hills -->
+  <path d="M-20 360 L120 300 L260 340 L400 290 L540 330 L620 310 L620 400 L-20 400 Z" fill="#7392b8" opacity=".45"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowP3)">
+    <ellipse cx="380" cy="100" rx="50" ry="18" fill="#fff"/>
+    <ellipse cx="420" cy="95" rx="35" ry="14" fill="#fff"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="600" ry="220" fill="url(#grassP3)"/>
+
+  <!-- Big brown ox -->
+  <g filter="url(#softShadowP3)" transform="translate(360,360)">
+    <ellipse cx="0" cy="120" rx="120" ry="14" fill="#0006"/>
+    <!-- body -->
+    <ellipse cx="0" cy="60" rx="110" ry="60" fill="url(#oxBodyP3)"/>
+    <!-- legs -->
+    <rect x="-80" y="105" width="20" height="40" rx="4" fill="#5d3a1a"/>
+    <rect x="-40" y="105" width="20" height="40" rx="4" fill="#5d3a1a"/>
+    <rect x="20" y="105" width="20" height="40" rx="4" fill="#5d3a1a"/>
+    <rect x="60" y="105" width="20" height="40" rx="4" fill="#5d3a1a"/>
+    <!-- hooves -->
+    <rect x="-80" y="138" width="20" height="8" fill="#2a1a08"/>
+    <rect x="-40" y="138" width="20" height="8" fill="#2a1a08"/>
+    <rect x="20" y="138" width="20" height="8" fill="#2a1a08"/>
+    <rect x="60" y="138" width="20" height="8" fill="#2a1a08"/>
+    <!-- head -->
+    <ellipse cx="-110" cy="40" rx="42" ry="38" fill="url(#oxBodyP3)"/>
+    <!-- snout -->
+    <ellipse cx="-130" cy="55" rx="20" ry="14" fill="#7d5a32"/>
+    <ellipse cx="-136" cy="55" rx="2.5" ry="3" fill="#2a1a08"/>
+    <ellipse cx="-124" cy="55" rx="2.5" ry="3" fill="#2a1a08"/>
+    <!-- horns -->
+    <path d="M-128 18 q-25 -20 -32 -10 q5 5 28 8 z" fill="#f0e0c0"/>
+    <path d="M-92 18 q25 -20 32 -10 q-5 5 -28 8 z" fill="#f0e0c0"/>
+    <!-- ears -->
+    <ellipse cx="-138" cy="30" rx="10" ry="14" fill="#5d3a1a" transform="rotate(-30 -138 30)"/>
+    <ellipse cx="-82" cy="30" rx="10" ry="14" fill="#5d3a1a" transform="rotate(30 -82 30)"/>
+    <!-- eyes -->
+    <circle cx="-122" cy="32" r="4" fill="#fff"/>
+    <circle cx="-122" cy="32" r="2.4" fill="#2b2140"/>
+    <circle cx="-121" cy="31" r=".8" fill="#fff"/>
+    <circle cx="-100" cy="32" r="4" fill="#fff"/>
+    <circle cx="-100" cy="32" r="2.4" fill="#2b2140"/>
+    <circle cx="-99" cy="31" r=".8" fill="#fff"/>
+    <!-- mouth -->
+    <path d="M-138 65 q8 5 16 0" stroke="#2a1a08" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- tail -->
+    <path d="M105 60 q20 10 25 30" stroke="#5d3a1a" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="132" cy="92" rx="6" ry="9" fill="#2a1a08"/>
+  </g>
+
+  <!-- Cabbage with Patufet peeking -->
+  <g filter="url(#softShadowP3)" transform="translate(140,460)">
+    <ellipse cx="0" cy="40" rx="60" ry="10" fill="#0006"/>
+    <!-- cabbage outer leaves -->
+    <ellipse cx="0" cy="0" rx="60" ry="45" fill="url(#cabbageP3)"/>
+    <path d="M-55 0 q-8 -25 0 -35 q15 -8 30 -5 q15 -3 30 5 q8 10 0 35" fill="#9ed46a" opacity=".7"/>
+    <path d="M-40 -10 q-5 -18 0 -25 q15 -5 25 -3 q15 -3 25 3 q5 7 0 25" fill="#bce286" opacity=".8"/>
+    <!-- veins -->
+    <path d="M-30 0 q5 -20 30 -22" stroke="#3d7a32" stroke-width="1.5" fill="none" opacity=".6"/>
+    <path d="M30 0 q-5 -20 -30 -22" stroke="#3d7a32" stroke-width="1.5" fill="none" opacity=".6"/>
+
+    <!-- Patufet peeking out from behind/inside -->
+    <g transform="translate(-15,-15)">
+      <circle cx="0" cy="0" r="12" fill="url(#skinP3)"/>
+      <path d="M-10 -5 q10 -18 20 0 q-2 -7 -10 -7 q-8 0 -10 7 z" fill="url(#capP3)"/>
+      <path d="M9 -5 q7 -7 14 -2 q-3 4 -8 3 q-4 -1 -6 -1" fill="url(#capP3)"/>
+      <circle cx="-4" cy="2" r="1.8" fill="#fff"/>
+      <circle cx="-4" cy="2" r="1" fill="#2b2140"/>
+      <circle cx="4" cy="2" r="1.8" fill="#fff"/>
+      <circle cx="4" cy="2" r="1" fill="#2b2140"/>
+      <path d="M-2 7 q2 2 4 0" stroke="#7a2a3e" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <circle cx="-7" cy="5" r="2" fill="#ff9bb5" opacity=".6"/>
+      <circle cx="7" cy="5" r="2" fill="#ff9bb5" opacity=".6"/>
+    </g>
+  </g>
+
+  <!-- flowers -->
+  <g>
+    <g transform="translate(60,540)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(540,560)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(280,560)"><circle r="4" fill="#cfe2ff"/><circle r="1.6" fill="#5683b8"/></g>
+  </g>
+
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

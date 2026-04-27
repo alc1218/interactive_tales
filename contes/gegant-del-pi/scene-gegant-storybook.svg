@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyGP2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ed3f0"/>
+      <stop offset="1" stop-color="#ffe4b8"/>
+    </linearGradient>
+    <linearGradient id="grassGP2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="sunGP2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="giantShirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff9442"/>
+      <stop offset="1" stop-color="#c45a14"/>
+    </linearGradient>
+    <linearGradient id="giantPants" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e8ac0"/>
+      <stop offset="1" stop-color="#2c4a78"/>
+    </linearGradient>
+    <radialGradient id="giantSkin" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffd8b8"/>
+      <stop offset="1" stop-color="#d89870"/>
+    </radialGradient>
+    <filter id="softShadowGP2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyGP2)"/>
+
+  <!-- sun -->
+  <circle cx="500" cy="120" r="150" fill="url(#sunGP2)"/>
+  <circle cx="500" cy="120" r="38" fill="#fff5b3"/>
+  <circle cx="500" cy="120" r="28" fill="#ffd86b"/>
+
+  <!-- mountains -->
+  <path d="M-20 380 L80 280 L200 350 L320 260 L460 340 L620 280 L620 420 L-20 420 Z" fill="#7392b8" opacity=".5"/>
+
+  <!-- clouds -->
+  <g opacity=".9">
+    <ellipse cx="120" cy="100" rx="50" ry="18" fill="#fff"/>
+    <ellipse cx="155" cy="95" rx="35" ry="14" fill="#fff"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="560" rx="600" ry="180" fill="url(#grassGP2)"/>
+
+  <!-- small distant trees for scale -->
+  <g opacity=".75">
+    <rect x="60" y="430" width="6" height="20" fill="#5d3a20"/>
+    <ellipse cx="63" cy="425" rx="14" ry="18" fill="#3a7140"/>
+    <rect x="540" y="430" width="6" height="20" fill="#5d3a20"/>
+    <ellipse cx="543" cy="425" rx="14" ry="18" fill="#3a7140"/>
+  </g>
+
+  <!-- giant standing tall -->
+  <g filter="url(#softShadowGP2)" transform="translate(300,310)">
+    <ellipse cx="0" cy="240" rx="80" ry="14" fill="#0006"/>
+    <!-- legs/pants -->
+    <rect x="-50" y="120" width="40" height="120" rx="14" fill="url(#giantPants)"/>
+    <rect x="10" y="120" width="40" height="120" rx="14" fill="url(#giantPants)"/>
+    <!-- shoes -->
+    <ellipse cx="-30" cy="245" rx="28" ry="10" fill="#3a1f10"/>
+    <ellipse cx="30" cy="245" rx="28" ry="10" fill="#3a1f10"/>
+    <!-- belt -->
+    <rect x="-55" y="115" width="110" height="14" fill="#5d3a1c"/>
+    <rect x="-8" y="115" width="16" height="14" fill="#ffd86b"/>
+    <!-- shirt -->
+    <path d="M-65 120 L-65 0 q0 -20 65 -20 q65 0 65 20 L65 120 z" fill="url(#giantShirt)"/>
+    <!-- arms / big hands -->
+    <path d="M-65 -10 q-50 30 -50 90 q15 5 25 -5 q5 -45 40 -65" fill="url(#giantShirt)"/>
+    <path d="M65 -10 q50 30 50 90 q-15 5 -25 -5 q-5 -45 -40 -65" fill="url(#giantShirt)"/>
+    <!-- hands -->
+    <ellipse cx="-105" cy="85" rx="22" ry="20" fill="url(#giantSkin)"/>
+    <ellipse cx="105" cy="85" rx="22" ry="20" fill="url(#giantSkin)"/>
+    <!-- finger lines -->
+    <g stroke="#a87858" stroke-width="1.5" opacity=".7" fill="none">
+      <path d="M-115 80 q3 8 0 14"/>
+      <path d="M-105 76 q2 9 0 16"/>
+      <path d="M-95 78 q2 8 0 14"/>
+      <path d="M115 80 q-3 8 0 14"/>
+      <path d="M105 76 q-2 9 0 16"/>
+      <path d="M95 78 q-2 8 0 14"/>
+    </g>
+    <!-- neck -->
+    <rect x="-15" y="-25" width="30" height="20" fill="url(#giantSkin)"/>
+    <!-- head -->
+    <circle cx="0" cy="-65" r="55" fill="url(#giantSkin)"/>
+    <!-- brown hair -->
+    <path d="M-50 -75 q-5 -55 50 -55 q55 0 50 55 q-5 -28 -50 -28 q-45 0 -50 28 z" fill="#5d3a1c"/>
+    <ellipse cx="-35" cy="-90" rx="18" ry="14" fill="#7a4a2a"/>
+    <ellipse cx="35" cy="-90" rx="18" ry="14" fill="#7a4a2a"/>
+    <!-- eyes -->
+    <circle cx="-15" cy="-65" r="5" fill="#fff"/><circle cx="-15" cy="-65" r="3" fill="#2b2140"/>
+    <circle cx="-13" cy="-66" r="1" fill="#fff"/>
+    <circle cx="15" cy="-65" r="5" fill="#fff"/><circle cx="15" cy="-65" r="3" fill="#2b2140"/>
+    <circle cx="17" cy="-66" r="1" fill="#fff"/>
+    <!-- nose -->
+    <ellipse cx="0" cy="-50" rx="5" ry="7" fill="#d89870"/>
+    <!-- gentle smile -->
+    <path d="M-15 -35 q15 12 30 0" stroke="#7a2a3e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- cheeks -->
+    <circle cx="-30" cy="-45" r="8" fill="#ff9bb5" opacity=".5"/>
+    <circle cx="30" cy="-45" r="8" fill="#ff9bb5" opacity=".5"/>
+  </g>
+
+  <!-- foreground tufts -->
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+  <g>
+    <g transform="translate(140,540)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(450,545)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+  </g>
+</svg>

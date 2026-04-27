@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#ffeaf3"/>
+  <rect x="0" y="240" width="300" height="60" fill="#c9a26b"/>
+  <!-- mouse with red ribbon -->
+  <g transform="translate(80,100)">
+    <ellipse cx="60" cy="90" rx="55" ry="40" fill="#d8c4a4"/>
+    <circle cx="105" cy="60" r="32" fill="#e8d4b4"/>
+    <circle cx="95" cy="38" r="13" fill="#d8c4a4"/><circle cx="115" cy="38" r="13" fill="#d8c4a4"/>
+    <circle cx="95" cy="38" r="7" fill="#ffb3d2"/><circle cx="115" cy="38" r="7" fill="#ffb3d2"/>
+    <circle cx="110" cy="62" r="2" fill="#2b2140"/>
+    <ellipse cx="120" cy="70" rx="5" ry="3" fill="#ff8fb0"/>
+    <!-- red bow -->
+    <path d="M80 22 L105 32 L90 5 Z" fill="#d93048"/>
+    <path d="M130 22 L105 32 L120 5 Z" fill="#d93048"/>
+    <circle cx="105" cy="25" r="6" fill="#c02039"/>
+  </g>
+  <text x="150" y="30" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="20" font-weight="800" fill="#d93048">Un llaç vermell!</text>
+</svg>

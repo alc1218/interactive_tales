@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#e8d6ff"/>
+  <g fill="#fff8d6" opacity=".8"><circle cx="50" cy="40" r="2"/><circle cx="100" cy="60" r="1.5"/><circle cx="220" cy="50" r="2"/><circle cx="250" cy="100" r="1.5"/><circle cx="80" cy="130" r="1"/></g>
+  <!-- fairy -->
+  <g transform="translate(110,70)">
+    <!-- wings -->
+    <ellipse cx="15" cy="55" rx="20" ry="30" fill="#cfe6ff" opacity=".7"/>
+    <ellipse cx="75" cy="55" rx="20" ry="30" fill="#cfe6ff" opacity=".7"/>
+    <!-- dress -->
+    <path d="M10 80 Q45 110 80 80 L78 160 L12 160 Z" fill="#b5d7ff"/>
+    <!-- body -->
+    <rect x="35" y="50" width="20" height="30" fill="#cfe6ff"/>
+    <circle cx="45" cy="35" r="20" fill="#ffd9c0"/>
+    <path d="M28 30 Q45 8 62 30 L62 45 Q45 52 28 45 Z" fill="#c080e5"/>
+    <circle cx="38" cy="35" r="1.5" fill="#2b2140"/><circle cx="52" cy="35" r="1.5" fill="#2b2140"/>
+    <path d="M40 44 Q45 48 50 44" stroke="#d93048" stroke-width="1" fill="none"/>
+    <!-- wand -->
+    <line x1="85" y1="80" x2="105" y2="60" stroke="#ffd86b" stroke-width="3"/>
+    <polygon points="100,52 115,55 108,68" fill="#ffd86b"/>
+  </g>
+  <!-- sparkles -->
+  <g fill="#ff8fb0"><circle cx="230" cy="80" r="3"/><circle cx="240" cy="110" r="2"/><circle cx="225" cy="140" r="2.5"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#eaf4ff"/>
+  <ellipse cx="150" cy="250" rx="220" ry="45" fill="#8cd2a0"/>
+  <polygon points="80,150 220,150 150,80" fill="#b0522c"/>
+  <rect x="95" y="150" width="110" height="90" fill="#d97453"/>
+  <!-- bricks -->
+  <g fill="none" stroke="#7a2e1b" stroke-width="1.5" opacity=".85">
+    <line x1="95" y1="165" x2="205" y2="165"/>
+    <line x1="95" y1="180" x2="205" y2="180"/>
+    <line x1="95" y1="195" x2="205" y2="195"/>
+    <line x1="95" y1="210" x2="205" y2="210"/>
+    <line x1="95" y1="225" x2="205" y2="225"/>
+    <line x1="120" y1="150" x2="120" y2="165"/>
+    <line x1="150" y1="150" x2="150" y2="165"/>
+    <line x1="180" y1="150" x2="180" y2="165"/>
+    <line x1="105" y1="165" x2="105" y2="180"/>
+    <line x1="135" y1="165" x2="135" y2="180"/>
+    <line x1="165" y1="165" x2="165" y2="180"/>
+    <line x1="195" y1="165" x2="195" y2="180"/>
+  </g>
+  <rect x="135" y="190" width="30" height="50" fill="#5a2a14"/>
+  <circle cx="158" cy="215" r="2" fill="#ffe27a"/>
+  <circle cx="230" cy="50" r="20" fill="#ffd86b"/>
+</svg>

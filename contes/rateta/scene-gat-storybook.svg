@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bgR5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe6e8"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <linearGradient id="floorR5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c89060"/>
+      <stop offset="1" stop-color="#7a4d22"/>
+    </linearGradient>
+    <linearGradient id="bowR5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <radialGradient id="mouseBodyR5" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#f8e8d0"/>
+      <stop offset="1" stop-color="#c9a878"/>
+    </radialGradient>
+    <radialGradient id="mouseHeadR5" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fbf2dc"/>
+      <stop offset="1" stop-color="#d8b888"/>
+    </radialGradient>
+    <radialGradient id="catBodyR5" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#c8c8d0"/>
+      <stop offset="1" stop-color="#6a6a78"/>
+    </radialGradient>
+    <radialGradient id="catHeadR5" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#d8d8e0"/>
+      <stop offset="1" stop-color="#7a7a88"/>
+    </radialGradient>
+    <filter id="softShadowR5" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgR5)"/>
+
+  <!-- floor -->
+  <rect y="450" width="600" height="150" fill="url(#floorR5)"/>
+  <g stroke="#5b3917" stroke-width="1" opacity=".4">
+    <line x1="0" y1="490" x2="600" y2="490"/>
+    <line x1="0" y1="540" x2="600" y2="540"/>
+  </g>
+
+  <!-- decorative wall paper hint -->
+  <g opacity=".25">
+    <circle cx="100" cy="150" r="6" fill="#ffd0e0"/>
+    <circle cx="200" cy="100" r="6" fill="#cfe2ff"/>
+    <circle cx="350" cy="130" r="6" fill="#ffd0e0"/>
+    <circle cx="500" cy="170" r="6" fill="#cfe2ff"/>
+  </g>
+
+  <!-- Mouse left with bow -->
+  <g filter="url(#softShadowR5)" transform="translate(180,360)">
+    <ellipse cx="0" cy="100" rx="42" ry="7" fill="#0006"/>
+    <ellipse cx="0" cy="55" rx="42" ry="46" fill="url(#mouseBodyR5)"/>
+    <ellipse cx="0" cy="65" rx="22" ry="28" fill="#fff5e0" opacity=".7"/>
+    <ellipse cx="-12" cy="95" rx="9" ry="6" fill="#c9a878"/>
+    <ellipse cx="14" cy="95" rx="9" ry="6" fill="#c9a878"/>
+    <circle cx="0" cy="10" r="30" fill="url(#mouseHeadR5)"/>
+    <circle cx="-22" cy="-15" r="14" fill="url(#mouseHeadR5)"/>
+    <circle cx="-22" cy="-15" r="9" fill="#ffb8c8"/>
+    <circle cx="22" cy="-15" r="14" fill="url(#mouseHeadR5)"/>
+    <circle cx="22" cy="-15" r="9" fill="#ffb8c8"/>
+    <circle cx="-8" cy="8" r="4" fill="#fff"/>
+    <circle cx="-8" cy="8" r="2.4" fill="#2b2140"/>
+    <circle cx="-7" cy="7" r="1" fill="#fff"/>
+    <circle cx="10" cy="8" r="4" fill="#fff"/>
+    <circle cx="10" cy="8" r="2.4" fill="#2b2140"/>
+    <circle cx="11" cy="7" r="1" fill="#fff"/>
+    <ellipse cx="1" cy="18" rx="3" ry="2.4" fill="#e87a98"/>
+    <path d="M-5 25 q6 5 12 0" stroke="#7a2a3e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <line x1="-32" y1="20" x2="-12" y2="20" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="-32" y1="24" x2="-12" y2="22" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="12" y1="20" x2="32" y2="20" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="12" y1="22" x2="32" y2="24" stroke="#7a5a3a" stroke-width="1"/>
+    <circle cx="-20" cy="22" r="4" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="22" cy="22" r="4" fill="#ff9bb5" opacity=".55"/>
+    <path d="M40 80 q35 -5 45 25" stroke="#c9a878" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- red bow -->
+    <g transform="translate(0,-30)">
+      <path d="M0 0 L-22 -14 L-22 8 L-4 4 z" fill="url(#bowR5)"/>
+      <path d="M0 0 L22 -14 L22 8 L4 4 z" fill="url(#bowR5)"/>
+      <circle r="5" fill="#a3192a"/>
+    </g>
+  </g>
+
+  <!-- Cat right -->
+  <g filter="url(#softShadowR5)" transform="translate(420,360)">
+    <ellipse cx="0" cy="100" rx="50" ry="8" fill="#0006"/>
+    <!-- body -->
+    <ellipse cx="0" cy="60" rx="48" ry="48" fill="url(#catBodyR5)"/>
+    <!-- legs -->
+    <ellipse cx="-15" cy="100" rx="10" ry="7" fill="#6a6a78"/>
+    <ellipse cx="17" cy="100" rx="10" ry="7" fill="#6a6a78"/>
+    <!-- head -->
+    <circle cx="0" cy="10" r="34" fill="url(#catHeadR5)"/>
+    <!-- pointy ears -->
+    <path d="M-30 -10 L-22 -38 L-12 -15 z" fill="url(#catHeadR5)"/>
+    <path d="M-25 -10 L-22 -28 L-16 -15 z" fill="#ffb8c8"/>
+    <path d="M30 -10 L22 -38 L12 -15 z" fill="url(#catHeadR5)"/>
+    <path d="M25 -10 L22 -28 L16 -15 z" fill="#ffb8c8"/>
+    <!-- green eyes -->
+    <ellipse cx="-10" cy="8" rx="5" ry="6" fill="#fff"/>
+    <ellipse cx="-10" cy="8" rx="3" ry="5" fill="#3a8a4c"/>
+    <ellipse cx="-10" cy="8" rx="1" ry="4" fill="#1a2a18"/>
+    <circle cx="-9" cy="6" r="1" fill="#fff"/>
+    <ellipse cx="12" cy="8" rx="5" ry="6" fill="#fff"/>
+    <ellipse cx="12" cy="8" rx="3" ry="5" fill="#3a8a4c"/>
+    <ellipse cx="12" cy="8" rx="1" ry="4" fill="#1a2a18"/>
+    <circle cx="13" cy="6" r="1" fill="#fff"/>
+    <!-- nose -->
+    <path d="M-3 18 L3 18 L0 23 z" fill="#e87a98"/>
+    <!-- mouth -->
+    <path d="M0 23 q-4 5 -8 3 M0 23 q4 5 8 3" stroke="#2b2140" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- whiskers -->
+    <line x1="-40" y1="20" x2="-15" y2="22" stroke="#3a3a3a" stroke-width="1"/>
+    <line x1="-40" y1="26" x2="-15" y2="26" stroke="#3a3a3a" stroke-width="1"/>
+    <line x1="15" y1="22" x2="40" y2="20" stroke="#3a3a3a" stroke-width="1"/>
+    <line x1="15" y1="26" x2="40" y2="26" stroke="#3a3a3a" stroke-width="1"/>
+    <circle cx="-22" cy="25" r="4.5" fill="#ff9bb5" opacity=".5"/>
+    <circle cx="24" cy="25" r="4.5" fill="#ff9bb5" opacity=".5"/>
+    <!-- tail -->
+    <path d="M48 70 q40 -5 35 -50" stroke="#6a6a78" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cat speech bubble -->
+  <g filter="url(#softShadowR5)">
+    <ellipse cx="430" cy="220" rx="80" ry="32" fill="#fff"/>
+    <path d="M410 245 L400 270 L435 255 z" fill="#fff"/>
+    <text x="430" y="227" text-anchor="middle" font-family="Georgia" font-size="20" fill="#3a4a8a" font-weight="bold">Miau,</text>
+    <text x="430" y="245" text-anchor="middle" font-family="Georgia" font-size="18" fill="#3a4a8a">miau!</text>
+  </g>
+</svg>

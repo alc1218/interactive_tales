@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyLT1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb8e6"/>
+      <stop offset=".55" stop-color="#bfe1f5"/>
+      <stop offset="1" stop-color="#f3ebbf"/>
+    </linearGradient>
+    <radialGradient id="sunLT1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassLT1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="hareBodyLT1" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#e8d8c0"/>
+      <stop offset="1" stop-color="#a98760"/>
+    </radialGradient>
+    <radialGradient id="tortShellLT1" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#9ec46a"/>
+      <stop offset="1" stop-color="#4d6b1a"/>
+    </radialGradient>
+    <radialGradient id="tortSkinLT1" cx=".5" cy=".5" r=".6">
+      <stop offset="0" stop-color="#c5d68e"/>
+      <stop offset="1" stop-color="#7d9a45"/>
+    </radialGradient>
+    <radialGradient id="cloudLT1" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <filter id="softShadowLT1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyLT1)"/>
+
+  <!-- sun -->
+  <circle cx="470" cy="130" r="160" fill="url(#sunLT1)" opacity=".7"/>
+  <circle cx="470" cy="130" r="42" fill="#fff5b3"/>
+  <circle cx="470" cy="130" r="32" fill="#ffd86b"/>
+
+  <!-- distant mountains -->
+  <path d="M-20 360 L80 290 L160 340 L260 270 L350 320 L470 250 L620 320 L620 400 L-20 400 Z" fill="#7392b8" opacity=".55"/>
+  <path d="M-20 380 L130 320 L240 360 L340 305 L450 350 L560 305 L620 345 L620 400 L-20 400 Z" fill="#5c7aa1" opacity=".45"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowLT1)">
+    <ellipse cx="120" cy="100" rx="56" ry="22" fill="url(#cloudLT1)"/>
+    <ellipse cx="155" cy="95" rx="38" ry="17" fill="url(#cloudLT1)"/>
+    <ellipse cx="320" cy="70" rx="48" ry="18" fill="url(#cloudLT1)"/>
+  </g>
+
+  <!-- distant trees -->
+  <g opacity=".7">
+    <ellipse cx="60" cy="395" rx="50" ry="28" fill="#3a7140"/>
+    <ellipse cx="540" cy="395" rx="55" ry="30" fill="#3a7140"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="500" ry="180" fill="url(#grassLT1)"/>
+
+  <!-- start line flag -->
+  <g filter="url(#softShadowLT1)">
+    <rect x="295" y="280" width="4" height="160" fill="#5b3a1f"/>
+    <path d="M299 280 L350 290 L350 320 L299 310 Z" fill="#ef4153"/>
+    <text x="304" y="305" font-family="Arial" font-size="14" fill="#fff" font-weight="bold">SORTIDA</text>
+  </g>
+
+  <!-- Hare on left -->
+  <g filter="url(#softShadowLT1)" transform="translate(120,360)">
+    <ellipse cx="0" cy="100" rx="40" ry="6" fill="#0006"/>
+    <!-- body -->
+    <ellipse cx="0" cy="60" rx="38" ry="42" fill="url(#hareBodyLT1)"/>
+    <!-- legs -->
+    <ellipse cx="-12" cy="100" rx="10" ry="8" fill="#a98760"/>
+    <ellipse cx="14" cy="100" rx="10" ry="8" fill="#a98760"/>
+    <!-- head -->
+    <circle cx="0" cy="15" r="28" fill="url(#hareBodyLT1)"/>
+    <!-- long ears -->
+    <path d="M-15 -5 q-12 -50 -4 -60 q12 -2 8 50 z" fill="url(#hareBodyLT1)"/>
+    <path d="M-12 -10 q-7 -40 -2 -48 q6 0 4 38 z" fill="#ffd0d8"/>
+    <path d="M5 -5 q12 -50 16 -55 q10 4 -2 52 z" fill="url(#hareBodyLT1)"/>
+    <path d="M8 -10 q7 -38 12 -42 q5 2 -3 36 z" fill="#ffd0d8"/>
+    <!-- eyes -->
+    <circle cx="-8" cy="14" r="3.5" fill="#fff"/>
+    <circle cx="-8" cy="14" r="2" fill="#2b2140"/>
+    <circle cx="-7" cy="13" r=".8" fill="#fff"/>
+    <circle cx="9" cy="14" r="3.5" fill="#fff"/>
+    <circle cx="9" cy="14" r="2" fill="#2b2140"/>
+    <circle cx="10" cy="13" r=".8" fill="#fff"/>
+    <!-- nose + smile -->
+    <ellipse cx="0" cy="22" rx="3" ry="2" fill="#e87a98"/>
+    <path d="M-5 28 q5 5 10 0" stroke="#7a2a3e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <!-- cheek blush -->
+    <circle cx="-18" cy="22" r="4" fill="#ff9bb5" opacity=".5"/>
+    <circle cx="18" cy="22" r="4" fill="#ff9bb5" opacity=".5"/>
+    <!-- tail -->
+    <circle cx="-35" cy="80" r="8" fill="#fff"/>
+  </g>
+
+  <!-- Tortoise on right -->
+  <g filter="url(#softShadowLT1)" transform="translate(420,420)">
+    <ellipse cx="0" cy="50" rx="55" ry="8" fill="#0006"/>
+    <!-- shell -->
+    <ellipse cx="0" cy="20" rx="50" ry="32" fill="url(#tortShellLT1)"/>
+    <!-- shell pattern -->
+    <path d="M-30 20 q15 -8 30 0 q15 -8 30 0" stroke="#3d6b22" stroke-width="2" fill="none" opacity=".6"/>
+    <path d="M-15 5 l5 8 M0 5 l0 10 M15 5 l-5 8" stroke="#3d6b22" stroke-width="1.5" opacity=".6"/>
+    <!-- legs -->
+    <ellipse cx="-35" cy="40" rx="10" ry="6" fill="url(#tortSkinLT1)"/>
+    <ellipse cx="35" cy="40" rx="10" ry="6" fill="url(#tortSkinLT1)"/>
+    <!-- head -->
+    <ellipse cx="-50" cy="20" rx="14" ry="11" fill="url(#tortSkinLT1)"/>
+    <circle cx="-55" cy="17" r="2.5" fill="#fff"/>
+    <circle cx="-55" cy="17" r="1.4" fill="#2b2140"/>
+    <path d="M-58 24 q3 3 6 0" stroke="#5d4a1f" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <circle cx="-45" cy="25" r="3" fill="#ff9bb5" opacity=".5"/>
+  </g>
+
+  <!-- VS / repte text -->
+  <g>
+    <text x="300" y="240" text-anchor="middle" font-family="Georgia" font-size="34" fill="#a3192a" font-weight="bold" font-style="italic">El repte!</text>
+  </g>
+
+  <!-- flowers -->
+  <g>
+    <g transform="translate(80,510)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(540,520)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(220,550)"><circle r="4" fill="#cfe2ff"/><circle r="1.6" fill="#5683b8"/></g>
+    <g transform="translate(380,545)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+  </g>
+
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

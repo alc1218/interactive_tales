@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyA4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8eb"/>
+      <stop offset="1" stop-color="#fff5d8"/>
+    </linearGradient>
+    <radialGradient id="sunA4" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff8d0"/>
+      <stop offset=".5" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lakeA4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#80c0e0"/>
+      <stop offset="1" stop-color="#3a6a8a"/>
+    </linearGradient>
+    <radialGradient id="swanA4" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <radialGradient id="cloudA4" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <linearGradient id="grassA4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <filter id="softShadowA4" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyA4)"/>
+
+  <circle cx="500" cy="120" r="120" fill="url(#sunA4)" opacity=".7"/>
+  <circle cx="500" cy="120" r="30" fill="#fff5b3"/>
+
+  <!-- caption -->
+  <text x="300" y="80" text-anchor="middle" font-family="Georgia" font-size="32" fill="#a3192a" font-weight="bold" font-style="italic">Soc un cigne!</text>
+
+  <!-- distant mountains -->
+  <path d="M-20 360 L80 280 L160 320 L260 270 L350 310 L470 260 L620 310 L620 400 L-20 400 Z" fill="#a0bce0" opacity=".5"/>
+
+  <g filter="url(#softShadowA4)">
+    <ellipse cx="120" cy="140" rx="50" ry="18" fill="url(#cloudA4)"/>
+    <ellipse cx="160" cy="135" rx="35" ry="14" fill="url(#cloudA4)"/>
+    <ellipse cx="380" cy="160" rx="40" ry="14" fill="url(#cloudA4)"/>
+  </g>
+
+  <!-- shore -->
+  <ellipse cx="300" cy="380" rx="600" ry="50" fill="url(#grassA4)"/>
+
+  <!-- lake -->
+  <path d="M-20 380 L620 380 L620 600 L-20 600 z" fill="url(#lakeA4)"/>
+  <!-- water highlights -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity=".5">
+    <path d="M50 430 q40 5 80 0"/>
+    <path d="M180 460 q40 5 80 0"/>
+    <path d="M340 450 q40 5 80 0"/>
+    <path d="M460 430 q40 5 80 0"/>
+    <path d="M80 510 q50 5 100 0"/>
+    <path d="M280 530 q50 5 100 0"/>
+    <path d="M420 540 q50 5 100 0"/>
+  </g>
+
+  <!-- lily pads -->
+  <g fill="#3a8a4c" opacity=".7">
+    <ellipse cx="80" cy="540" rx="22" ry="6"/>
+    <ellipse cx="500" cy="560" rx="22" ry="6"/>
+  </g>
+
+  <!-- 3 swans -->
+  <!-- left swan -->
+  <g filter="url(#softShadowA4)" transform="translate(140,460)">
+    <ellipse cx="0" cy="20" rx="55" ry="8" fill="#0006"/>
+    <ellipse cx="0" cy="0" rx="50" ry="28" fill="url(#swanA4)"/>
+    <!-- wing -->
+    <path d="M-30 -5 q-5 -25 25 -25 q30 0 30 25 q-15 -10 -30 -10 q-15 0 -25 10 z" fill="#fff"/>
+    <!-- neck curving back -->
+    <path d="M30 -5 q15 -25 5 -50 q-10 -10 -25 0" stroke="#fff" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="6" cy="-55" r="11" fill="url(#swanA4)"/>
+    <!-- beak orange -->
+    <path d="M-3 -55 L-15 -52 L-15 -58 z" fill="#ff8a3b"/>
+    <!-- black mask -->
+    <path d="M-3 -58 L-8 -57 L-3 -54 z" fill="#1a1a1a"/>
+    <!-- eye -->
+    <circle cx="6" cy="-58" r="1.6" fill="#1a1a1a"/>
+  </g>
+
+  <!-- center (former ugly duckling, larger, proudest) -->
+  <g filter="url(#softShadowA4)" transform="translate(300,440)">
+    <ellipse cx="0" cy="30" rx="70" ry="10" fill="#0006"/>
+    <ellipse cx="0" cy="0" rx="65" ry="35" fill="url(#swanA4)"/>
+    <!-- wing slightly raised -->
+    <path d="M-40 -10 q-5 -40 40 -38 q40 0 40 30 q-20 -15 -40 -15 q-20 0 -40 23 z" fill="#fff"/>
+    <path d="M-30 -15 q5 -25 30 -28" stroke="#dde9f2" stroke-width="1.5" fill="none"/>
+    <!-- elegant S-curve neck up -->
+    <path d="M40 -10 q25 -50 0 -85 q-20 -10 -25 5" stroke="#fff" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="22" cy="-95" r="14" fill="url(#swanA4)"/>
+    <!-- beak -->
+    <path d="M10 -95 L-4 -92 L-4 -100 z" fill="#ff8a3b"/>
+    <!-- black mask -->
+    <path d="M10 -100 L4 -98 L10 -94 z" fill="#1a1a1a"/>
+    <!-- eye -->
+    <circle cx="22" cy="-98" r="2" fill="#1a1a1a"/>
+    <circle cx="22.5" cy="-98.5" r=".5" fill="#fff"/>
+    <!-- cheek blush (subtle) -->
+    <circle cx="20" cy="-90" r="3" fill="#ff9bb5" opacity=".5"/>
+  </g>
+
+  <!-- right swan -->
+  <g filter="url(#softShadowA4)" transform="translate(470,470)">
+    <ellipse cx="0" cy="20" rx="50" ry="8" fill="#0006"/>
+    <ellipse cx="0" cy="0" rx="48" ry="26" fill="url(#swanA4)"/>
+    <path d="M-30 -5 q-5 -22 25 -22 q28 0 28 22 q-15 -10 -28 -10 q-13 0 -25 10 z" fill="#fff"/>
+    <!-- neck forward -->
+    <path d="M-30 -5 q-25 -25 -10 -50 q12 -10 25 0" stroke="#fff" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <circle cx="-30" cy="-55" r="10" fill="url(#swanA4)"/>
+    <path d="M-22 -55 L-10 -52 L-10 -58 z" fill="#ff8a3b"/>
+    <path d="M-22 -58 L-16 -57 L-22 -54 z" fill="#1a1a1a"/>
+    <circle cx="-30" cy="-58" r="1.5" fill="#1a1a1a"/>
+  </g>
+
+  <!-- ripples around center swan -->
+  <g stroke="#fff" stroke-width="1.5" fill="none" opacity=".5">
+    <ellipse cx="300" cy="475" rx="80" ry="8"/>
+    <ellipse cx="300" cy="488" rx="100" ry="10"/>
+  </g>
+
+  <!-- sparkle -->
+  <g fill="#fff5b3">
+    <path d="M180 250 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z"/>
+    <path d="M420 270 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z"/>
+  </g>
+</svg>

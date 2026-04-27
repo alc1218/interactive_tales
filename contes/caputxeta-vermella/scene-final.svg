@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fff8d6"/>
+  <ellipse cx="150" cy="260" rx="240" ry="50" fill="#8cd2a0"/>
+  <!-- house -->
+  <rect x="50" y="130" width="200" height="110" fill="#f2c880"/>
+  <polygon points="50,130 250,130 150,70" fill="#b0522c"/>
+  <rect x="130" y="180" width="40" height="60" fill="#7a431d"/>
+  <rect x="70" y="150" width="30" height="30" fill="#cfeaff" stroke="#7a431d" stroke-width="2"/>
+  <rect x="200" y="150" width="30" height="30" fill="#cfeaff" stroke="#7a431d" stroke-width="2"/>
+  <!-- Red, grandma, hunter -->
+  <g transform="translate(60,180)">
+    <path d="M5 40 Q20 60 35 40 L30 90 L10 90 Z" fill="#d93048"/>
+    <circle cx="20" cy="25" r="12" fill="#ffd9c0"/>
+    <path d="M10 15 Q20 0 30 15 L30 30 Q20 35 10 30 Z" fill="#d93048"/>
+  </g>
+  <g transform="translate(130,180)">
+    <rect x="5" y="30" width="30" height="60" fill="#b8b8c8"/>
+    <circle cx="20" cy="20" r="13" fill="#ffd9c0"/>
+    <path d="M7 12 Q20 -4 33 12 L33 20 Q20 24 7 20 Z" fill="#e8e8e8"/>
+  </g>
+  <g transform="translate(210,180)">
+    <rect x="0" y="30" width="35" height="60" fill="#4f9a62"/>
+    <circle cx="17" cy="18" r="12" fill="#ffd9c0"/>
+    <rect x="3" y="5" width="28" height="10" fill="#7a431d"/>
+    <rect x="0" y="13" width="34" height="5" fill="#7a431d"/>
+  </g>
+  <text x="150" y="40" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="22" font-weight="800" fill="#d93048">Tots fora de perill!</text>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bgV2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d3a8a"/>
+      <stop offset="1" stop-color="#9a6ec8"/>
+    </linearGradient>
+    <radialGradient id="magicGlowV2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff5b3" stop-opacity=".8"/>
+      <stop offset=".5" stop-color="#d8a0e8" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#5d3a8a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fairyDressV2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8f0"/>
+      <stop offset="1" stop-color="#5d8acb"/>
+    </linearGradient>
+    <radialGradient id="wingsV2" cx=".5" cy=".5" r=".7">
+      <stop offset="0" stop-color="#fff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#cfe2ff" stop-opacity=".2"/>
+    </radialGradient>
+    <radialGradient id="starV2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff5b3"/>
+      <stop offset="1" stop-color="#ffd86b"/>
+    </radialGradient>
+    <radialGradient id="skinV2" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <filter id="softShadowV2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgV2)"/>
+
+  <!-- big magical glow -->
+  <circle cx="300" cy="300" r="280" fill="url(#magicGlowV2)"/>
+
+  <!-- swirling stars in background -->
+  <g fill="#fff" opacity=".6">
+    <circle cx="80" cy="100" r="2"/>
+    <circle cx="150" cy="60" r="1.5"/>
+    <circle cx="500" cy="80" r="2"/>
+    <circle cx="540" cy="160" r="1.5"/>
+    <circle cx="60" cy="250" r="1.5"/>
+    <circle cx="540" cy="300" r="2"/>
+    <circle cx="100" cy="450" r="1.5"/>
+    <circle cx="520" cy="500" r="2"/>
+  </g>
+
+  <!-- Fairy godmother -->
+  <g filter="url(#softShadowV2)" transform="translate(300,330)">
+    <ellipse cx="0" cy="180" rx="60" ry="10" fill="#0006"/>
+    <!-- wings -->
+    <ellipse cx="-50" cy="20" rx="55" ry="80" fill="url(#wingsV2)" transform="rotate(-15 -50 20)"/>
+    <ellipse cx="50" cy="20" rx="55" ry="80" fill="url(#wingsV2)" transform="rotate(15 50 20)"/>
+    <ellipse cx="-50" cy="20" rx="40" ry="55" fill="url(#wingsV2)" opacity=".5" transform="rotate(-15 -50 20)"/>
+    <ellipse cx="50" cy="20" rx="40" ry="55" fill="url(#wingsV2)" opacity=".5" transform="rotate(15 50 20)"/>
+    <!-- dress -->
+    <path d="M-55 175 L-40 30 q0 -10 40 -10 q40 0 40 10 L55 175 z" fill="url(#fairyDressV2)"/>
+    <!-- shimmer -->
+    <path d="M-30 170 L-22 50 L0 60 L20 50 L30 170" stroke="#fff" stroke-width="1" fill="none" opacity=".4"/>
+    <!-- arm holding wand -->
+    <path d="M30 30 q30 -20 50 -55" stroke="url(#skinV2)" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <path d="M-30 30 q-15 5 -20 30" stroke="url(#skinV2)" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="0" cy="-10" r="30" fill="url(#skinV2)"/>
+    <!-- silver hair bun -->
+    <path d="M-30 -22 q5 -28 30 -28 q25 0 30 28 q-5 -10 -30 -10 q-25 0 -30 10 z" fill="#c8c8d8"/>
+    <circle cx="0" cy="-42" r="10" fill="#c8c8d8"/>
+    <!-- eyes -->
+    <circle cx="-9" cy="-8" r="3" fill="#fff"/>
+    <circle cx="-9" cy="-8" r="1.7" fill="#5d8acb"/>
+    <circle cx="9" cy="-8" r="3" fill="#fff"/>
+    <circle cx="9" cy="-8" r="1.7" fill="#5d8acb"/>
+    <circle cx="-8" cy="-9" r=".7" fill="#fff"/>
+    <path d="M-6 4 q6 5 12 0" stroke="#7a2a3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="-16" cy="0" r="4.5" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="16" cy="0" r="4.5" fill="#ff9bb5" opacity=".55"/>
+  </g>
+
+  <!-- wand with star -->
+  <g filter="url(#softShadowV2)" transform="translate(390,225)">
+    <line x1="0" y1="40" x2="-20" y2="80" stroke="#c8c8d8" stroke-width="3" stroke-linecap="round"/>
+    <g transform="translate(0,30)">
+      <path d="M0 -22 L7 -7 L22 -7 L10 3 L15 18 L0 9 L-15 18 L-10 3 L-22 -7 L-7 -7 z" fill="url(#starV2)" stroke="#b88512" stroke-width="1"/>
+    </g>
+    <!-- glow -->
+    <circle r="35" fill="url(#magicGlowV2)" opacity=".6"/>
+  </g>
+
+  <!-- magic sparkles -->
+  <g fill="#fff5b3">
+    <path d="M120 200 l3 -10 l3 10 l10 3 l-10 3 l-3 10 l-3 -10 l-10 -3 z"/>
+    <path d="M460 350 l2 -8 l2 8 l8 2 l-8 2 l-2 8 l-2 -8 l-8 -2 z"/>
+    <path d="M180 380 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z"/>
+    <path d="M450 180 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z"/>
+    <path d="M150 480 l1.5 -5 l1.5 5 l5 1.5 l-5 1.5 l-1.5 5 l-1.5 -5 l-5 -1.5 z"/>
+    <path d="M500 450 l1.5 -5 l1.5 5 l5 1.5 l-5 1.5 l-1.5 5 l-1.5 -5 l-5 -1.5 z"/>
+    <path d="M80 350 l1.5 -5 l1.5 5 l5 1.5 l-5 1.5 l-1.5 5 l-1.5 -5 l-5 -1.5 z"/>
+  </g>
+</svg>

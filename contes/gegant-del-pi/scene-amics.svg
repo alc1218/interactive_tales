@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fff8d6"/>
+  <ellipse cx="150" cy="265" rx="250" ry="45" fill="#8cd2a0"/>
+  <!-- pine -->
+  <g transform="translate(230,50)"><polygon points="0,60 20,15 40,60" fill="#3a8f53"/><polygon points="-5,110 20,40 45,110" fill="#4aa568"/><rect x="15" y="110" width="10" height="30" fill="#5a3320"/></g>
+  <!-- giant sitting -->
+  <g transform="translate(70,100)">
+    <circle cx="45" cy="40" r="30" fill="#ffd9c0"/>
+    <rect x="20" y="60" width="50" height="60" fill="#ff7a59" rx="8"/>
+    <circle cx="36" cy="40" r="2" fill="#2b2140"/><circle cx="54" cy="40" r="2" fill="#2b2140"/>
+    <path d="M36 52 Q45 58 54 52" stroke="#2b2140" stroke-width="2" fill="none"/>
+    <rect x="15" y="120" width="60" height="30" fill="#3455a3" rx="4"/>
+  </g>
+  <!-- kids -->
+  <g transform="translate(160,160)">
+    <rect x="0" y="25" width="22" height="40" fill="#ffb703" rx="3"/>
+    <circle cx="11" cy="17" r="12" fill="#ffd9c0"/>
+    <path d="M2 10 Q11 0 20 10 L20 20 Q11 23 2 20 Z" fill="#2b2140"/>
+    <circle cx="8" cy="17" r="1" fill="#2b2140"/><circle cx="14" cy="17" r="1" fill="#2b2140"/>
+  </g>
+  <g transform="translate(200,160)">
+    <path d="M2 25 L22 25 L24 65 L0 65 Z" fill="#d93048"/>
+    <circle cx="12" cy="17" r="12" fill="#ffd9c0"/>
+    <path d="M2 8 Q12 -2 22 8 L22 20 Q12 23 2 20 Z" fill="#ffb703"/>
+    <circle cx="8" cy="17" r="1" fill="#2b2140"/><circle cx="16" cy="17" r="1" fill="#2b2140"/>
+  </g>
+  <!-- heart -->
+  <path d="M140 100 C140 92, 152 92, 152 102 C152 92, 164 92, 164 100 C164 112, 152 122, 152 122 C152 122, 140 112, 140 100 Z" fill="#d93048"/>
+</svg>

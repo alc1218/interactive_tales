@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyGP4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbc8a0"/>
+      <stop offset="1" stop-color="#fff0d0"/>
+    </linearGradient>
+    <linearGradient id="grassGP4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="sunGP4" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffe6c0"/>
+      <stop offset=".55" stop-color="#ffae6b"/>
+      <stop offset="1" stop-color="#ff7a3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="giantShirtGP4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff9442"/>
+      <stop offset="1" stop-color="#c45a14"/>
+    </linearGradient>
+    <linearGradient id="giantPantsGP4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e8ac0"/>
+      <stop offset="1" stop-color="#2c4a78"/>
+    </linearGradient>
+    <radialGradient id="skinGP4" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <radialGradient id="giantSkinGP4" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffd8b8"/>
+      <stop offset="1" stop-color="#d89870"/>
+    </radialGradient>
+    <radialGradient id="cookieGrad" cx=".4" cy=".4" r=".5">
+      <stop offset="0" stop-color="#e8b870"/>
+      <stop offset="1" stop-color="#a87038"/>
+    </radialGradient>
+    <filter id="softShadowGP4" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyGP4)"/>
+
+  <!-- warm sun -->
+  <circle cx="500" cy="130" r="160" fill="url(#sunGP4)"/>
+  <circle cx="500" cy="130" r="40" fill="#ffd8a0"/>
+  <circle cx="500" cy="130" r="30" fill="#ffae6b"/>
+
+  <!-- distant hills -->
+  <path d="M-20 380 L120 290 L260 340 L380 280 L520 330 L620 290 L620 420 L-20 420 Z" fill="#a08aa8" opacity=".5"/>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="600" ry="180" fill="url(#grassGP4)"/>
+
+  <!-- floating hearts -->
+  <g filter="url(#softShadowGP4)">
+    <g transform="translate(150,140)" opacity=".9">
+      <path d="M0 8 L-10 -2 q-7 -7 0 -12 q7 -5 10 3 q3 -8 10 -3 q7 5 0 12 z" fill="#ef4153"/>
+    </g>
+    <g transform="translate(450,200) scale(.7)" opacity=".85">
+      <path d="M0 8 L-10 -2 q-7 -7 0 -12 q7 -5 10 3 q3 -8 10 -3 q7 5 0 12 z" fill="#ff7a98"/>
+    </g>
+    <g transform="translate(80,250) scale(.6)" opacity=".8">
+      <path d="M0 8 L-10 -2 q-7 -7 0 -12 q7 -5 10 3 q3 -8 10 -3 q7 5 0 12 z" fill="#ef4153"/>
+    </g>
+  </g>
+
+  <!-- giant sitting on left -->
+  <g filter="url(#softShadowGP4)" transform="translate(180,330)">
+    <ellipse cx="0" cy="200" rx="100" ry="14" fill="#0006"/>
+    <!-- legs crossed/extended sitting -->
+    <ellipse cx="40" cy="180" rx="80" ry="22" fill="url(#giantPantsGP4)"/>
+    <ellipse cx="80" cy="170" rx="22" ry="14" fill="#3a1f10"/>
+    <!-- body -->
+    <path d="M-50 100 L-55 0 q0 -15 55 -15 q55 0 55 15 L55 100 q-5 18 -55 18 q-50 0 -55 -18 z" fill="url(#giantShirtGP4)"/>
+    <!-- arm reaching with cookies -->
+    <path d="M55 30 q40 20 50 70" stroke="url(#giantShirtGP4)" stroke-width="32" fill="none" stroke-linecap="round"/>
+    <!-- giant hand -->
+    <circle cx="115" cy="100" r="22" fill="url(#giantSkinGP4)"/>
+    <!-- cookies in hand -->
+    <circle cx="108" cy="92" r="10" fill="url(#cookieGrad)"/>
+    <circle cx="105" cy="89" r="1.3" fill="#5d3a1c"/>
+    <circle cx="112" cy="95" r="1.3" fill="#5d3a1c"/>
+    <circle cx="120" cy="100" r="9" fill="url(#cookieGrad)"/>
+    <circle cx="117" cy="98" r="1.3" fill="#5d3a1c"/>
+    <circle cx="123" cy="103" r="1.3" fill="#5d3a1c"/>
+    <!-- head -->
+    <circle cx="0" cy="-50" r="48" fill="url(#giantSkinGP4)"/>
+    <path d="M-42 -60 q-5 -45 42 -45 q47 0 42 45 q-4 -22 -42 -22 q-38 0 -42 22 z" fill="#5d3a1c"/>
+    <ellipse cx="-30" cy="-75" rx="14" ry="10" fill="#7a4a2a"/>
+    <circle cx="-12" cy="-50" r="4" fill="#fff"/><circle cx="-12" cy="-50" r="2.5" fill="#2b2140"/>
+    <circle cx="12" cy="-50" r="4" fill="#fff"/><circle cx="12" cy="-50" r="2.5" fill="#2b2140"/>
+    <ellipse cx="0" cy="-38" rx="4" ry="6" fill="#d89870"/>
+    <path d="M-13 -25 q13 12 26 0" stroke="#7a2a3e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="-26" cy="-32" r="7" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="26" cy="-32" r="7" fill="#ff9bb5" opacity=".55"/>
+  </g>
+
+  <!-- kids on right (smaller, sitting) -->
+  <g filter="url(#softShadowGP4)" transform="translate(420,420)">
+    <!-- boy -->
+    <g transform="translate(-30,0)">
+      <ellipse cx="0" cy="80" rx="25" ry="5" fill="#0006"/>
+      <rect x="-18" y="40" width="36" height="40" rx="6" fill="#ffd84a"/>
+      <circle cx="0" cy="20" r="18" fill="url(#skinGP4)"/>
+      <path d="M-18 18 q-2 -22 18 -22 q20 0 18 22 q-2 -10 -18 -10 q-16 0 -18 10 z" fill="#5d3a1c"/>
+      <circle cx="-5" cy="22" r="2" fill="#2b2140"/>
+      <circle cx="5" cy="22" r="2" fill="#2b2140"/>
+      <path d="M-5 30 q5 4 10 0" stroke="#7a2a3e" stroke-width="1.5" fill="none"/>
+      <circle cx="-10" cy="28" r="3" fill="#ff9bb5" opacity=".55"/>
+      <circle cx="10" cy="28" r="3" fill="#ff9bb5" opacity=".55"/>
+      <!-- raised arm -->
+      <path d="M-18 50 q-15 -5 -20 -25" stroke="url(#skinGP4)" stroke-width="7" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- girl -->
+    <g transform="translate(40,5)">
+      <ellipse cx="0" cy="80" rx="25" ry="5" fill="#0006"/>
+      <path d="M-22 80 L-18 35 q0 -8 18 -8 q18 0 18 8 L22 80 z" fill="#ef4153"/>
+      <circle cx="0" cy="15" r="18" fill="url(#skinGP4)"/>
+      <path d="M-20 13 q-2 -22 20 -22 q22 0 20 22 q-2 -10 -20 -10 q-18 0 -20 10 z" fill="#c08040"/>
+      <ellipse cx="-20" cy="20" rx="5" ry="10" fill="#c08040"/>
+      <ellipse cx="20" cy="20" rx="5" ry="10" fill="#c08040"/>
+      <circle cx="-5" cy="17" r="2" fill="#2b2140"/>
+      <circle cx="5" cy="17" r="2" fill="#2b2140"/>
+      <path d="M-5 25 q5 4 10 0" stroke="#7a2a3e" stroke-width="1.5" fill="none"/>
+      <circle cx="-10" cy="22" r="3" fill="#ff9bb5" opacity=".55"/>
+      <circle cx="10" cy="22" r="3" fill="#ff9bb5" opacity=".55"/>
+      <!-- both arms reaching up -->
+      <path d="M-18 45 q-12 -8 -10 -22" stroke="url(#skinGP4)" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M18 45 q12 -8 10 -22" stroke="url(#skinGP4)" stroke-width="7" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- foreground tufts -->
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+  <g>
+    <g transform="translate(70,540)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(560,560)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+  </g>
+</svg>

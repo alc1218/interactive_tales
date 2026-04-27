@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bgR2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff5d8"/>
+      <stop offset="1" stop-color="#ffd0b0"/>
+    </linearGradient>
+    <radialGradient id="glowR2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff5b3" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#ffd86b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coinR2" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fff5a0"/>
+      <stop offset=".5" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#b88512"/>
+    </radialGradient>
+    <radialGradient id="mouseBodyR2" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#f8e8d0"/>
+      <stop offset="1" stop-color="#c9a878"/>
+    </radialGradient>
+    <radialGradient id="mouseHeadR2" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fbf2dc"/>
+      <stop offset="1" stop-color="#d8b888"/>
+    </radialGradient>
+    <linearGradient id="grassR2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <filter id="softShadowR2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgR2)"/>
+
+  <!-- caption -->
+  <text x="300" y="80" text-anchor="middle" font-family="Georgia" font-size="34" fill="#a3192a" font-weight="bold" font-style="italic">Una moneda!</text>
+
+  <!-- big glow behind coin -->
+  <circle cx="300" cy="300" r="180" fill="url(#glowR2)"/>
+
+  <!-- ground -->
+  <ellipse cx="300" cy="540" rx="600" ry="160" fill="url(#grassR2)"/>
+
+  <!-- Mouse holding coin in front -->
+  <g filter="url(#softShadowR2)" transform="translate(280,360)">
+    <ellipse cx="0" cy="100" rx="42" ry="7" fill="#0006"/>
+    <ellipse cx="0" cy="55" rx="40" ry="44" fill="url(#mouseBodyR2)"/>
+    <ellipse cx="0" cy="65" rx="22" ry="28" fill="#fff5e0" opacity=".7"/>
+    <ellipse cx="-12" cy="95" rx="9" ry="6" fill="#c9a878"/>
+    <ellipse cx="14" cy="95" rx="9" ry="6" fill="#c9a878"/>
+    <circle cx="0" cy="15" r="28" fill="url(#mouseHeadR2)"/>
+    <circle cx="-19" cy="-9" r="13" fill="url(#mouseHeadR2)"/>
+    <circle cx="-19" cy="-9" r="8" fill="#ffb8c8"/>
+    <circle cx="19" cy="-9" r="13" fill="url(#mouseHeadR2)"/>
+    <circle cx="19" cy="-9" r="8" fill="#ffb8c8"/>
+    <!-- happy excited eyes -->
+    <circle cx="-7" cy="13" r="4" fill="#fff"/>
+    <circle cx="-7" cy="13" r="2.4" fill="#2b2140"/>
+    <circle cx="-6" cy="12" r="1" fill="#fff"/>
+    <circle cx="9" cy="13" r="4" fill="#fff"/>
+    <circle cx="9" cy="13" r="2.4" fill="#2b2140"/>
+    <circle cx="10" cy="12" r="1" fill="#fff"/>
+    <ellipse cx="1" cy="22" rx="3" ry="2.4" fill="#e87a98"/>
+    <path d="M-6 28 q7 7 14 0" stroke="#7a2a3e" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <line x1="-30" y1="22" x2="-12" y2="22" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="-30" y1="26" x2="-12" y2="24" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="12" y1="22" x2="30" y2="22" stroke="#7a5a3a" stroke-width="1"/>
+    <line x1="12" y1="24" x2="30" y2="26" stroke="#7a5a3a" stroke-width="1"/>
+    <circle cx="-18" cy="22" r="4" fill="#ff9bb5" opacity=".6"/>
+    <circle cx="20" cy="22" r="4" fill="#ff9bb5" opacity=".6"/>
+    <!-- tail -->
+    <path d="M40 80 q35 -5 45 25" stroke="#c9a878" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- arms reaching up holding coin -->
+    <path d="M-25 35 q-15 -25 -10 -55" stroke="url(#mouseBodyR2)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M25 35 q15 -25 10 -55" stroke="url(#mouseBodyR2)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- big shiny coin held aloft -->
+  <g filter="url(#softShadowR2)" transform="translate(295,260)">
+    <circle r="42" fill="url(#coinR2)"/>
+    <circle r="34" fill="none" stroke="#b88512" stroke-width="2"/>
+    <text y="14" text-anchor="middle" font-family="Georgia" font-size="42" fill="#7a5400" font-weight="bold">€</text>
+    <!-- highlight -->
+    <path d="M-25 -15 q5 -20 25 -22" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#fff5b3">
+    <path d="M180 200 l3 -10 l3 10 l10 3 l-10 3 l-3 10 l-3 -10 l-10 -3 z"/>
+    <path d="M420 220 l2 -8 l2 8 l8 2 l-8 2 l-2 8 l-2 -8 l-8 -2 z"/>
+    <path d="M390 320 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z"/>
+    <path d="M200 350 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z"/>
+    <path d="M460 280 l1.5 -5 l1.5 5 l5 1.5 l-5 1.5 l-1.5 5 l-1.5 -5 l-5 -1.5 z"/>
+  </g>
+
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#fcd87a"/>
+  <circle cx="510" cy="100" r="240" fill="#ff8a5b"/>
+  <g fill="#ffe17a">
+    <polygon points="510,100 480,-20 540,-20" opacity=".7"/>
+    <polygon points="510,100 380,40 410,-10" opacity=".5"/>
+    <polygon points="510,100 640,40 610,-10" opacity=".5"/>
+  </g>
+
+  <!-- hills -->
+  <path d="M0 380 Q200 280 380 350 T 600 320 V 600 H 0 Z" fill="#3c8a8d"/>
+  <path d="M0 410 Q150 340 320 400 T 600 380 V 600 H 0 Z" fill="#2a6b6e"/>
+  <path d="M0 460 Q200 410 380 460 T 600 440 V 600 H 0 Z" fill="#1f4f52"/>
+  <path d="M0 510 Q300 480 600 510 V 600 H 0 Z" fill="#173b3e"/>
+
+  <!-- trees -->
+  <g>
+    <circle cx="55" cy="375" r="38" fill="#d6f0a8"/>
+    <rect x="51" y="375" width="8" height="22" fill="#5d3a20"/>
+    <circle cx="555" cy="385" r="35" fill="#d6f0a8"/>
+    <rect x="551" y="385" width="8" height="22" fill="#5d3a20"/>
+  </g>
+
+  <!-- straw house -->
+  <!-- long shadow of house -->
+  <g opacity=".25">
+    <polygon points="180,295 420,295 420,475 360,540 200,540" fill="#173b3e" transform="translate(45,15) skewX(-12)"/>
+  </g>
+  <!-- roof -->
+  <polygon points="180,295 420,295 300,160" fill="#e0a532"/>
+  <polygon points="180,295 300,295 300,160" fill="#a87810"/>
+  <!-- straw streaks -->
+  <g stroke="#a87810" stroke-width="3" opacity=".55" stroke-linecap="round">
+    <line x1="220" y1="290" x2="240" y2="220"/>
+    <line x1="270" y1="290" x2="290" y2="200"/>
+    <line x1="320" y1="290" x2="310" y2="190"/>
+    <line x1="370" y1="290" x2="350" y2="220"/>
+  </g>
+  <!-- walls -->
+  <rect x="195" y="295" width="210" height="180" fill="#fbd96a"/>
+  <rect x="195" y="295" width="105" height="180" fill="#cf9929" opacity=".55"/>
+  <!-- straw lines -->
+  <g stroke="#a87810" stroke-width="2" opacity=".55">
+    <line x1="200" y1="320" x2="400" y2="320"/>
+    <line x1="200" y1="350" x2="400" y2="350"/>
+    <line x1="200" y1="380" x2="400" y2="380"/>
+    <line x1="200" y1="410" x2="400" y2="410"/>
+    <line x1="200" y1="440" x2="400" y2="440"/>
+  </g>
+  <!-- door (modern arch) -->
+  <path d="M270 475 L270 380 q0 -25 30 -25 q30 0 30 25 L330 475 z" fill="#3d2410"/>
+  <path d="M270 475 L270 380 q0 -25 30 -25 L300 475 z" fill="#1d1408" opacity=".4"/>
+  <circle cx="318" cy="425" r="3.5" fill="#fbd96a"/>
+  <!-- windows -->
+  <rect x="220" y="320" width="35" height="35" fill="#cfeaff"/>
+  <rect x="220" y="320" width="35" height="35" fill="none" stroke="#3d2410" stroke-width="3"/>
+  <rect x="220" y="320" width="17" height="35" fill="#a8cbe0"/>
+  <rect x="345" y="320" width="35" height="35" fill="#cfeaff"/>
+  <rect x="345" y="320" width="35" height="35" fill="none" stroke="#3d2410" stroke-width="3"/>
+  <rect x="345" y="320" width="17" height="35" fill="#a8cbe0"/>
+
+  <!-- piglet builder w/ pitchfork -->
+  <g transform="translate(450,440)">
+    <rect x="-4" y="-50" width="3" height="50" fill="#5d3a20"/>
+    <line x1="-10" y1="-48" x2="6" y2="-48" stroke="#5d3a20" stroke-width="2"/>
+    <line x1="-10" y1="-48" x2="-12" y2="-58" stroke="#5d3a20" stroke-width="2"/>
+    <line x1="-2" y1="-48" x2="-3" y2="-58" stroke="#5d3a20" stroke-width="2"/>
+    <line x1="6" y1="-48" x2="6" y2="-58" stroke="#5d3a20" stroke-width="2"/>
+    <ellipse cx="0" cy="20" rx="22" ry="20" fill="#ffadc1"/>
+    <circle cx="0" cy="-5" r="18" fill="#ffbfd0"/>
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#ff5d80"/>
+    <circle cx="-2" cy="0" r="1.2" fill="#5a1d2e"/>
+    <circle cx="2" cy="0" r="1.2" fill="#5a1d2e"/>
+    <circle cx="-6" cy="-8" r="1.5" fill="#1f1334"/>
+    <circle cx="6" cy="-8" r="1.5" fill="#1f1334"/>
+    <path d="M-5 9 q5 4 10 0" stroke="#5a1d2e" stroke-width="1.4" fill="none"/>
+  </g>
+
+  <!-- abstract cloud -->
+  <g fill="#fff" opacity=".85">
+    <rect x="80" y="80" width="120" height="22" rx="11"/>
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyGP1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb8e6"/>
+      <stop offset=".55" stop-color="#bfe1f5"/>
+      <stop offset="1" stop-color="#f3ebbf"/>
+    </linearGradient>
+    <linearGradient id="grassGP1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="sunGP1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pineFol" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5ea862"/>
+      <stop offset="1" stop-color="#1f5230"/>
+    </linearGradient>
+    <linearGradient id="pineTrunk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d4f2a"/>
+      <stop offset="1" stop-color="#3d2010"/>
+    </linearGradient>
+    <radialGradient id="cloudGP1" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <filter id="softShadowGP1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyGP1)"/>
+
+  <!-- sun -->
+  <circle cx="120" cy="120" r="170" fill="url(#sunGP1)" opacity=".7"/>
+  <circle cx="120" cy="120" r="42" fill="#fff5b3"/>
+  <circle cx="120" cy="120" r="32" fill="#ffd86b"/>
+
+  <!-- mountain backdrop -->
+  <path d="M-20 360 L60 250 L140 320 L240 200 L340 280 L440 180 L520 270 L620 220 L620 420 L-20 420 Z" fill="#7392b8" opacity=".55"/>
+  <path d="M-20 400 L100 320 L220 380 L320 290 L420 360 L530 290 L620 340 L620 430 L-20 430 Z" fill="#5c7aa1" opacity=".5"/>
+  <!-- snow caps -->
+  <path d="M232 210 L240 200 L252 215 Z" fill="#f3f7fb"/>
+  <path d="M432 190 L440 180 L452 195 Z" fill="#f3f7fb"/>
+  <path d="M52 260 L60 250 L70 264 Z" fill="#f3f7fb" opacity=".8"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowGP1)">
+    <ellipse cx="380" cy="100" rx="55" ry="20" fill="url(#cloudGP1)"/>
+    <ellipse cx="420" cy="95" rx="38" ry="16" fill="url(#cloudGP1)"/>
+    <ellipse cx="500" cy="170" rx="42" ry="16" fill="url(#cloudGP1)"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="600" ry="180" fill="url(#grassGP1)"/>
+
+  <!-- distant pines -->
+  <g opacity=".7">
+    <polygon points="40,440 60,360 80,440" fill="#3a7140"/>
+    <polygon points="540,430 555,360 575,430" fill="#3a7140"/>
+    <polygon points="510,440 525,380 540,440" fill="#4c8c52"/>
+  </g>
+
+  <!-- big pine center -->
+  <g filter="url(#softShadowGP1)">
+    <rect x="282" y="430" width="36" height="120" fill="url(#pineTrunk)"/>
+    <!-- trunk lines -->
+    <g stroke="#3d2010" stroke-width="1.5" opacity=".6">
+      <line x1="290" y1="440" x2="290" y2="540"/>
+      <line x1="305" y1="445" x2="305" y2="535"/>
+    </g>
+    <!-- triangular foliage layers -->
+    <polygon points="300,80 220,210 380,210" fill="url(#pineFol)"/>
+    <polygon points="300,150 200,290 400,290" fill="url(#pineFol)"/>
+    <polygon points="300,230 180,380 420,380" fill="url(#pineFol)"/>
+    <polygon points="300,310 160,460 440,460" fill="url(#pineFol)"/>
+    <!-- highlights -->
+    <g fill="#7ec480" opacity=".55">
+      <polygon points="300,85 270,150 330,150"/>
+      <polygon points="300,160 260,225 340,225"/>
+      <polygon points="300,240 240,310 360,310"/>
+      <polygon points="300,320 220,390 380,390"/>
+    </g>
+    <!-- tip highlight -->
+    <circle cx="300" cy="80" r="6" fill="#a8e090"/>
+  </g>
+
+  <!-- foreground tufts -->
+  <g fill="#2e6e3a" opacity=".6">
+    <path d="M0 580 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 580 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+  <g>
+    <g transform="translate(80,540)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(180,560)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(420,545)"><circle r="4" fill="#cfe2ff"/><circle r="1.6" fill="#5683b8"/></g>
+    <g transform="translate(500,560)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+  </g>
+</svg>

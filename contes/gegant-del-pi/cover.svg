@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe0ff"/><stop offset="1" stop-color="#e9f7d3"/></linearGradient></defs>
+  <rect width="300" height="400" fill="url(#sky)"/>
+  <!-- pine tree -->
+  <g transform="translate(165,40)">
+    <polygon points="0,50 30,10 60,50" fill="#2f7a44"/>
+    <polygon points="-5,100 30,40 65,100" fill="#3a8f53"/>
+    <polygon points="-15,160 30,80 75,160" fill="#4aa568"/>
+    <rect x="22" y="160" width="16" height="30" fill="#5a3320"/>
+  </g>
+  <!-- ground -->
+  <ellipse cx="150" cy="365" rx="260" ry="45" fill="#8cd2a0"/>
+  <!-- giant -->
+  <g transform="translate(40,180)">
+    <rect x="30" y="60" width="90" height="120" fill="#ff7a59" rx="10"/>
+    <circle cx="75" cy="45" r="42" fill="#ffd9c0"/>
+    <path d="M40 15 Q75 -10 110 15 L108 45 Q75 52 42 45 Z" fill="#6b4423"/>
+    <circle cx="62" cy="45" r="2.5" fill="#2b2140"/><circle cx="88" cy="45" r="2.5" fill="#2b2140"/>
+    <path d="M60 62 Q75 70 90 62" stroke="#2b2140" stroke-width="2" fill="none"/>
+    <!-- arms -->
+    <rect x="10" y="70" width="22" height="70" fill="#ff7a59" rx="6"/>
+    <rect x="118" y="70" width="22" height="70" fill="#ff7a59" rx="6"/>
+    <circle cx="21" cy="145" r="12" fill="#ffd9c0"/><circle cx="129" cy="145" r="12" fill="#ffd9c0"/>
+    <!-- legs -->
+    <rect x="40" y="180" width="25" height="40" fill="#3455a3" rx="4"/>
+    <rect x="85" y="180" width="25" height="40" fill="#3455a3" rx="4"/>
+  </g>
+  <text x="150" y="30" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="26" font-weight="800" fill="#2b2140">El Gegant del Pi</text>
+</svg>

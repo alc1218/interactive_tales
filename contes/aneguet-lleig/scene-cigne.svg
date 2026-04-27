@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#cfe6ff"/>
+  <rect x="0" y="180" width="300" height="120" fill="#6a9bff"/>
+  <g stroke="#a5cfff" stroke-width="2" fill="none" opacity=".6"><path d="M10 210 Q40 205 70 210 Q100 215 130 210 Q160 205 190 210 Q220 215 250 210 Q280 205 295 210"/></g>
+  <!-- Three swans -->
+  <g transform="translate(20,110)">
+    <ellipse cx="50" cy="100" rx="45" ry="22" fill="#ffffff"/>
+    <path d="M85 100 Q100 65 90 50 Q82 42 78 55 Q82 65 80 85 Q80 95 85 100 Z" fill="#ffffff"/>
+    <polygon points="78,52 88,52 83,58" fill="#ffb703"/>
+    <circle cx="80" cy="55" r="1.2" fill="#2b2140"/>
+  </g>
+  <g transform="translate(115,100)">
+    <ellipse cx="50" cy="100" rx="50" ry="25" fill="#ffffff"/>
+    <path d="M88 100 Q108 55 95 38 Q83 28 78 45 Q85 58 85 85 Q85 95 90 100 Z" fill="#ffffff"/>
+    <polygon points="80,40 92,40 86,48" fill="#ffb703"/>
+    <circle cx="82" cy="44" r="1.5" fill="#2b2140"/>
+  </g>
+  <g transform="translate(205,110)">
+    <ellipse cx="50" cy="100" rx="45" ry="22" fill="#ffffff"/>
+    <path d="M85 100 Q100 65 90 50 Q82 42 78 55 Q82 65 80 85 Q80 95 85 100 Z" fill="#ffffff"/>
+    <polygon points="78,52 88,52 83,58" fill="#ffb703"/>
+    <circle cx="80" cy="55" r="1.2" fill="#2b2140"/>
+  </g>
+  <text x="150" y="40" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="18" font-weight="800" fill="#2b2140">Soc un cigne!</text>
+</svg>

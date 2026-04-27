@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#ffeedc"/>
+  <rect x="0" y="220" width="300" height="80" fill="#b8855e"/>
+  <!-- bed -->
+  <rect x="50" y="140" width="210" height="90" rx="10" fill="#fff4e0" stroke="#7a431d" stroke-width="3"/>
+  <rect x="60" y="150" width="80" height="70" rx="8" fill="#ffd2d2"/>
+  <!-- Wolf disguised -->
+  <g transform="translate(140,100)">
+    <circle cx="50" cy="50" r="35" fill="#8f8a9a"/>
+    <ellipse cx="50" cy="55" rx="15" ry="10" fill="#6b6875"/>
+    <circle cx="42" cy="45" r="2" fill="#2b2140"/><circle cx="58" cy="45" r="2" fill="#2b2140"/>
+    <path d="M42 62 Q50 70 58 62" stroke="#2b2140" stroke-width="1.5" fill="none"/>
+    <!-- bonnet -->
+    <path d="M10 30 Q50 0 90 30 L90 50 Q50 55 10 50 Z" fill="#ffd2e5"/>
+    <circle cx="30" cy="25" r="3" fill="#d93048"/>
+    <circle cx="70" cy="25" r="3" fill="#d93048"/>
+  </g>
+  <!-- blanket -->
+  <rect x="50" y="180" width="210" height="50" fill="#a8d8ff" rx="6"/>
+  <g stroke="#6a9bff" stroke-width="2" opacity=".8">
+    <line x1="60" y1="195" x2="250" y2="195"/>
+    <line x1="60" y1="210" x2="250" y2="210"/>
+  </g>
+</svg>

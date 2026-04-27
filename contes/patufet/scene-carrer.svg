@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#d4efff"/>
+  <rect x="0" y="220" width="300" height="80" fill="#d6b27a"/>
+  <!-- houses -->
+  <g>
+    <rect x="20" y="130" width="60" height="90" fill="#f2c880"/>
+    <polygon points="20,130 80,130 50,100" fill="#b0522c"/>
+    <rect x="42" y="170" width="16" height="50" fill="#7a431d"/>
+    <rect x="220" y="140" width="60" height="80" fill="#c5e3ff"/>
+    <polygon points="220,140 280,140 250,115" fill="#6a9bff"/>
+    <rect x="242" y="175" width="16" height="45" fill="#3455a3"/>
+  </g>
+  <!-- Patufet walking -->
+  <g transform="translate(130,245)">
+    <rect x="6" y="15" width="16" height="24" fill="#d93048" rx="2"/>
+    <circle cx="14" cy="8" r="8" fill="#ffd9c0"/>
+    <polygon points="6,5 10,-5 16,5 22,-5 22,10" fill="#2b2140"/>
+    <polygon points="0,5 6,2 6,10" fill="#d93048"/>
+    <circle cx="11" cy="8" r="0.8" fill="#2b2140"/><circle cx="17" cy="8" r="0.8" fill="#2b2140"/>
+    <path d="M11 12 Q14 15 17 12" stroke="#2b2140" stroke-width="0.8" fill="none"/>
+    <rect x="7" y="39" width="4" height="9" fill="#3455a3"/>
+    <rect x="17" y="39" width="4" height="9" fill="#3455a3"/>
+  </g>
+  <!-- music notes -->
+  <g fill="#ff5a7e"><text x="170" y="240" font-size="16">♪</text><text x="180" y="230" font-size="14">♫</text></g>
+</svg>

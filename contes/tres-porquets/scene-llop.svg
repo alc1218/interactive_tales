@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fff2e8"/>
+  <ellipse cx="150" cy="250" rx="220" ry="45" fill="#8cd2a0"/>
+  <!-- wolf -->
+  <g transform="translate(40,120)">
+    <ellipse cx="70" cy="90" rx="60" ry="40" fill="#7e7a8a"/>
+    <circle cx="120" cy="60" r="35" fill="#8f8a9a"/>
+    <polygon points="100,35 110,15 115,35" fill="#8f8a9a"/>
+    <polygon points="135,35 130,15 140,35" fill="#8f8a9a"/>
+    <circle cx="115" cy="55" r="2.5" fill="#2b2140"/>
+    <circle cx="130" cy="55" r="2.5" fill="#2b2140"/>
+    <ellipse cx="148" cy="70" rx="10" ry="6" fill="#6b6875"/>
+    <circle cx="152" cy="66" r="1.5" fill="#2b2140"/>
+    <path d="M142 74 Q148 80 154 74" stroke="#2b2140" stroke-width="1.5" fill="none"/>
+  </g>
+  <!-- wind lines / blowing -->
+  <g stroke="#6a9bff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8">
+    <path d="M210 120 Q240 130 270 120"/>
+    <path d="M210 140 Q240 150 270 140"/>
+    <path d="M210 160 Q240 170 270 160"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fff2e8"/>
+  <g fill="#c9a26b" stroke="#8a5a2a" stroke-width="2">
+    <rect x="0" y="250" width="300" height="50"/>
+    <rect x="20" y="220" width="260" height="30"/>
+    <rect x="40" y="190" width="220" height="30"/>
+  </g>
+  <!-- mouse -->
+  <g transform="translate(80,120)">
+    <ellipse cx="50" cy="70" rx="40" ry="32" fill="#d8c4a4"/>
+    <circle cx="85" cy="50" r="24" fill="#e8d4b4"/>
+    <circle cx="78" cy="32" r="10" fill="#d8c4a4"/><circle cx="95" cy="32" r="10" fill="#d8c4a4"/>
+    <circle cx="90" cy="52" r="1.8" fill="#2b2140"/>
+    <ellipse cx="98" cy="58" rx="4" ry="2.5" fill="#ff8fb0"/>
+    <path d="M85 65 Q90 70 95 65" stroke="#2b2140" stroke-width="1" fill="none"/>
+  </g>
+  <!-- broom -->
+  <g transform="translate(150,100)">
+    <rect x="0" y="0" width="5" height="80" fill="#8a5a2a"/>
+    <polygon points="-6,80 11,80 15,100 -10,100" fill="#f2c14e"/>
+  </g>
+  <!-- dust -->
+  <g fill="#d8c4a4" opacity=".6"><circle cx="195" cy="215" r="3"/><circle cx="210" cy="220" r="4"/><circle cx="225" cy="215" r="2.5"/></g>
+</svg>

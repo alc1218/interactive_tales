@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="wallV4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8d4a8"/>
+      <stop offset="1" stop-color="#d8a868"/>
+    </linearGradient>
+    <linearGradient id="floorV4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a4754a"/>
+      <stop offset="1" stop-color="#6e4a26"/>
+    </linearGradient>
+    <linearGradient id="princeCoatV4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#7a1a2a"/>
+    </linearGradient>
+    <linearGradient id="ballgownV4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8f0"/>
+      <stop offset="1" stop-color="#3a6acb"/>
+    </linearGradient>
+    <linearGradient id="slipperV4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#a8d8f0"/>
+    </linearGradient>
+    <radialGradient id="skinV4" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <radialGradient id="warmGlowV4" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff5b3" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff5b3" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadowV4" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#wallV4)"/>
+  <rect y="450" width="600" height="150" fill="url(#floorV4)"/>
+  <g stroke="#5b3917" stroke-width="1" opacity=".4">
+    <line x1="0" y1="490" x2="600" y2="490"/>
+    <line x1="0" y1="540" x2="600" y2="540"/>
+  </g>
+
+  <!-- soft warm glow window -->
+  <circle cx="300" cy="200" r="160" fill="url(#warmGlowV4)"/>
+
+  <!-- decorative -->
+  <g opacity=".4">
+    <rect x="40" y="80" width="60" height="100" fill="#c8e8f5"/>
+    <line x1="70" y1="80" x2="70" y2="180" stroke="#7a4d22" stroke-width="2"/>
+    <line x1="40" y1="130" x2="100" y2="130" stroke="#7a4d22" stroke-width="2"/>
+  </g>
+
+  <!-- Prince kneeling left -->
+  <g filter="url(#softShadowV4)" transform="translate(170,360)">
+    <ellipse cx="0" cy="120" rx="60" ry="9" fill="#0006"/>
+    <!-- kneeling leg -->
+    <rect x="-40" y="60" width="80" height="22" fill="#1a1a2a"/>
+    <rect x="-50" y="80" width="40" height="40" fill="#1a1a2a"/>
+    <!-- back leg -->
+    <rect x="0" y="40" width="22" height="80" fill="#1a1a2a"/>
+    <!-- coat -->
+    <path d="M-35 50 L-28 -10 q0 -5 28 -5 q28 0 28 5 L35 50 z" fill="url(#princeCoatV4)"/>
+    <!-- lapel -->
+    <path d="M-28 -10 L-14 30 L-14 50 L-28 50 z" fill="#1a1a2a"/>
+    <path d="M28 -10 L14 30 L14 50 L28 50 z" fill="#1a1a2a"/>
+    <!-- buttons -->
+    <circle cx="0" cy="10" r="2" fill="#ffd86b"/>
+    <circle cx="0" cy="25" r="2" fill="#ffd86b"/>
+    <circle cx="0" cy="40" r="2" fill="#ffd86b"/>
+    <!-- arms holding slipper -->
+    <path d="M-28 -5 q-15 5 -10 30" stroke="url(#skinV4)" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M28 -5 q20 8 35 30" stroke="url(#skinV4)" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="0" cy="-32" r="22" fill="url(#skinV4)"/>
+    <path d="M-22 -42 q5 -22 22 -22 q17 0 22 22 q-3 -7 -22 -7 q-19 0 -22 7 z" fill="#5d3a1a"/>
+    <!-- crown -->
+    <path d="M-12 -52 L-8 -58 L-4 -52 L0 -58 L4 -52 L8 -58 L12 -52 z" fill="#ffd86b"/>
+    <circle cx="-7" cy="-30" r="2.5" fill="#fff"/>
+    <circle cx="-7" cy="-30" r="1.4" fill="#2b2140"/>
+    <circle cx="7" cy="-30" r="2.5" fill="#fff"/>
+    <circle cx="7" cy="-30" r="1.4" fill="#2b2140"/>
+    <path d="M-4 -20 q4 4 8 0" stroke="#7a2a3e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="-13" cy="-22" r="3" fill="#ff9bb5" opacity=".5"/>
+    <circle cx="13" cy="-22" r="3" fill="#ff9bb5" opacity=".5"/>
+  </g>
+
+  <!-- Glass slipper held in prince's hand -->
+  <g filter="url(#softShadowV4)" transform="translate(220,395)">
+    <path d="M0 0 L40 -2 q8 0 10 6 q2 8 -10 12 q-15 4 -30 4 q-12 0 -12 -10 q0 -10 2 -10 z" fill="url(#slipperV4)" opacity=".85" stroke="#5683b8" stroke-width="1"/>
+    <path d="M5 -1 q15 -2 25 0" stroke="#fff" stroke-width="1.5" fill="none" opacity=".7"/>
+    <!-- heel -->
+    <path d="M40 4 L48 16 L42 16 z" fill="#5683b8" opacity=".7"/>
+  </g>
+
+  <!-- Cinderella's foot/leg coming from right -->
+  <g filter="url(#softShadowV4)" transform="translate(450,260)">
+    <!-- skirt extending in -->
+    <path d="M150 0 L100 200 q-20 5 -50 0 q-30 5 -50 0 q5 -100 30 -180 q5 -25 50 -25 z" fill="url(#ballgownV4)"/>
+    <!-- leg -->
+    <path d="M30 165 q5 25 -5 50" stroke="url(#skinV4)" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <!-- slipper on foot -->
+    <g transform="translate(15,220)">
+      <path d="M0 0 L-40 -2 q-8 0 -10 6 q-2 8 10 12 q15 4 30 4 q12 0 12 -10 q0 -10 -2 -10 z" fill="url(#slipperV4)" opacity=".85" stroke="#5683b8" stroke-width="1"/>
+      <path d="M-5 -1 q-15 -2 -25 0" stroke="#fff" stroke-width="1.5" fill="none" opacity=".7"/>
+      <path d="M-40 4 L-48 16 L-42 16 z" fill="#5683b8" opacity=".7"/>
+    </g>
+    <!-- skirt highlight -->
+    <path d="M50 30 L40 180" stroke="#fff" stroke-width="1.5" fill="none" opacity=".4"/>
+  </g>
+
+  <!-- sparkle -->
+  <g fill="#fff5b3">
+    <path d="M260 380 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z"/>
+    <path d="M380 470 l2 -7 l2 7 l7 2 l-7 2 l-2 7 l-2 -7 l-7 -2 z"/>
+  </g>
+</svg>

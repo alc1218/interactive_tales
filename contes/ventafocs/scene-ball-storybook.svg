@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="bgV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd0e0"/>
+      <stop offset="1" stop-color="#f8b8c8"/>
+    </linearGradient>
+    <linearGradient id="floorV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c89060"/>
+      <stop offset="1" stop-color="#7a4d22"/>
+    </linearGradient>
+    <linearGradient id="ballgownV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8f0"/>
+      <stop offset="1" stop-color="#3a6acb"/>
+    </linearGradient>
+    <linearGradient id="princeCoatV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#7a1a2a"/>
+    </linearGradient>
+    <radialGradient id="skinV3" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <radialGradient id="candleV3" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff5b3"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadowV3" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgV3)"/>
+
+  <!-- ballroom floor -->
+  <rect y="470" width="600" height="130" fill="url(#floorV3)"/>
+  <g stroke="#5b3917" stroke-width="1" opacity=".4">
+    <line x1="0" y1="500" x2="600" y2="500"/>
+    <line x1="0" y1="540" x2="600" y2="540"/>
+    <line x1="0" y1="580" x2="600" y2="580"/>
+  </g>
+
+  <!-- decorative columns -->
+  <g filter="url(#softShadowV3)" opacity=".7">
+    <rect x="20" y="100" width="30" height="370" fill="#f0d4a0"/>
+    <rect x="10" y="100" width="50" height="20" fill="#d8a060"/>
+    <rect x="10" y="450" width="50" height="20" fill="#d8a060"/>
+    <rect x="550" y="100" width="30" height="370" fill="#f0d4a0"/>
+    <rect x="540" y="100" width="50" height="20" fill="#d8a060"/>
+    <rect x="540" y="450" width="50" height="20" fill="#d8a060"/>
+  </g>
+
+  <!-- chandelier -->
+  <g filter="url(#softShadowV3)" transform="translate(300,140)">
+    <line x1="0" y1="-60" x2="0" y2="-10" stroke="#7a5400" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="80" ry="14" fill="#ffd86b"/>
+    <ellipse cx="0" cy="0" rx="60" ry="8" fill="#fff5b3"/>
+    <!-- candles -->
+    <g>
+      <rect x="-65" y="-15" width="6" height="14" fill="#fff5d0"/>
+      <ellipse cx="-62" cy="-18" rx="3" ry="6" fill="#ffae3b"/>
+      <ellipse cx="-62" cy="-18" rx="6" ry="10" fill="url(#candleV3)" opacity=".7"/>
+      <rect x="-25" y="-15" width="6" height="14" fill="#fff5d0"/>
+      <ellipse cx="-22" cy="-18" rx="3" ry="6" fill="#ffae3b"/>
+      <ellipse cx="-22" cy="-18" rx="6" ry="10" fill="url(#candleV3)" opacity=".7"/>
+      <rect x="20" y="-15" width="6" height="14" fill="#fff5d0"/>
+      <ellipse cx="23" cy="-18" rx="3" ry="6" fill="#ffae3b"/>
+      <ellipse cx="23" cy="-18" rx="6" ry="10" fill="url(#candleV3)" opacity=".7"/>
+      <rect x="60" y="-15" width="6" height="14" fill="#fff5d0"/>
+      <ellipse cx="63" cy="-18" rx="3" ry="6" fill="#ffae3b"/>
+      <ellipse cx="63" cy="-18" rx="6" ry="10" fill="url(#candleV3)" opacity=".7"/>
+    </g>
+    <!-- droplets -->
+    <ellipse cx="-40" cy="10" rx="4" ry="6" fill="#fff5b3"/>
+    <ellipse cx="0" cy="14" rx="5" ry="7" fill="#fff5b3"/>
+    <ellipse cx="40" cy="10" rx="4" ry="6" fill="#fff5b3"/>
+  </g>
+
+  <!-- Cinderella in blue ballgown (left dancer) -->
+  <g filter="url(#softShadowV3)" transform="translate(240,330)">
+    <ellipse cx="0" cy="170" rx="80" ry="10" fill="#0006"/>
+    <!-- big flowing skirt -->
+    <path d="M-80 165 L-40 50 q0 -5 40 -5 q40 0 40 5 L80 165 q-40 8 -80 0 q-40 8 -80 0 z" fill="url(#ballgownV3)"/>
+    <!-- bodice -->
+    <path d="M-22 50 L-18 0 q5 -5 18 -5 q13 0 18 5 L22 50 z" fill="#5d8acb"/>
+    <!-- arm reaching to prince -->
+    <path d="M22 5 q30 0 50 15" stroke="url(#skinV3)" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M-18 5 q-15 8 -18 25" stroke="url(#skinV3)" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="0" cy="-25" r="26" fill="url(#skinV3)"/>
+    <!-- blonde updo -->
+    <path d="M-26 -36 q5 -25 26 -25 q21 0 26 25 q-5 -8 -26 -8 q-21 0 -26 8 z" fill="#e8c068"/>
+    <circle cx="0" cy="-58" r="8" fill="#e8c068"/>
+    <!-- tiara -->
+    <path d="M-15 -55 L-5 -62 L0 -55 L5 -62 L15 -55 z" fill="#ffd86b"/>
+    <!-- face -->
+    <circle cx="-7" cy="-23" r="2.5" fill="#fff"/>
+    <circle cx="-7" cy="-23" r="1.4" fill="#2b6abd"/>
+    <circle cx="7" cy="-23" r="2.5" fill="#fff"/>
+    <circle cx="7" cy="-23" r="1.4" fill="#2b6abd"/>
+    <path d="M-4 -12 q4 4 8 0" stroke="#7a2a3e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <circle cx="-13" cy="-15" r="3.5" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="13" cy="-15" r="3.5" fill="#ff9bb5" opacity=".55"/>
+  </g>
+
+  <!-- Prince (right) -->
+  <g filter="url(#softShadowV3)" transform="translate(370,330)">
+    <ellipse cx="0" cy="170" rx="40" ry="8" fill="#0006"/>
+    <!-- pants -->
+    <rect x="-18" y="80" width="36" height="90" fill="#1a1a2a"/>
+    <!-- coat -->
+    <path d="M-32 80 L-26 0 q0 -5 26 -5 q26 0 26 5 L32 80 z" fill="url(#princeCoatV3)"/>
+    <!-- coat lapel/black trim -->
+    <path d="M-26 0 L-10 30 L-10 60 L-26 80 z" fill="#1a1a2a"/>
+    <path d="M26 0 L10 30 L10 60 L26 80 z" fill="#1a1a2a"/>
+    <!-- gold buttons -->
+    <circle cx="0" cy="20" r="2.5" fill="#ffd86b"/>
+    <circle cx="0" cy="40" r="2.5" fill="#ffd86b"/>
+    <circle cx="0" cy="60" r="2.5" fill="#ffd86b"/>
+    <!-- arm reaching out -->
+    <path d="M-26 5 q-30 0 -50 15" stroke="url(#skinV3)" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M26 5 q15 8 18 25" stroke="url(#skinV3)" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="0" cy="-25" r="24" fill="url(#skinV3)"/>
+    <!-- brown hair -->
+    <path d="M-24 -36 q5 -22 24 -22 q19 0 24 22 q-3 -7 -24 -7 q-21 0 -24 7 z" fill="#5d3a1a"/>
+    <!-- crown -->
+    <path d="M-12 -45 L-8 -52 L-4 -45 L0 -52 L4 -45 L8 -52 L12 -45 z" fill="#ffd86b"/>
+    <circle cx="-8" cy="-50" r="1.5" fill="#ef4153"/>
+    <circle cx="0" cy="-50" r="1.5" fill="#5d8acb"/>
+    <circle cx="8" cy="-50" r="1.5" fill="#ef4153"/>
+    <circle cx="-7" cy="-23" r="2.5" fill="#fff"/>
+    <circle cx="-7" cy="-23" r="1.4" fill="#2b2140"/>
+    <circle cx="7" cy="-23" r="2.5" fill="#fff"/>
+    <circle cx="7" cy="-23" r="1.4" fill="#2b2140"/>
+    <path d="M-4 -12 q4 4 8 0" stroke="#7a2a3e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <circle cx="-13" cy="-15" r="3.5" fill="#ff9bb5" opacity=".5"/>
+    <circle cx="13" cy="-15" r="3.5" fill="#ff9bb5" opacity=".5"/>
+  </g>
+
+  <!-- music notes -->
+  <g fill="#a3192a" font-family="Georgia">
+    <text x="100" y="200" font-size="34">♪</text>
+    <text x="490" y="240" font-size="28">♫</text>
+    <text x="80" y="350" font-size="26">♫</text>
+    <text x="510" y="380" font-size="30">♪</text>
+  </g>
+</svg>

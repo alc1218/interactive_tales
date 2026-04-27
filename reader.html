@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conte — Biblioteca interactiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <a href="index.html" class="back-link" data-i18n="back">← Torna a la biblioteca</a>
+    <div class="back-link" id="tale-label" style="cursor:default;" data-i18n="label_tale">📖 Conte</div>
+    <div class="header-controls"></div>
+  </div>
+
+  <main class="reader">
+    <div class="config-panel" id="config-panel">
+      <h2 data-i18n="personalize">Personalitza el teu conte</h2>
+      <div class="config-grid" id="character-fields"></div>
+
+      <div style="margin-top:16px;">
+        <div class="field" style="margin-bottom:6px;">
+          <label data-i18n="educational_theme">Tema educatiu del conte</label>
+        </div>
+        <div class="twist-row" id="twist-row">
+          <button class="twist-chip" data-twist="numbers" data-i18n="twist_numbers">🔢 Nombres</button>
+          <button class="twist-chip" data-twist="colors" data-i18n="twist_colors">🎨 Colors</button>
+          <button class="twist-chip" data-twist="shapes" data-i18n="twist_shapes">🔺 Formes</button>
+          <button class="twist-chip" data-twist="objects" data-i18n="twist_objects">🧺 Objectes</button>
+        </div>
+      </div>
+
+      <div class="age-row" style="margin-top:18px;">
+        <div class="field" style="margin-bottom:6px;">
+          <label>
+            <span data-i18n="age_label">Edat del lector</span>:
+            <strong id="age-value">7</strong> <span data-i18n="age_years">anys</span>
+            <span class="age-band" id="age-band" data-i18n="age_band_mid">(Mitjans)</span>
+          </label>
+        </div>
+        <input type="range" id="age-slider" min="3" max="12" step="1" value="7" />
+        <div class="age-ticks">
+          <span>3</span><span>5</span><span>7</span><span>9</span><span>12</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" id="start-btn" data-i18n="btn_start">▶ Comença el conte</button>
+        <button class="btn btn-ghost" id="reset-btn" data-i18n="btn_reset">↺ Restaura els noms</button>
+      </div>
+    </div>
+
+    <h1 class="story-title" id="story-title" style="display:none;"></h1>
+
+    <div class="story-toolbar" id="story-toolbar" style="display:none;">
+      <button class="btn btn-primary" id="play-all-btn">
+        <span class="play-ico">▶</span> <span data-i18n="play_all">Llegir tot el conte</span>
+      </button>
+      <button class="btn btn-ghost" id="stop-btn" disabled>
+        <span>■</span> <span data-i18n="stop_audio">Atura</span>
+      </button>
+      <span class="audio-status" id="audio-status"></span>
+    </div>
+
+    <div id="scenes"></div>
+
+    <div class="actions" id="post-actions" style="display:none; justify-content:center;">
+      <button class="btn btn-ghost" id="reconfigure-btn" data-i18n="btn_reconfigure">⚙ Torna a personalitzar</button>
+      <a href="index.html" class="btn btn-primary" data-i18n="btn_another">📚 Tria un altre conte</a>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-i18n="footer_reader">
+    Fet amb ♥ per llegir plegats.
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="reader.js"></script>
+</body>
+</html>

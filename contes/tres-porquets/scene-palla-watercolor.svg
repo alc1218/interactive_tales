@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <filter id="paperWP" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" seed="5"/>
+      <feColorMatrix values="0 0 0 0 .85  0 0 0 0 .80  0 0 0 0 .65  0 0 0 .12 0"/>
+    </filter>
+    <filter id="bleedWP" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="softBleedWP" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="#f4eedf"/>
+  <rect width="600" height="600" filter="url(#paperWP)" opacity=".5"/>
+
+  <!-- sky -->
+  <ellipse cx="300" cy="80" rx="500" ry="250" fill="#cfe5f0" opacity=".6" filter="url(#bleedWP)"/>
+  <ellipse cx="200" cy="140" rx="300" ry="120" fill="#a8cbe0" opacity=".4" filter="url(#bleedWP)"/>
+
+  <!-- sun bloom -->
+  <circle cx="490" cy="110" r="80" fill="#ffd86b" opacity=".25" filter="url(#softBleedWP)"/>
+  <circle cx="490" cy="110" r="40" fill="#ffd86b" opacity=".55" filter="url(#bleedWP)"/>
+  <circle cx="490" cy="110" r="28" fill="#fff5b3" opacity=".75"/>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="540" rx="500" ry="200" fill="#a4c878" opacity=".55" filter="url(#bleedWP)"/>
+  <ellipse cx="300" cy="560" rx="500" ry="120" fill="#79a05d" opacity=".4" filter="url(#bleedWP)"/>
+
+  <!-- distant hills -->
+  <path d="M-20 380 Q150 320 320 360 Q480 320 620 380 L620 420 L-20 420 Z"
+        fill="#a8b8d0" opacity=".55" filter="url(#bleedWP)"/>
+
+  <!-- trees as soft blobs -->
+  <g opacity=".75">
+    <ellipse cx="72" cy="290" rx="42" ry="50" fill="#5e8a4a" filter="url(#bleedWP)"/>
+    <ellipse cx="58" cy="278" rx="22" ry="22" fill="#7ba65a" filter="url(#bleedWP)"/>
+    <rect x="65" y="295" width="14" height="55" fill="#7d4f12" opacity=".6" filter="url(#bleedWP)"/>
+
+    <ellipse cx="532" cy="295" rx="40" ry="46" fill="#5e8a4a" filter="url(#bleedWP)"/>
+    <ellipse cx="548" cy="282" rx="22" ry="22" fill="#7ba65a" filter="url(#bleedWP)"/>
+    <rect x="525" y="305" width="14" height="55" fill="#7d4f12" opacity=".6" filter="url(#bleedWP)"/>
+  </g>
+
+  <!-- straw house — washes -->
+  <!-- roof base wash -->
+  <polygon points="180,295 420,295 300,160" fill="#e0a532" opacity=".7" filter="url(#bleedWP)"/>
+  <polygon points="180,295 420,295 300,160" fill="#fbd96a" opacity=".5"/>
+  <!-- roof straw streaks (loose) -->
+  <g stroke="#a07310" stroke-width="2.5" opacity=".55" stroke-linecap="round" filter="url(#bleedWP)">
+    <line x1="200" y1="285" x2="225" y2="195"/>
+    <line x1="240" y1="290" x2="262" y2="210"/>
+    <line x1="290" y1="290" x2="305" y2="200"/>
+    <line x1="335" y1="290" x2="350" y2="220"/>
+    <line x1="375" y1="285" x2="385" y2="220"/>
+  </g>
+  <!-- walls wash -->
+  <rect x="195" y="295" width="210" height="180" fill="#e8c668" opacity=".7" filter="url(#bleedWP)"/>
+  <rect x="195" y="295" width="210" height="180" fill="#fbd96a" opacity=".4"/>
+  <!-- straw lines -->
+  <g stroke="#a07310" stroke-width="1.8" opacity=".55" filter="url(#bleedWP)">
+    <path d="M210 325 q30 -6 60 0 q30 6 60 0 q30 -6 60 0"/>
+    <path d="M210 360 q30 6 60 0 q30 -6 60 0 q30 6 60 0"/>
+    <path d="M210 395 q30 -6 60 0 q30 6 60 0 q30 -6 60 0"/>
+    <path d="M210 430 q30 6 60 0 q30 -6 60 0 q30 6 60 0"/>
+  </g>
+  <!-- door wash -->
+  <path d="M270 475 L270 380 q0 -25 30 -25 q30 0 30 25 L330 475 z" fill="#7d4f12" opacity=".7" filter="url(#bleedWP)"/>
+  <path d="M270 475 L270 380 q0 -25 30 -25 q30 0 30 25 L330 475 z" fill="#a06414" opacity=".55"/>
+  <circle cx="320" cy="425" r="3" fill="#ffe27a"/>
+  <!-- windows -->
+  <rect x="220" y="320" width="35" height="35" rx="6" fill="#cfeaff" opacity=".7" filter="url(#bleedWP)"/>
+  <rect x="220" y="320" width="35" height="35" rx="6" fill="none" stroke="#7d4f12" stroke-width="2.5" opacity=".7"/>
+  <line x1="220" y1="337" x2="255" y2="337" stroke="#7d4f12" stroke-width="2" opacity=".5"/>
+  <line x1="237" y1="320" x2="237" y2="355" stroke="#7d4f12" stroke-width="2" opacity=".5"/>
+  <rect x="345" y="320" width="35" height="35" rx="6" fill="#cfeaff" opacity=".7" filter="url(#bleedWP)"/>
+  <rect x="345" y="320" width="35" height="35" rx="6" fill="none" stroke="#7d4f12" stroke-width="2.5" opacity=".7"/>
+  <line x1="345" y1="337" x2="380" y2="337" stroke="#7d4f12" stroke-width="2" opacity=".5"/>
+  <line x1="362" y1="320" x2="362" y2="355" stroke="#7d4f12" stroke-width="2" opacity=".5"/>
+
+  <!-- splatters -->
+  <g opacity=".5">
+    <circle cx="180" cy="510" r="3" fill="#a07310"/>
+    <circle cx="190" cy="525" r="2" fill="#a07310"/>
+    <circle cx="430" cy="510" r="3" fill="#a07310"/>
+    <circle cx="80" cy="540" r="3" fill="#5683b8"/>
+    <circle cx="520" cy="535" r="3" fill="#e87a98"/>
+  </g>
+
+  <!-- paper grain top -->
+  <rect width="600" height="600" filter="url(#paperWP)" opacity=".25"/>
+</svg>

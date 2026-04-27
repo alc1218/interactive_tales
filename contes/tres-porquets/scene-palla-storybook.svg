@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="skyP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ed3f0"/>
+      <stop offset="1" stop-color="#ffe4b8"/>
+    </linearGradient>
+    <linearGradient id="grassP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a4dd8c"/>
+      <stop offset="1" stop-color="#3d7c45"/>
+    </linearGradient>
+    <linearGradient id="strawWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbd96a"/>
+      <stop offset="1" stop-color="#cf9929"/>
+    </linearGradient>
+    <linearGradient id="strawRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0bf3e"/>
+      <stop offset="1" stop-color="#a86f17"/>
+    </linearGradient>
+    <radialGradient id="sunP" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="strawTexture" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="2"/>
+      <feColorMatrix values="0 0 0 0 .65  0 0 0 0 .42  0 0 0 0 .12  0 0 0 .55 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="softShadowP" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#skyP)"/>
+
+  <!-- sun -->
+  <circle cx="490" cy="120" r="160" fill="url(#sunP)"/>
+  <circle cx="490" cy="120" r="40" fill="#fff5b3"/>
+  <circle cx="490" cy="120" r="30" fill="#ffd86b"/>
+
+  <!-- distant hills -->
+  <path d="M-20 380 L120 320 L260 360 L380 305 L500 350 L620 320 L620 420 L-20 420 Z"
+        fill="#7392b8" opacity=".5"/>
+  <path d="M-20 405 L150 355 L300 395 L460 350 L620 390 L620 430 L-20 430 Z"
+        fill="#5c7aa1" opacity=".4"/>
+
+  <!-- clouds -->
+  <g opacity=".95">
+    <ellipse cx="120" cy="115" rx="50" ry="20" fill="#fff"/>
+    <ellipse cx="155" cy="112" rx="34" ry="15" fill="#fff"/>
+    <ellipse cx="92" cy="120" rx="28" ry="13" fill="#fff"/>
+  </g>
+
+  <!-- meadow -->
+  <rect x="0" y="380" width="600" height="220" fill="url(#grassP)"/>
+  <ellipse cx="300" cy="540" rx="500" ry="120" fill="#3d7c45" opacity=".25"/>
+
+  <!-- trees -->
+  <g filter="url(#softShadowP)">
+    <rect x="65" y="295" width="14" height="55" fill="#5d3a20"/>
+    <ellipse cx="72" cy="290" rx="40" ry="50" fill="#3a7140"/>
+    <ellipse cx="58" cy="278" rx="22" ry="22" fill="#4c8c52"/>
+
+    <rect x="525" y="305" width="14" height="55" fill="#5d3a20"/>
+    <ellipse cx="532" cy="295" rx="38" ry="46" fill="#3a7140"/>
+    <ellipse cx="548" cy="282" rx="22" ry="22" fill="#4c8c52"/>
+  </g>
+
+  <!-- straw house -->
+  <g filter="url(#softShadowP)">
+    <!-- roof base -->
+    <polygon points="180,295 420,295 300,160" fill="url(#strawRoof)"/>
+    <!-- roof straw streaks -->
+    <g stroke="#fff2b6" stroke-width="2" opacity=".55" stroke-linecap="round">
+      <line x1="200" y1="285" x2="225" y2="195"/>
+      <line x1="225" y1="285" x2="250" y2="200"/>
+      <line x1="250" y1="285" x2="275" y2="190"/>
+      <line x1="275" y1="285" x2="300" y2="180"/>
+      <line x1="300" y1="285" x2="325" y2="190"/>
+      <line x1="325" y1="285" x2="350" y2="200"/>
+      <line x1="350" y1="285" x2="370" y2="210"/>
+      <line x1="375" y1="285" x2="385" y2="220"/>
+    </g>
+    <g stroke="#7d4f12" stroke-width="2" opacity=".55" stroke-linecap="round">
+      <line x1="195" y1="290" x2="220" y2="200"/>
+      <line x1="240" y1="290" x2="262" y2="210"/>
+      <line x1="290" y1="290" x2="305" y2="200"/>
+      <line x1="335" y1="290" x2="350" y2="220"/>
+    </g>
+
+    <!-- walls -->
+    <rect x="195" y="295" width="210" height="180" fill="url(#strawWall)"/>
+    <!-- straw lines on wall -->
+    <g stroke="#a07310" stroke-width="1.6" opacity=".75">
+      <path d="M200 320 q30 -6 60 0 q30 6 60 0 q30 -6 60 0 q15 3 25 0"/>
+      <path d="M200 345 q30 6 60 0 q30 -6 60 0 q30 6 60 0 q15 -3 25 0"/>
+      <path d="M200 370 q30 -6 60 0 q30 6 60 0 q30 -6 60 0 q15 3 25 0"/>
+      <path d="M200 395 q30 6 60 0 q30 -6 60 0 q30 6 60 0 q15 -3 25 0"/>
+      <path d="M200 420 q30 -6 60 0 q30 6 60 0 q30 -6 60 0 q15 3 25 0"/>
+      <path d="M200 445 q30 6 60 0 q30 -6 60 0 q30 6 60 0 q15 -3 25 0"/>
+    </g>
+    <!-- door -->
+    <path d="M270 475 L270 380 q0 -25 30 -25 q30 0 30 25 L330 475 z" fill="#7d4f12"/>
+    <path d="M275 470 L275 382 q0 -20 25 -20 q25 0 25 20 L325 470 z" fill="#a06414"/>
+    <circle cx="320" cy="425" r="3" fill="#ffe27a"/>
+    <!-- windows -->
+    <rect x="220" y="320" width="35" height="35" rx="6" fill="#cfeaff" stroke="#7d4f12" stroke-width="3"/>
+    <line x1="220" y1="337" x2="255" y2="337" stroke="#7d4f12" stroke-width="2"/>
+    <line x1="237" y1="320" x2="237" y2="355" stroke="#7d4f12" stroke-width="2"/>
+
+    <rect x="345" y="320" width="35" height="35" rx="6" fill="#cfeaff" stroke="#7d4f12" stroke-width="3"/>
+    <line x1="345" y1="337" x2="380" y2="337" stroke="#7d4f12" stroke-width="2"/>
+    <line x1="362" y1="320" x2="362" y2="355" stroke="#7d4f12" stroke-width="2"/>
+  </g>
+
+  <!-- wheelbarrow with straw bundle -->
+  <g transform="translate(420,440)">
+    <rect x="0" y="-10" width="60" height="30" rx="6" fill="#a86f17"/>
+    <rect x="55" y="-2" width="20" height="6" fill="#5d3a20"/>
+    <circle cx="12" cy="22" r="10" fill="#5d3a20"/>
+    <circle cx="12" cy="22" r="4" fill="#a06414"/>
+    <ellipse cx="30" cy="-12" rx="22" ry="8" fill="#fbd96a"/>
+    <g stroke="#a07310" stroke-width="1" opacity=".7">
+      <line x1="12" y1="-8" x2="20" y2="-18"/>
+      <line x1="22" y1="-7" x2="28" y2="-17"/>
+      <line x1="32" y1="-7" x2="38" y2="-17"/>
+      <line x1="42" y1="-8" x2="46" y2="-16"/>
+    </g>
+  </g>
+
+  <!-- piglet by the door -->
+  <g transform="translate(180,395)">
+    <ellipse cx="0" cy="36" rx="10" ry="3" fill="#0006"/>
+    <ellipse cx="0" cy="20" rx="22" ry="20" fill="#ffadc1"/>
+    <circle cx="0" cy="-5" r="18" fill="#ffbfd0"/>
+    <path d="M-13 -18 q-3 -8 3 -10 q7 -1 8 8 z" fill="#e89aa8"/>
+    <path d="M13 -18 q3 -8 -3 -10 q-7 -1 -8 8 z" fill="#e89aa8"/>
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#ff97b3"/>
+    <circle cx="-2" cy="0" r="1.2" fill="#7a2a3e"/>
+    <circle cx="2" cy="0" r="1.2" fill="#7a2a3e"/>
+    <circle cx="-6" cy="-8" r="1.5" fill="#2b2140"/>
+    <circle cx="6" cy="-8" r="1.5" fill="#2b2140"/>
+    <path d="M-5 9 q5 4 10 0" stroke="#7a2a3e" stroke-width="1.4" fill="none"/>
+  </g>
+
+  <!-- foreground grass tufts -->
+  <g fill="#2e6e3a" opacity=".55">
+    <path d="M0 575 q20 -22 38 0 q12 -18 28 0 q15 -22 30 0 z"/>
+    <path d="M460 575 q18 -22 36 0 q15 -22 32 0 q15 -22 30 0 z"/>
+  </g>
+  <!-- flowers -->
+  <g>
+    <g transform="translate(150,510)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(450,520)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(80,540)"><circle r="4" fill="#cfe2ff"/><circle r="1.6" fill="#5683b8"/></g>
+  </g>
+</svg>
