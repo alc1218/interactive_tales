@@ -49,7 +49,15 @@
       playing_scene: "⏸ Playing…",
       vocab_label: "We learn:",
       audio_unsupported: "Audio reader not supported in this browser.",
-      audio_no_voice: "No voice available for this language."
+      audio_no_voice: "No voice available for this language.",
+      title_tres_porquets: "The Three Little Pigs",
+      title_caputxeta_vermella: "Little Red Riding Hood",
+      title_gegant_del_pi: "The Giant of the Pine",
+      title_rateta: "The Little Mouse Who Swept the Stairs",
+      title_patufet: "Little Thumb (Patufet)",
+      title_ventafocs: "Cinderella",
+      title_llebre_i_tortuga: "The Hare and the Tortoise",
+      title_aneguet_lleig: "The Ugly Duckling"
     },
     es: {
       created_by: "Creado por",
@@ -86,7 +94,15 @@
       playing_scene: "⏸ Reproduciendo…",
       vocab_label: "Aprendemos:",
       audio_unsupported: "El lector de audio no está disponible en este navegador.",
-      audio_no_voice: "No hay voz disponible para este idioma."
+      audio_no_voice: "No hay voz disponible para este idioma.",
+      title_tres_porquets: "Los tres cerditos",
+      title_caputxeta_vermella: "Caperucita Roja",
+      title_gegant_del_pi: "El Gigante del Pino",
+      title_rateta: "La Ratita que barría la escalerita",
+      title_patufet: "El Patufet",
+      title_ventafocs: "Cenicienta",
+      title_llebre_i_tortuga: "La liebre y la tortuga",
+      title_aneguet_lleig: "El patito feo"
     },
     ca: {
       created_by: "Fet per",
@@ -123,7 +139,15 @@
       playing_scene: "⏸ Llegint…",
       vocab_label: "Aprenem:",
       audio_unsupported: "El lector d'àudio no està disponible en aquest navegador.",
-      audio_no_voice: "No hi ha cap veu disponible per a aquest idioma."
+      audio_no_voice: "No hi ha cap veu disponible per a aquest idioma.",
+      title_tres_porquets: "Els tres porquets",
+      title_caputxeta_vermella: "La Caputxeta Vermella",
+      title_gegant_del_pi: "El Gegant del Pi",
+      title_rateta: "La Rateta que escombrava l'escaleta",
+      title_patufet: "En Patufet",
+      title_ventafocs: "La Ventafocs",
+      title_llebre_i_tortuga: "La llebre i la tortuga",
+      title_aneguet_lleig: "L'aneguet lleig"
     },
     fr: {
       created_by: "Créé par",
@@ -160,7 +184,15 @@
       playing_scene: "⏸ Lecture…",
       vocab_label: "Apprenons :",
       audio_unsupported: "Le lecteur audio n'est pas disponible dans ce navigateur.",
-      audio_no_voice: "Aucune voix disponible pour cette langue."
+      audio_no_voice: "Aucune voix disponible pour cette langue.",
+      title_tres_porquets: "Les trois petits cochons",
+      title_caputxeta_vermella: "Le Petit Chaperon Rouge",
+      title_gegant_del_pi: "Le Géant du Pin",
+      title_rateta: "La Petite Souris qui balayait l'escalier",
+      title_patufet: "Le Patufet",
+      title_ventafocs: "Cendrillon",
+      title_llebre_i_tortuga: "Le lièvre et la tortue",
+      title_aneguet_lleig: "Le vilain petit canard"
     }
   };
 
@@ -222,6 +254,17 @@
         const [attr, key] = pair.split(":").map((s) => s.trim());
         if (dict[key] != null) el.setAttribute(attr, dict[key]);
       });
+    });
+    // Swap localized cover images: any <img data-cover-base="path/to/cover-storybook">
+    // gets src="path/to/cover-storybook-<lang>.svg" (or the bare .svg for Catalan).
+    document.querySelectorAll("img[data-cover-base]").forEach((img) => {
+      const base = img.getAttribute("data-cover-base");
+      const desired = lang === "ca" ? base + ".svg" : base + "-" + lang + ".svg";
+      if (img.getAttribute("src") !== desired) img.setAttribute("src", desired);
+      // Keep alt text in sync with the title
+      const slug = (base.split("/")[1] || "").replace(/-/g, "_");
+      const titleKey = "title_" + slug;
+      if (dict[titleKey] != null) img.setAttribute("alt", dict[titleKey]);
     });
     const code = document.getElementById("langCode");
     if (code) code.textContent = lang.toUpperCase();

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="skyVF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4870"/>
+      <stop offset=".5" stop-color="#7a8eb8"/>
+      <stop offset="1" stop-color="#d8c0e0"/>
+    </linearGradient>
+    <radialGradient id="moonVF" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff8d0"/>
+      <stop offset=".5" stop-color="#fce8a8" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#fce8a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassVF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e7a8c"/>
+      <stop offset="1" stop-color="#2c3e58"/>
+    </linearGradient>
+    <linearGradient id="dressVF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe2ff"/>
+      <stop offset=".5" stop-color="#7da8e0"/>
+      <stop offset="1" stop-color="#3e5a8c"/>
+    </linearGradient>
+    <radialGradient id="skinVF" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <linearGradient id="castleVF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e7aa0"/>
+      <stop offset="1" stop-color="#2c3e58"/>
+    </linearGradient>
+    <linearGradient id="ribbonVF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7da8e0"/>
+      <stop offset="1" stop-color="#3e5a8c"/>
+    </linearGradient>
+    <filter id="softShadowVF" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#skyVF)"/>
+
+  <!-- frame -->
+  <rect x="20" y="20" width="560" height="760" rx="22" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/>
+  <rect x="32" y="32" width="536" height="736" rx="16" fill="none" stroke="#cfa8e0" stroke-width="3" opacity=".55"/>
+
+  <!-- moon glow -->
+  <circle cx="460" cy="220" r="160" fill="url(#moonVF)" opacity=".85"/>
+  <circle cx="460" cy="220" r="50" fill="#fff8d0"/>
+  <circle cx="450" cy="210" r="40" fill="#fce8a8" opacity=".7"/>
+
+  <!-- stars -->
+  <g fill="#fff8d0">
+    <circle cx="80" cy="120" r="2"/>
+    <circle cx="160" cy="80" r="1.5"/>
+    <circle cx="240" cy="140" r="2"/>
+    <circle cx="120" cy="200" r="1.5"/>
+    <circle cx="540" cy="80" r="2"/>
+    <circle cx="500" cy="150" r="1.5"/>
+    <circle cx="380" cy="100" r="1.5"/>
+    <circle cx="320" cy="60" r="2"/>
+    <circle cx="40" cy="180" r="1.5"/>
+  </g>
+
+  <!-- castle silhouette in distance -->
+  <g filter="url(#softShadowVF)" opacity=".85">
+    <rect x="180" y="380" width="240" height="120" fill="url(#castleVF)"/>
+    <rect x="170" y="350" width="40" height="150" fill="url(#castleVF)"/>
+    <rect x="280" y="320" width="40" height="180" fill="url(#castleVF)"/>
+    <rect x="390" y="350" width="40" height="150" fill="url(#castleVF)"/>
+    <!-- roofs -->
+    <path d="M170 350 L190 320 L210 350 z" fill="#3e5a8c"/>
+    <path d="M280 320 L300 286 L320 320 z" fill="#3e5a8c"/>
+    <path d="M390 350 L410 320 L430 350 z" fill="#3e5a8c"/>
+    <circle cx="190" cy="318" r="2.5" fill="#ffd86b"/>
+    <circle cx="300" cy="284" r="2.5" fill="#ffd86b"/>
+    <circle cx="410" cy="318" r="2.5" fill="#ffd86b"/>
+    <!-- windows glow -->
+    <rect x="200" y="420" width="10" height="18" fill="#ffd86b"/>
+    <rect x="240" y="420" width="10" height="18" fill="#ffd86b"/>
+    <rect x="290" y="420" width="10" height="18" fill="#ffd86b"/>
+    <rect x="330" y="420" width="10" height="18" fill="#ffd86b"/>
+    <rect x="370" y="420" width="10" height="18" fill="#ffd86b"/>
+    <!-- gate -->
+    <path d="M290 480 q10 -20 20 0 L310 500 L290 500 z" fill="#3a2010"/>
+  </g>
+
+  <!-- ground -->
+  <ellipse cx="300" cy="780" rx="600" ry="160" fill="url(#grassVF)"/>
+
+  <!-- sparkles around -->
+  <g fill="#fff8d0" opacity=".9">
+    <g transform="translate(150,520)"><path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 z"/></g>
+    <g transform="translate(460,560)"><path d="M0 -6 L1.5 -1.5 L6 0 L1.5 1.5 L0 6 L-1.5 1.5 L-6 0 L-1.5 -1.5 z"/></g>
+    <g transform="translate(120,650)"><path d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 z"/></g>
+    <g transform="translate(490,650)"><path d="M0 -7 L2 -2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2 -2 z"/></g>
+    <g transform="translate(390,540)"><path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 z"/></g>
+    <g transform="translate(220,580)"><path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 z"/></g>
+  </g>
+
+  <!-- Cinderella -->
+  <g filter="url(#softShadowVF)" transform="translate(300,470)">
+    <ellipse cx="0" cy="225" rx="80" ry="10" fill="#0008"/>
+    <!-- ballgown skirt (wide flowing) -->
+    <path d="M-90 220 q0 -100 90 -100 q90 0 90 100 q-30 -10 -90 -10 q-60 0 -90 10 z" fill="url(#dressVF)"/>
+    <!-- skirt highlights -->
+    <path d="M-70 215 q0 -80 70 -80" stroke="#cfe2ff" stroke-width="2" fill="none" opacity=".6"/>
+    <path d="M70 215 q0 -80 -70 -80" stroke="#cfe2ff" stroke-width="2" fill="none" opacity=".6"/>
+    <!-- bodice -->
+    <path d="M-22 130 L-26 70 q0 -8 26 -8 q26 0 26 8 L22 130 z" fill="#3e5a8c"/>
+    <!-- shoulders / sleeves -->
+    <ellipse cx="-26" cy="65" rx="10" ry="7" fill="#cfe2ff"/>
+    <ellipse cx="26" cy="65" rx="10" ry="7" fill="#cfe2ff"/>
+    <!-- arms -->
+    <path d="M-30 70 q-12 16 -10 40" stroke="url(#skinVF)" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M30 70 q12 16 10 40" stroke="url(#skinVF)" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- neck -->
+    <rect x="-6" y="50" width="12" height="14" fill="url(#skinVF)"/>
+    <!-- head -->
+    <circle cx="0" cy="32" r="26" fill="url(#skinVF)"/>
+    <!-- hair (blonde, up-do) -->
+    <path d="M-24 22 q-6 -32 24 -34 q30 2 24 34 q-4 -16 -24 -16 q-20 0 -24 16 z" fill="#e8c060"/>
+    <ellipse cx="0" cy="0" rx="14" ry="6" fill="#e8c060"/>
+    <!-- tiara -->
+    <path d="M-12 6 q12 -10 24 0 L18 10 L-6 10 z" fill="#fff8d0" stroke="#ffd86b" stroke-width="1"/>
+    <circle cx="0" cy="6" r="1.8" fill="#cfe2ff"/>
+    <!-- face -->
+    <circle cx="-8" cy="32" r="3" fill="#fff"/><circle cx="-8" cy="32" r="1.8" fill="#2b2140"/><circle cx="-7" cy="31" r=".7" fill="#fff"/>
+    <circle cx="8" cy="32" r="3" fill="#fff"/><circle cx="8" cy="32" r="1.8" fill="#2b2140"/><circle cx="9" cy="31" r=".7" fill="#fff"/>
+    <path d="M-5 42 q5 4 10 0" stroke="#a3192a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="-14" cy="38" r="4" fill="#ff9bb5" opacity=".6"/>
+    <circle cx="14" cy="38" r="4" fill="#ff9bb5" opacity=".6"/>
+  </g>
+
+  <!-- glass slipper at feet -->
+  <g filter="url(#softShadowVF)" transform="translate(360,710)">
+    <path d="M-22 0 q12 -16 32 -10 q4 4 0 8 q-10 6 -32 8 z" fill="#cfe2ff" opacity=".8" stroke="#fff" stroke-width="1.2"/>
+    <path d="M-22 0 q12 -16 32 -10" stroke="#fff" stroke-width="1.5" fill="none" opacity=".8"/>
+    <circle cx="6" cy="-6" r="1.5" fill="#fff"/>
+  </g>
+
+  <!-- title ribbon top -->
+  <g filter="url(#softShadowVF)">
+    <path d="M50 80 L550 80 L535 155 L65 155 Z" fill="url(#ribbonVF)"/>
+    <path d="M50 80 L65 155 L40 165 L30 95 Z" fill="#1f2e58"/>
+    <path d="M550 80 L535 155 L560 165 L570 95 Z" fill="#1f2e58"/>
+  </g>
+  <text x="300" y="130" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="46" font-weight="800" fill="#fff" stroke="#1f2e58" stroke-width="6" stroke-linejoin="round" paint-order="stroke fill">Cendrillon</text>
+</svg>

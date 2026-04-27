@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="skyAL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8eb"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <radialGradient id="sunAL" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lakeAL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7da8c8"/>
+      <stop offset=".5" stop-color="#3e6e8c"/>
+      <stop offset="1" stop-color="#1f3e58"/>
+    </linearGradient>
+    <linearGradient id="lakeRefl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8c8e0" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#a8c8e0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="cloudAL" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <radialGradient id="duckBody" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#cccccc"/>
+      <stop offset=".7" stop-color="#888080"/>
+      <stop offset="1" stop-color="#555050"/>
+    </radialGradient>
+    <radialGradient id="swanBody" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".75" stop-color="#e8e8ea"/>
+      <stop offset="1" stop-color="#b8c0c8"/>
+    </radialGradient>
+    <linearGradient id="reedAL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3a6e1e"/>
+    </linearGradient>
+    <linearGradient id="ribbonAL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7da8c8"/>
+      <stop offset="1" stop-color="#3e6e8c"/>
+    </linearGradient>
+    <filter id="softShadowAL" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#skyAL)"/>
+
+  <!-- frame -->
+  <rect x="20" y="20" width="560" height="760" rx="22" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/>
+  <rect x="32" y="32" width="536" height="736" rx="16" fill="none" stroke="#3e6e8c" stroke-width="3" opacity=".55"/>
+
+  <!-- sun -->
+  <circle cx="460" cy="200" r="140" fill="url(#sunAL)" opacity=".75"/>
+  <circle cx="460" cy="200" r="36" fill="#fff5b3"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowAL)">
+    <ellipse cx="120" cy="180" rx="50" ry="18" fill="url(#cloudAL)"/>
+    <ellipse cx="155" cy="172" rx="36" ry="14" fill="url(#cloudAL)"/>
+    <ellipse cx="320" cy="140" rx="42" ry="14" fill="url(#cloudAL)"/>
+  </g>
+
+  <!-- distant hills -->
+  <path d="M0 440 L100 380 L240 420 L380 370 L500 410 L600 380 L600 460 L0 460 Z" fill="#5c8a5e" opacity=".6"/>
+
+  <!-- horizon water line -->
+  <rect x="0" y="430" width="600" height="350" fill="url(#lakeAL)"/>
+
+  <!-- water shimmer lines -->
+  <g stroke="#cfe2ff" stroke-width="1.5" opacity=".5" fill="none">
+    <path d="M40 500 q40 -4 80 0"/>
+    <path d="M180 530 q40 -4 80 0"/>
+    <path d="M340 510 q40 -4 80 0"/>
+    <path d="M460 540 q40 -4 80 0"/>
+    <path d="M80 580 q40 -4 80 0"/>
+    <path d="M260 600 q40 -4 80 0"/>
+    <path d="M420 620 q40 -4 80 0"/>
+    <path d="M120 660 q40 -4 80 0"/>
+    <path d="M340 680 q40 -4 80 0"/>
+  </g>
+
+  <!-- reeds -->
+  <g filter="url(#softShadowAL)">
+    <rect x="50" y="450" width="3" height="60" fill="url(#reedAL)"/>
+    <rect x="58" y="440" width="3" height="70" fill="url(#reedAL)"/>
+    <ellipse cx="51" cy="445" rx="3" ry="8" fill="#5c3a18"/>
+    <ellipse cx="59" cy="435" rx="3" ry="8" fill="#5c3a18"/>
+    <rect x="540" y="450" width="3" height="60" fill="url(#reedAL)"/>
+    <rect x="548" y="440" width="3" height="70" fill="url(#reedAL)"/>
+    <ellipse cx="541" cy="445" rx="3" ry="8" fill="#5c3a18"/>
+    <ellipse cx="549" cy="435" rx="3" ry="8" fill="#5c3a18"/>
+  </g>
+
+  <!-- gray duckling on top (above water, looking down) -->
+  <g filter="url(#softShadowAL)" transform="translate(220,360)">
+    <!-- body -->
+    <ellipse cx="60" cy="50" rx="55" ry="32" fill="url(#duckBody)"/>
+    <!-- tail -->
+    <path d="M5 45 q-12 -2 -15 -10 q12 0 15 4 z" fill="#555050"/>
+    <!-- head -->
+    <circle cx="105" cy="30" r="22" fill="url(#duckBody)"/>
+    <!-- beak (orange small) -->
+    <path d="M125 28 q14 0 14 6 q-14 4 -14 -2 z" fill="#e89a3a"/>
+    <!-- eye (sad) -->
+    <circle cx="112" cy="26" r="3" fill="#fff"/>
+    <circle cx="112" cy="26" r="1.8" fill="#2b2140"/>
+    <circle cx="113" cy="25" r=".6" fill="#fff"/>
+    <!-- sad brow -->
+    <path d="M108 20 q4 -2 8 0" stroke="#3a3030" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <!-- wing -->
+    <path d="M40 38 q15 -10 35 -2 q-12 14 -35 12 z" fill="#666060"/>
+    <!-- water ripple under -->
+    <ellipse cx="60" cy="80" rx="55" ry="5" fill="#3e6e8c" opacity=".5"/>
+  </g>
+
+  <!-- swan reflection below in water (mirrored, larger, magical) -->
+  <g filter="url(#softShadowAL)" transform="translate(180,500)">
+    <!-- glow -->
+    <ellipse cx="120" cy="100" rx="130" ry="40" fill="#fff7c2" opacity=".25"/>
+    <!-- body -->
+    <ellipse cx="120" cy="100" rx="80" ry="38" fill="url(#swanBody)"/>
+    <!-- tail tip up -->
+    <path d="M50 88 q-12 -16 -20 -8 q4 12 20 16 z" fill="url(#swanBody)"/>
+    <!-- long graceful neck (S-curve) -->
+    <path d="M180 100 q40 -10 30 -50 q-12 -38 -38 -28" stroke="url(#swanBody)" stroke-width="20" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="170" cy="22" r="16" fill="url(#swanBody)"/>
+    <!-- beak orange -->
+    <path d="M186 22 q14 0 14 6 q-14 4 -14 -2 z" fill="#e89a3a"/>
+    <!-- black mask near beak -->
+    <ellipse cx="184" cy="20" rx="4" ry="3" fill="#1a1a1a"/>
+    <!-- eye -->
+    <circle cx="174" cy="18" r="2.4" fill="#fff"/>
+    <circle cx="174" cy="18" r="1.4" fill="#2b2140"/>
+    <circle cx="175" cy="17" r=".5" fill="#fff"/>
+    <!-- wing feathers -->
+    <path d="M70 90 q40 -30 100 -20 q-40 30 -100 30 z" fill="#fff" opacity=".9"/>
+    <g stroke="#cfd8e0" stroke-width="1.2" opacity=".7" fill="none">
+      <path d="M85 90 q20 -8 35 -2"/>
+      <path d="M100 100 q20 -8 35 -2"/>
+      <path d="M115 110 q20 -8 35 -2"/>
+    </g>
+    <!-- water reflection ripples -->
+    <ellipse cx="120" cy="138" rx="80" ry="5" fill="#3e6e8c" opacity=".5"/>
+    <path d="M50 150 q70 -8 140 0" stroke="#cfe2ff" stroke-width="1.2" fill="none" opacity=".5"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#fff8d0" opacity=".85">
+    <g transform="translate(140,560)"><path d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 z"/></g>
+    <g transform="translate(450,580)"><path d="M0 -6 L2 -2 L6 0 L2 2 L0 6 L-2 2 L-6 0 L-2 -2 z"/></g>
+    <g transform="translate(420,520)"><path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 z"/></g>
+  </g>
+
+  <!-- title ribbon at top -->
+  <g filter="url(#softShadowAL)">
+    <path d="M50 80 L550 80 L535 155 L65 155 Z" fill="url(#ribbonAL)"/>
+    <path d="M50 80 L65 155 L40 165 L30 95 Z" fill="#1f3e58"/>
+    <path d="M550 80 L535 155 L560 165 L570 95 Z" fill="#1f3e58"/>
+  </g>
+  <text x="300" y="130" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="46" font-weight="800" fill="#fff" stroke="#1f3e58" stroke-width="6" stroke-linejoin="round" paint-order="stroke fill">El patito feo</text>
+</svg>

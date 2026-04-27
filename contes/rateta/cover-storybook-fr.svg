@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="skyRT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe2f5"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <radialGradient id="sunRT" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassRT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="cloudRT" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <radialGradient id="ratBody" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#f0e0c4"/>
+      <stop offset=".7" stop-color="#d4b88c"/>
+      <stop offset="1" stop-color="#9c7a4a"/>
+    </radialGradient>
+    <radialGradient id="ratHead" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#f5e8d0"/>
+      <stop offset="1" stop-color="#b89a6a"/>
+    </radialGradient>
+    <linearGradient id="stoneRT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8d0c0"/>
+      <stop offset="1" stop-color="#7a705c"/>
+    </linearGradient>
+    <linearGradient id="bowRT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <linearGradient id="ribbonRT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <filter id="softShadowRT" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#skyRT)"/>
+
+  <!-- frame -->
+  <rect x="20" y="20" width="560" height="760" rx="22" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/>
+  <rect x="32" y="32" width="536" height="736" rx="16" fill="none" stroke="#7a3a10" stroke-width="3" opacity=".55"/>
+
+  <!-- sun -->
+  <circle cx="480" cy="220" r="140" fill="url(#sunRT)" opacity=".75"/>
+  <circle cx="480" cy="220" r="38" fill="#fff5b3"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowRT)">
+    <ellipse cx="130" cy="200" rx="55" ry="20" fill="url(#cloudRT)"/>
+    <ellipse cx="165" cy="192" rx="38" ry="16" fill="url(#cloudRT)"/>
+    <ellipse cx="320" cy="160" rx="42" ry="15" fill="url(#cloudRT)"/>
+  </g>
+
+  <!-- distant mountains -->
+  <path d="M0 460 L100 400 L200 450 L320 380 L420 440 L520 400 L600 440 L600 520 L0 520 Z" fill="#7392b8" opacity=".5"/>
+  <path d="M0 500 L120 440 L260 490 L360 430 L470 480 L560 430 L600 470 L600 540 L0 540 Z" fill="#5c7aa1" opacity=".4"/>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="780" rx="600" ry="180" fill="url(#grassRT)"/>
+
+  <!-- stone staircase -->
+  <g filter="url(#softShadowRT)">
+    <rect x="180" y="640" width="240" height="30" fill="url(#stoneRT)"/>
+    <rect x="200" y="600" width="200" height="42" fill="url(#stoneRT)"/>
+    <rect x="220" y="560" width="160" height="42" fill="url(#stoneRT)"/>
+    <rect x="240" y="520" width="120" height="42" fill="url(#stoneRT)"/>
+    <!-- stone outlines -->
+    <g stroke="#5c5040" stroke-width="1.2" fill="none" opacity=".55">
+      <line x1="180" y1="650" x2="420" y2="650"/>
+      <line x1="220" y1="610" x2="380" y2="610"/>
+      <line x1="240" y1="570" x2="360" y2="570"/>
+      <line x1="240" y1="530" x2="360" y2="530"/>
+      <line x1="220" y1="600" x2="220" y2="640"/>
+      <line x1="280" y1="600" x2="280" y2="640"/>
+      <line x1="340" y1="600" x2="340" y2="640"/>
+      <line x1="260" y1="560" x2="260" y2="600"/>
+      <line x1="320" y1="560" x2="320" y2="600"/>
+    </g>
+  </g>
+
+  <!-- broom -->
+  <g filter="url(#softShadowRT)" transform="translate(380,470)">
+    <rect x="0" y="0" width="6" height="100" fill="#7d4f2a"/>
+    <path d="M-14 100 L20 100 L26 130 L-20 130 z" fill="#d8a060"/>
+    <g stroke="#7d4f2a" stroke-width="1" opacity=".5">
+      <line x1="-12" y1="100" x2="-16" y2="130"/>
+      <line x1="-4" y1="100" x2="-6" y2="130"/>
+      <line x1="4" y1="100" x2="6" y2="130"/>
+      <line x1="12" y1="100" x2="16" y2="130"/>
+    </g>
+  </g>
+
+  <!-- mouse on staircase -->
+  <g filter="url(#softShadowRT)" transform="translate(220,440)">
+    <ellipse cx="60" cy="135" rx="48" ry="7" fill="#0006"/>
+    <!-- body -->
+    <ellipse cx="60" cy="100" rx="50" ry="42" fill="url(#ratBody)"/>
+    <!-- legs -->
+    <rect x="35" y="130" width="10" height="14" rx="4" fill="#9c7a4a"/>
+    <rect x="62" y="132" width="10" height="14" rx="4" fill="#9c7a4a"/>
+    <!-- tail -->
+    <path d="M105 110 q30 -10 30 30" stroke="#b89a6a" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="60" cy="55" r="36" fill="url(#ratHead)"/>
+    <!-- ears (round, big) -->
+    <circle cx="32" cy="28" r="16" fill="url(#ratHead)"/>
+    <circle cx="32" cy="28" r="9" fill="#ff9bb5"/>
+    <circle cx="88" cy="28" r="16" fill="url(#ratHead)"/>
+    <circle cx="88" cy="28" r="9" fill="#ff9bb5"/>
+    <!-- big red bow -->
+    <g transform="translate(60,12)">
+      <path d="M-22 0 q-12 -8 -12 8 q0 16 12 8 q-2 -8 0 -16 z" fill="url(#bowRT)"/>
+      <path d="M22 0 q12 -8 12 8 q0 16 -12 8 q2 -8 0 -16 z" fill="url(#bowRT)"/>
+      <ellipse cx="0" cy="2" rx="6" ry="8" fill="#a3192a"/>
+    </g>
+    <!-- snout -->
+    <ellipse cx="60" cy="68" rx="9" ry="6" fill="#ff97b3"/>
+    <ellipse cx="60" cy="64" rx="3" ry="2" fill="#3a1018"/>
+    <!-- eyes -->
+    <circle cx="48" cy="48" r="3.6" fill="#fff"/><circle cx="49" cy="48" r="2.3" fill="#2b2140"/><circle cx="50" cy="47" r=".8" fill="#fff"/>
+    <circle cx="72" cy="48" r="3.6" fill="#fff"/><circle cx="73" cy="48" r="2.3" fill="#2b2140"/><circle cx="74" cy="47" r=".8" fill="#fff"/>
+    <!-- whiskers -->
+    <g stroke="#5c3a18" stroke-width=".8" opacity=".7">
+      <line x1="50" y1="68" x2="32" y2="64"/>
+      <line x1="50" y1="72" x2="32" y2="74"/>
+      <line x1="70" y1="68" x2="88" y2="64"/>
+      <line x1="70" y1="72" x2="88" y2="74"/>
+    </g>
+    <!-- smile -->
+    <path d="M52 78 q8 6 16 0" stroke="#7a2a3e" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="36" cy="64" r="5" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="84" cy="64" r="5" fill="#ff9bb5" opacity=".55"/>
+  </g>
+
+  <!-- title ribbon top -->
+  <g filter="url(#softShadowRT)">
+    <path d="M30 80 L570 80 L555 165 L45 165 Z" fill="url(#ribbonRT)"/>
+    <path d="M30 80 L45 165 L20 175 L10 95 Z" fill="#7a0a18"/>
+    <path d="M570 80 L555 165 L580 175 L590 95 Z" fill="#7a0a18"/>
+  </g>
+  <text x="300" y="118" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="32" font-weight="800" fill="#fff" stroke="#5c0a18" stroke-width="5" stroke-linejoin="round" paint-order="stroke fill">La Petite Souris</text>
+  <text x="300" y="152" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="22" font-weight="800" fill="#fff" stroke="#5c0a18" stroke-width="5" stroke-linejoin="round" paint-order="stroke fill">qui balayait l'escalier</text>
+</svg>

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="skyTP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb8e6"/>
+      <stop offset=".55" stop-color="#bfe1f5"/>
+      <stop offset="1" stop-color="#f3ebbf"/>
+    </linearGradient>
+    <radialGradient id="sunTP" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassTP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="pigBodyTP" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffd2dc"/>
+      <stop offset=".7" stop-color="#ffadc1"/>
+      <stop offset="1" stop-color="#e87a98"/>
+    </radialGradient>
+    <radialGradient id="pigHeadTP" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe1e8"/>
+      <stop offset=".75" stop-color="#ffbfd0"/>
+      <stop offset="1" stop-color="#e88aaa"/>
+    </radialGradient>
+    <radialGradient id="cloudTP" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <linearGradient id="brickTP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d96f4a"/>
+      <stop offset="1" stop-color="#9c3d28"/>
+    </linearGradient>
+    <linearGradient id="ribbonTP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#e89a3a"/>
+    </linearGradient>
+    <filter id="softShadowTP" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#skyTP)"/>
+
+  <!-- frame backdrop -->
+  <rect x="20" y="20" width="560" height="760" rx="22" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/>
+  <rect x="32" y="32" width="536" height="736" rx="16" fill="none" stroke="#7a4a2a" stroke-width="3" opacity=".55"/>
+
+  <!-- sun -->
+  <circle cx="460" cy="200" r="160" fill="url(#sunTP)" opacity=".75"/>
+  <circle cx="460" cy="200" r="46" fill="#fff5b3"/>
+  <circle cx="460" cy="200" r="36" fill="#ffd86b"/>
+
+  <!-- mountains -->
+  <path d="M0 480 L80 400 L180 460 L280 380 L380 440 L490 360 L600 440 L600 520 L0 520 Z" fill="#7392b8" opacity=".55"/>
+  <path d="M0 510 L120 440 L240 490 L340 430 L460 480 L560 430 L600 470 L600 540 L0 540 Z" fill="#5c7aa1" opacity=".45"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowTP)">
+    <ellipse cx="120" cy="180" rx="55" ry="20" fill="url(#cloudTP)"/>
+    <ellipse cx="155" cy="172" rx="38" ry="16" fill="url(#cloudTP)"/>
+    <ellipse cx="320" cy="130" rx="46" ry="17" fill="url(#cloudTP)"/>
+    <ellipse cx="350" cy="128" rx="32" ry="13" fill="url(#cloudTP)"/>
+  </g>
+
+  <!-- brick house in distance -->
+  <g filter="url(#softShadowTP)" transform="translate(420,420)">
+    <rect x="0" y="20" width="90" height="70" fill="url(#brickTP)"/>
+    <path d="M-8 22 L45 -10 L98 22 Z" fill="#7a3320"/>
+    <rect x="38" y="55" width="18" height="35" fill="#5c3a20"/>
+    <rect x="12" y="35" width="16" height="14" fill="#fff7c2"/>
+    <rect x="62" y="35" width="16" height="14" fill="#fff7c2"/>
+    <g stroke="#7a3320" stroke-width=".6" opacity=".6">
+      <line x1="0" y1="35" x2="90" y2="35"/>
+      <line x1="0" y1="50" x2="90" y2="50"/>
+      <line x1="0" y1="65" x2="90" y2="65"/>
+      <line x1="0" y1="80" x2="90" y2="80"/>
+    </g>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="700" rx="520" ry="200" fill="url(#grassTP)"/>
+
+  <!-- 3 piglets -->
+  <g filter="url(#softShadowTP)">
+    <!-- piglet 1 -->
+    <g transform="translate(80,470)">
+      <ellipse cx="60" cy="100" rx="50" ry="44" fill="url(#pigBodyTP)"/>
+      <rect x="32" y="130" width="13" height="22" rx="6" fill="#e89aa8"/>
+      <rect x="60" y="132" width="13" height="22" rx="6" fill="#e89aa8"/>
+      <circle cx="60" cy="55" r="38" fill="url(#pigHeadTP)"/>
+      <path d="M30 30 q-5 -16 5 -22 q15 -2 17 18 z" fill="#e89aa8"/>
+      <path d="M90 30 q5 -16 -5 -22 q-15 -2 -17 18 z" fill="#e89aa8"/>
+      <ellipse cx="60" cy="62" rx="15" ry="10" fill="#ff97b3"/>
+      <ellipse cx="55" cy="62" rx="2.2" ry="3" fill="#7a2a3e"/>
+      <ellipse cx="65" cy="62" rx="2.2" ry="3" fill="#7a2a3e"/>
+      <circle cx="48" cy="48" r="4" fill="#fff"/><circle cx="49" cy="48" r="2.5" fill="#2b2140"/><circle cx="50" cy="47" r=".8" fill="#fff"/>
+      <circle cx="72" cy="48" r="4" fill="#fff"/><circle cx="73" cy="48" r="2.5" fill="#2b2140"/><circle cx="74" cy="47" r=".8" fill="#fff"/>
+      <path d="M48 78 q12 8 24 0" stroke="#7a2a3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="36" cy="62" r="6" fill="#ff9bb5" opacity=".55"/>
+      <circle cx="84" cy="62" r="6" fill="#ff9bb5" opacity=".55"/>
+    </g>
+    <!-- piglet 2 (middle, bigger) -->
+    <g transform="translate(230,460)">
+      <ellipse cx="60" cy="105" rx="58" ry="50" fill="url(#pigBodyTP)"/>
+      <rect x="30" y="140" width="14" height="22" rx="6" fill="#e89aa8"/>
+      <rect x="62" y="143" width="14" height="22" rx="6" fill="#e89aa8"/>
+      <circle cx="60" cy="55" r="44" fill="url(#pigHeadTP)"/>
+      <path d="M27 26 q-5 -18 6 -24 q16 -2 18 20 z" fill="#e89aa8"/>
+      <path d="M93 26 q5 -18 -6 -24 q-16 -2 -18 20 z" fill="#e89aa8"/>
+      <ellipse cx="60" cy="64" rx="18" ry="12" fill="#ff97b3"/>
+      <ellipse cx="54" cy="64" rx="2.5" ry="3.2" fill="#7a2a3e"/>
+      <ellipse cx="66" cy="64" rx="2.5" ry="3.2" fill="#7a2a3e"/>
+      <circle cx="46" cy="48" r="4.5" fill="#fff"/><circle cx="47" cy="48" r="2.8" fill="#2b2140"/><circle cx="48" cy="47" r=".9" fill="#fff"/>
+      <circle cx="74" cy="48" r="4.5" fill="#fff"/><circle cx="75" cy="48" r="2.8" fill="#2b2140"/><circle cx="76" cy="47" r=".9" fill="#fff"/>
+      <path d="M48 80 q12 9 24 0" stroke="#7a2a3e" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <circle cx="34" cy="62" r="6.5" fill="#ff9bb5" opacity=".55"/>
+      <circle cx="86" cy="62" r="6.5" fill="#ff9bb5" opacity=".55"/>
+    </g>
+    <!-- piglet 3 -->
+    <g transform="translate(400,470)">
+      <ellipse cx="60" cy="100" rx="50" ry="44" fill="url(#pigBodyTP)"/>
+      <rect x="32" y="130" width="13" height="22" rx="6" fill="#e89aa8"/>
+      <rect x="60" y="132" width="13" height="22" rx="6" fill="#e89aa8"/>
+      <circle cx="60" cy="55" r="38" fill="url(#pigHeadTP)"/>
+      <path d="M30 30 q-5 -16 5 -22 q15 -2 17 18 z" fill="#e89aa8"/>
+      <path d="M90 30 q5 -16 -5 -22 q-15 -2 -17 18 z" fill="#e89aa8"/>
+      <ellipse cx="60" cy="62" rx="15" ry="10" fill="#ff97b3"/>
+      <ellipse cx="55" cy="62" rx="2.2" ry="3" fill="#7a2a3e"/>
+      <ellipse cx="65" cy="62" rx="2.2" ry="3" fill="#7a2a3e"/>
+      <circle cx="48" cy="48" r="4" fill="#fff"/><circle cx="49" cy="48" r="2.5" fill="#2b2140"/><circle cx="50" cy="47" r=".8" fill="#fff"/>
+      <circle cx="72" cy="48" r="4" fill="#fff"/><circle cx="73" cy="48" r="2.5" fill="#2b2140"/><circle cx="74" cy="47" r=".8" fill="#fff"/>
+      <path d="M48 78 q12 8 24 0" stroke="#7a2a3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="36" cy="62" r="6" fill="#ff9bb5" opacity=".55"/>
+      <circle cx="84" cy="62" r="6" fill="#ff9bb5" opacity=".55"/>
+    </g>
+  </g>
+
+  <!-- title ribbon -->
+  <g filter="url(#softShadowTP)">
+    <path d="M50 90 L550 90 L535 165 L65 165 Z" fill="url(#ribbonTP)"/>
+    <path d="M50 90 L65 165 L40 175 L30 105 Z" fill="#c97a22"/>
+    <path d="M550 90 L535 165 L560 175 L570 105 Z" fill="#c97a22"/>
+  </g>
+  <text x="300" y="140" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="44" font-weight="800" fill="#fff" stroke="#7a3a10" stroke-width="6" stroke-linejoin="round" paint-order="stroke fill">Los tres cerditos</text>
+</svg>

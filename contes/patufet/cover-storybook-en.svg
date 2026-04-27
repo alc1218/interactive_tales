@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="skyPF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fcae8"/>
+      <stop offset=".55" stop-color="#cee6f5"/>
+      <stop offset="1" stop-color="#fbe6c0"/>
+    </linearGradient>
+    <radialGradient id="sunPF" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7c2"/>
+      <stop offset=".55" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ffae3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grassPF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bd884"/>
+      <stop offset="1" stop-color="#3d8a4c"/>
+    </linearGradient>
+    <radialGradient id="cloudPF" cx=".5" cy=".4" r=".55">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dde9f2"/>
+    </radialGradient>
+    <radialGradient id="skinPF" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#ffe6cf"/>
+      <stop offset="1" stop-color="#e8b48a"/>
+    </radialGradient>
+    <linearGradient id="capPF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <linearGradient id="cabbagePF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d870"/>
+      <stop offset="1" stop-color="#3a6e1e"/>
+    </linearGradient>
+    <linearGradient id="pathPF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6a370"/>
+      <stop offset="1" stop-color="#a16f3f"/>
+    </linearGradient>
+    <linearGradient id="ribbonPF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4153"/>
+      <stop offset="1" stop-color="#a3192a"/>
+    </linearGradient>
+    <filter id="softShadowPF" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="3"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#skyPF)"/>
+
+  <!-- frame -->
+  <rect x="20" y="20" width="560" height="760" rx="22" fill="none" stroke="#fff" stroke-width="6" opacity=".7"/>
+  <rect x="32" y="32" width="536" height="736" rx="16" fill="none" stroke="#7a3a10" stroke-width="3" opacity=".55"/>
+
+  <!-- sun -->
+  <circle cx="460" cy="200" r="150" fill="url(#sunPF)" opacity=".75"/>
+  <circle cx="460" cy="200" r="42" fill="#fff5b3"/>
+  <circle cx="460" cy="200" r="32" fill="#ffd86b"/>
+
+  <!-- clouds -->
+  <g filter="url(#softShadowPF)">
+    <ellipse cx="120" cy="200" rx="55" ry="20" fill="url(#cloudPF)"/>
+    <ellipse cx="155" cy="192" rx="38" ry="16" fill="url(#cloudPF)"/>
+    <ellipse cx="280" cy="160" rx="40" ry="15" fill="url(#cloudPF)"/>
+  </g>
+
+  <!-- mountains -->
+  <path d="M0 480 L80 400 L180 460 L280 380 L380 440 L490 360 L600 440 L600 520 L0 520 Z" fill="#7392b8" opacity=".5"/>
+  <path d="M0 510 L120 440 L240 490 L340 430 L460 480 L560 430 L600 470 L600 540 L0 540 Z" fill="#5c7aa1" opacity=".4"/>
+
+  <!-- distant trees -->
+  <g opacity=".75">
+    <ellipse cx="40" cy="510" rx="45" ry="28" fill="#3a7140"/>
+    <ellipse cx="100" cy="508" rx="35" ry="22" fill="#4c8c52"/>
+    <ellipse cx="540" cy="510" rx="45" ry="28" fill="#3a7140"/>
+  </g>
+
+  <!-- meadow -->
+  <ellipse cx="300" cy="710" rx="600" ry="200" fill="url(#grassPF)"/>
+
+  <!-- country lane -->
+  <path d="M-20 600 Q300 560 620 600 Q300 620 -20 600 Z" fill="url(#pathPF)" opacity=".9"/>
+
+  <!-- giant cabbage leaf left -->
+  <g filter="url(#softShadowPF)" transform="translate(80,500)">
+    <ellipse cx="80" cy="100" rx="90" ry="55" fill="url(#cabbagePF)"/>
+    <ellipse cx="80" cy="92" rx="70" ry="42" fill="#83be58" opacity=".75"/>
+    <ellipse cx="80" cy="86" rx="50" ry="30" fill="#a8d870" opacity=".75"/>
+    <g stroke="#2e5a18" stroke-width="2" fill="none" opacity=".55">
+      <path d="M80 60 q0 30 -40 70"/>
+      <path d="M80 60 q0 30 40 70"/>
+      <path d="M80 60 q0 30 0 80"/>
+    </g>
+  </g>
+
+  <!-- tiny patufet on lane -->
+  <g filter="url(#softShadowPF)" transform="translate(330,520)">
+    <ellipse cx="0" cy="135" rx="22" ry="5" fill="#0006"/>
+    <!-- legs -->
+    <rect x="-10" y="90" width="8" height="38" rx="3" fill="#5c7aa1"/>
+    <rect x="2" y="90" width="8" height="38" rx="3" fill="#5c7aa1"/>
+    <!-- shoes -->
+    <ellipse cx="-6" cy="130" rx="8" ry="4" fill="#3a2010"/>
+    <ellipse cx="6" cy="130" rx="8" ry="4" fill="#3a2010"/>
+    <!-- shirt -->
+    <path d="M-22 50 q0 -10 22 -10 q22 0 22 10 L22 95 q0 5 -10 5 L-12 100 q-10 0 -10 -5 z" fill="#fff" stroke="#c0c8d0" stroke-width="1"/>
+    <!-- vest -->
+    <path d="M-18 50 L-22 95 L-10 95 L-6 50 z" fill="#3a6e1e"/>
+    <path d="M18 50 L22 95 L10 95 L6 50 z" fill="#3a6e1e"/>
+    <!-- arms -->
+    <path d="M-22 55 q-12 12 -10 30" stroke="url(#skinPF)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M22 55 q12 12 10 30" stroke="url(#skinPF)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- head -->
+    <circle cx="0" cy="20" r="22" fill="url(#skinPF)"/>
+    <!-- hair -->
+    <path d="M-18 12 q4 -10 18 -10 q14 0 18 10 q-5 -2 -18 -2 q-13 0 -18 2 z" fill="#5c3a18"/>
+    <!-- barretina cap (red, slumped to one side) -->
+    <path d="M-15 5 q5 -22 22 -18 q14 -2 18 6 q-2 8 -28 22 q-10 4 -12 -10 z" fill="url(#capPF)"/>
+    <ellipse cx="20" cy="0" rx="6" ry="4" fill="#a3192a"/>
+    <!-- face -->
+    <circle cx="-7" cy="22" r="2.8" fill="#fff"/><circle cx="-7" cy="22" r="1.7" fill="#2b2140"/><circle cx="-6" cy="21" r=".6" fill="#fff"/>
+    <circle cx="7" cy="22" r="2.8" fill="#fff"/><circle cx="7" cy="22" r="1.7" fill="#2b2140"/><circle cx="8" cy="21" r=".6" fill="#fff"/>
+    <path d="M-4 32 q4 4 8 0" stroke="#7a2a3e" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="-12" cy="28" r="3.5" fill="#ff9bb5" opacity=".55"/>
+    <circle cx="12" cy="28" r="3.5" fill="#ff9bb5" opacity=".55"/>
+  </g>
+
+  <!-- flowers -->
+  <g>
+    <g transform="translate(420,640)"><circle r="4" fill="#fff7c2"/><circle r="1.6" fill="#ffae3b"/></g>
+    <g transform="translate(70,660)"><circle r="4" fill="#ffd0e0"/><circle r="1.6" fill="#e87a98"/></g>
+    <g transform="translate(490,680)"><circle r="4" fill="#cfe2ff"/><circle r="1.6" fill="#5683b8"/></g>
+  </g>
+
+  <!-- title ribbon top -->
+  <g filter="url(#softShadowPF)">
+    <path d="M50 80 L550 80 L535 155 L65 155 Z" fill="url(#ribbonPF)"/>
+    <path d="M50 80 L65 155 L40 165 L30 95 Z" fill="#7a0a18"/>
+    <path d="M550 80 L535 155 L560 165 L570 95 Z" fill="#7a0a18"/>
+  </g>
+  <text x="300" y="130" text-anchor="middle" font-family="Baloo 2, sans-serif" font-size="38" font-weight="800" fill="#fff" stroke="#5c0a18" stroke-width="6" stroke-linejoin="round" paint-order="stroke fill">Little Thumb (Patufet)</text>
+</svg>
